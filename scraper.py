@@ -1,336 +1,256 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-import os
-from datetime import datetime, timezone, timedelta
 import time
-import sys
 import re
+from datetime import datetime
 
-# 设置时区为东八区（北京时间）
-BJ_TZ = timezone(timedelta(hours=8))
-
-# 南开大学就业指导中心招聘信息页面
-BASE_URL = "https://career.nankai.edu.cn"
-RECRUITMENT_URL = f"{BASE_URL}/correcruit/index.html"
-
-def get_current_time():
-    """获取当前北京时间"""
-    return datetime.now(BJ_TZ).strftime('%Y-%m-%d %H:%M:%S')
-
-def is_recruitment_link(href):
-    """判断链接是否为招聘信息链接"""
-    if not href:
-        return False
-    pattern = r'/correcruit/content/id/\d+\.html'
-    return bool(re.search(pattern, href))
-
-def fetch_detail_page(url):
-    """
-    抓取招聘详情页面的详细信息
-    """
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
-    }
+class NankaiCareerSpider:
+    def __init__(self):
+        self.base_url = "https://career.nankai.edu.cn"
+        self.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+        self.jobs = []
     
-    try:
-        response = requests.get(url, headers=headers, timeout=10)
-        response.encoding = 'utf-8'
+    def get_page_content(self, url):
+        """获取页面内容"""
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            response.encoding = 'utf-8'
+            if response.status_code == 200:
+                return response.text
+            else:
+                print(f"请求失败，状态码: {response.status_code}")
+                return None
+        except Exception as e:
+            print(f"请求异常: {e}")
+            return None
+    
+    def parse_list_page(self, html_content):
+        """解析列表页面，提取招聘信息的基本信息和链接"""
+        soup = BeautifulSoup(html_content, 'html.parser')
+        job_list = []
         
-        if response.status_code != 200:
-            return {}
+        # 查找招聘信息列表
+        # 根据常见的页面结构，招聘信息通常在特定的列表容器中
+        job_items = soup.find_all('li') or soup.find_all('div', class_=re.compile(r'item|list|job'))
         
-        soup = BeautifulSoup(response.text, 'html.parser')
+        for item in job_items:
+            try:
+                # 查找链接
+                link_tag = item.find('a', href=re.compile(r'/correcruit/content/id/\d+\.html'))
+                if link_tag:
+                    title = link_tag.get_text(strip=True)
+                    link = link_tag.get('href')
+                    if link and not link.startswith('http'):
+                        link = self.base_url + link
+                    
+                    # 查找公司名称和其他信息
+                    company = ""
+                    company_tag = item.find('span', class_=re.compile(r'company|corp|enterprise')) or \
+                                 item.find('div', class_=re.compile(r'company|corp|enterprise'))
+                    if company_tag:
+                        company = company_tag.get_text(strip=True)
+                    
+                    # 查找发布时间
+                    publish_time = ""
+                    time_tag = item.find('span', class_=re.compile(r'time|date')) or \
+                               item.find('div', class_=re.compile(r'time|date'))
+                    if time_tag:
+                        publish_time = time_tag.get_text(strip=True)
+                    
+                    if title and link:
+                        job_list.append({
+                            'title': title,
+                            'link': link,
+                            'company': company,
+                            'publish_time': publish_time
+                        })
+            except Exception as e:
+                print(f"解析列表项时出错: {e}")
+                continue
         
-        # 初始化详细信息
-        detail = {
+        return job_list
+    
+    def parse_detail_page(self, html_content, url):
+        """解析详情页面，提取详细的招聘信息"""
+        soup = BeautifulSoup(html_content, 'html.parser')
+        job_detail = {
+            'link': url,
+            'title': '',
             'company': '',
-            'pub_time': '',
+            'education_requirement': '',
+            'major_requirement': '',
             'salary': '',
-            'location': '',
-            'category': '',
-            'degree': '不限',
-            'major': '',
-            'description': ''
+            'work_location': '',
+            'job_category': '',
+            'publish_time': ''
         }
         
-        # 尝试多种方式提取信息
-        # 1. 从表格中提取
-        tables = soup.find_all('table')
-        for table in tables:
-            rows = table.find_all('tr')
-            for row in rows:
-                cells = row.find_all('td')
-                if len(cells) >= 2:
-                    label = cells[0].get_text(strip=True)
-                    value = cells[1].get_text(strip=True)
-                    
-                    if '单位名称' in label or '企业名称' in label or '公司' in label:
-                        detail['company'] = value
-                    elif '发布时间' in label or '发布日期' in label:
-                        detail['pub_time'] = value
-                    elif '薪资' in label or '待遇' in label or '薪酬' in label:
-                        detail['salary'] = value
-                    elif '工作地域' in label or '工作地点' in label or '地区' in label:
-                        detail['location'] = value
-                    elif '职业类别' in label or '职位类别' in label or '岗位类别' in label:
-                        detail['category'] = value
-                    elif '学历' in label or '学位' in label:
-                        detail['degree'] = value
-                        if '博士' in value:
-                            detail['degree'] = '博士'
-                        elif '硕士' in value:
-                            detail['degree'] = '硕士'
-                        elif '本科' in value:
-                            detail['degree'] = '本科'
-                        else:
-                            detail['degree'] = '不限'
-                    elif '专业' in label:
-                        detail['major'] = value
-        
-        # 2. 从定义列表或描述中提取
-        if not detail['company']:
-            # 尝试从标题中提取公司名称
-            title_tag = soup.find('h1') or soup.find('h2') or soup.find('h3')
-            if title_tag:
-                title_text = title_tag.get_text(strip=True)
-                # 假设标题格式为 "公司名称 - 职位名称" 或 "公司名称招聘"
-                if ' - ' in title_text:
-                    detail['company'] = title_text.split(' - ')[0]
-                elif '招聘' in title_text:
-                    detail['company'] = title_text.split('招聘')[0]
-        
-        # 3. 从页面其他部分提取信息
-        page_text = soup.get_text()
-        
-        # 提取薪资信息
-        salary_patterns = [
-            r'(\d+[千千万万]?[-~到]\d+[千千万万]?/?[月年]?)',
-            r'(\d+[千千万万]?以上/?[月年]?)',
-            r'面议',
-            r'薪资[：:]\s*([^。\n]*)',
-            r'待遇[：:]\s*([^。\n]*)'
-        ]
-        for pattern in salary_patterns:
-            match = re.search(pattern, page_text)
-            if match:
-                if not detail['salary']:
-                    detail['salary'] = match.group(1) if match.groups() else match.group(0)
-                break
-        
-        # 提取工作地点
-        location_patterns = [
-            r'工作[地点地域][：:]\s*([^。\n]*)',
-            r'工作[城市地区][：:]\s*([^。\n]*)'
-        ]
-        for pattern in location_patterns:
-            match = re.search(pattern, page_text)
-            if match:
-                if not detail['location']:
-                    detail['location'] = match.group(1)
-                break
-        
-        # 提取职位类别
-        category_patterns = [
-            r'职位[类别分类][：:]\s*([^。\n]*)',
-            r'职业[类别分类][：:]\s*([^。\n]*)',
-            r'岗位[类别分类][：:]\s*([^。\n]*)'
-        ]
-        for pattern in category_patterns:
-            match = re.search(pattern, page_text)
-            if match:
-                if not detail['category']:
-                    detail['category'] = match.group(1)
-                break
-        
-        # 提取发布时间
-        time_patterns = [
-            r'发布[时间日期][：:]\s*(\d{4}[-/]\d{1,2}[-/]\d{1,2})',
-            r'发布时间[：:]\s*(\d{4}[-/]\d{1,2}[-/]\d{1,2})'
-        ]
-        for pattern in time_patterns:
-            match = re.search(pattern, page_text)
-            if match:
-                if not detail['pub_time']:
-                    detail['pub_time'] = match.group(1)
-                break
-        
-        # 提取描述信息
-        content_div = soup.find('div', class_='content') or soup.find('div', class_='article-content')
-        if content_div:
-            detail['description'] = content_div.get_text(strip=True)[:500]  # 只取前500字
-        
-        return detail
-        
-    except Exception as e:
-        print(f"抓取详情页出错: {e}")
-        return {}
-
-def fetch_jobs_from_nankai():
-    """
-    从南开大学就业指导中心抓取招聘信息
-    """
-    all_jobs = []
-    
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
-    }
-    
-    max_pages = 50
-    total_count = 0
-    
-    start_time = get_current_time()
-    print(f"开始抓取时间: {start_time}")
-    
-    for page in range(1, max_pages + 1):
-        if page == 1:
-            url = RECRUITMENT_URL
-        else:
-            url = f"{BASE_URL}/correcruit/index/p/{page}.html"
-        
-        print(f"\n正在抓取第 {page}/{max_pages} 页: {url}")
-        
         try:
-            response = requests.get(url, headers=headers, timeout=10)
-            response.encoding = 'utf-8'
+            # 提取标题
+            title_tag = soup.find('h1') or soup.find('h2') or soup.find('title')
+            if title_tag:
+                job_detail['title'] = title_tag.get_text(strip=True)
             
-            if response.status_code != 200:
-                print(f"请求失败，状态码: {response.status_code}")
-                continue
+            # 提取所有文本内容进行分析
+            all_text = soup.get_text()
             
-            soup = BeautifulSoup(response.text, 'html.parser')
+            # 提取公司名称
+            company_patterns = [
+                r'公司名称[：:]\s*([^\n]+)',
+                r'单位名称[：:]\s*([^\n]+)',
+                r'企业名称[：:]\s*([^\n]+)',
+                r'招聘单位[：:]\s*([^\n]+)'
+            ]
+            for pattern in company_patterns:
+                match = re.search(pattern, all_text)
+                if match:
+                    job_detail['company'] = match.group(1).strip()
+                    break
             
-            # 查找所有招聘信息链接
-            all_links = soup.find_all('a', href=True)
-            page_count = 0
+            # 提取学历要求
+            education_patterns = [
+                r'学历要求[：:]\s*([^\n]+)',
+                r'学历[：:]\s*([^\n]+)',
+                r'学历层次[：:]\s*([^\n]+)'
+            ]
+            for pattern in education_patterns:
+                match = re.search(pattern, all_text)
+                if match:
+                    job_detail['education_requirement'] = match.group(1).strip()
+                    break
             
-            for link in all_links:
-                try:
-                    href = link.get('href', '')
-                    
-                    # 只处理招聘信息链接
-                    if not is_recruitment_link(href):
-                        continue
-                    
-                    title = link.get('title') or link.get_text(strip=True)
-                    
-                    # 处理相对链接
-                    if href and not href.startswith('http'):
-                        href = BASE_URL + href
-                    
-                    # 获取发布时间（从列表页）
-                    pub_time = ''
-                    parent = link.parent
-                    if parent:
-                        time_span = parent.find('span', class_='time') or parent.find('span', class_='date')
-                        if time_span:
-                            pub_time = time_span.get_text(strip=True)
-                    
-                    # 先创建基本信息
-                    job_info = {
-                        'title': title,
-                        'url': href,
-                        'company': '',
-                        'degree': '不限',
-                        'major': '',
-                        'salary': '',
-                        'location': '',
-                        'category': '',
-                        'source': '南开大学就业指导中心',
-                        'update_time': get_current_time(),
-                        'pub_time': pub_time,
-                        'description': ''
-                    }
-                    
-                    all_jobs.append(job_info)
-                    page_count += 1
-                    total_count += 1
-                    
-                except Exception as e:
-                    continue
+            # 提取专业要求
+            major_patterns = [
+                r'专业要求[：:]\s*([^\n]+)',
+                r'专业[：:]\s*([^\n]+)',
+                r'所需专业[：:]\s*([^\n]+)'
+            ]
+            for pattern in major_patterns:
+                match = re.search(pattern, all_text)
+                if match:
+                    job_detail['major_requirement'] = match.group(1).strip()
+                    break
             
-            print(f"第 {page} 页共找到 {page_count} 条招聘信息")
+            # 提取薪资待遇
+            salary_patterns = [
+                r'薪资待遇[：:]\s*([^\n]+)',
+                r'薪资[：:]\s*([^\n]+)',
+                r'薪酬[：:]\s*([^\n]+)',
+                r'工资[：:]\s*([^\n]+)'
+            ]
+            for pattern in salary_patterns:
+                match = re.search(pattern, all_text)
+                if match:
+                    job_detail['salary'] = match.group(1).strip()
+                    break
             
-            # 如果当前页没有招聘信息，可能已经到最后一页
-            if page_count == 0:
-                print(f"第 {page} 页没有招聘信息，可能已到最后一页")
-                break
+            # 提取工作地区
+            location_patterns = [
+                r'工作地区[：:]\s*([^\n]+)',
+                r'工作地点[：:]\s*([^\n]+)',
+                r'工作地址[：:]\s*([^\n]+)',
+                r'所在地区[：:]\s*([^\n]+)'
+            ]
+            for pattern in location_patterns:
+                match = re.search(pattern, all_text)
+                if match:
+                    job_detail['work_location'] = match.group(1).strip()
+                    break
             
-            # 每页之间等待0.5秒
-            time.sleep(0.5)
+            # 提取岗位类别
+            category_patterns = [
+                r'岗位类别[：:]\s*([^\n]+)',
+                r'岗位类型[：:]\s*([^\n]+)',
+                r'职位类别[：:]\s*([^\n]+)',
+                r'招聘岗位[：:]\s*([^\n]+)'
+            ]
+            for pattern in category_patterns:
+                match = re.search(pattern, all_text)
+                if match:
+                    job_detail['job_category'] = match.group(1).strip()
+                    break
+            
+            # 提取发布时间
+            time_patterns = [
+                r'发布时间[：:]\s*([^\n]+)',
+                r'发布日期[：:]\s*([^\n]+)',
+                r'发布时间[：:]\s*(\d{4}-\d{2}-\d{2})'
+            ]
+            for pattern in time_patterns:
+                match = re.search(pattern, all_text)
+                if match:
+                    job_detail['publish_time'] = match.group(1).strip()
+                    break
             
         except Exception as e:
-            print(f"抓取第 {page} 页时出错: {e}")
-            continue
-    
-    # 抓取详情页信息
-    print(f"\n开始抓取详情页信息...")
-    print(f"共 {len(all_jobs)} 条招聘信息需要抓取详情")
-    
-    for i, job in enumerate(all_jobs):
-        print(f"正在抓取第 {i+1}/{len(all_jobs)} 条详情: {job['title']}")
+            print(f"解析详情页面时出错: {e}")
         
-        detail = fetch_detail_page(job['url'])
+        return job_detail
+    
+    def crawl(self, max_pages=2):
+        """爬取招聘信息"""
+        print(f"开始爬取前{max_pages}页的招聘信息...")
         
-        # 更新详细信息
-        if detail:
-            job['company'] = detail.get('company', '') or job['company']
-            job['pub_time'] = detail.get('pub_time', '') or job['pub_time']
-            job['salary'] = detail.get('salary', '')
-            job['location'] = detail.get('location', '')
-            job['category'] = detail.get('category', '')
-            job['degree'] = detail.get('degree', '不限')
-            job['major'] = detail.get('major', '')
-            job['description'] = detail.get('description', '')
+        for page in range(1, max_pages + 1):
+            if page == 1:
+                list_url = f"{self.base_url}/correcruit/index.html"
+            else:
+                list_url = f"{self.base_url}/correcruit/index/p/{page}.html"
+            
+            print(f"正在爬取第{page}页: {list_url}")
+            
+            # 获取列表页面
+            list_html = self.get_page_content(list_url)
+            if not list_html:
+                print(f"无法获取第{page}页的内容")
+                continue
+            
+            # 解析列表页面
+            job_list = self.parse_list_page(list_html)
+            print(f"第{page}页找到{len(job_list)}个招聘信息")
+            
+            # 爬取每个招聘信息的详情
+            for i, job in enumerate(job_list):
+                print(f"正在爬取第{page}页第{i+1}个招聘信息: {job['title']}")
+                
+                # 获取详情页面
+                detail_html = self.get_page_content(job['link'])
+                if detail_html:
+                    # 解析详情页面
+                    job_detail = self.parse_detail_page(detail_html, job['link'])
+                    
+                    # 如果列表页有基本信息，而详情页没有，则使用列表页的信息
+                    if not job_detail['title']:
+                        job_detail['title'] = job['title']
+                    if not job_detail['company']:
+                        job_detail['company'] = job['company']
+                    if not job_detail['publish_time']:
+                        job_detail['publish_time'] = job['publish_time']
+                    
+                    self.jobs.append(job_detail)
+                    print(f"成功爬取: {job_detail['title']}")
+                
+                # 添加延迟，避免请求过于频繁
+                time.sleep(1)
+            
+            # 页面间延迟
+            time.sleep(2)
         
-        # 每抓取一条详情后等待0.3秒
-        time.sleep(0.3)
+        print(f"爬取完成，共获取{len(self.jobs)}个招聘信息")
     
-    # 记录结束时间
-    end_time = get_current_time()
-    print(f"\n抓取完成！")
-    print(f"开始时间: {start_time}")
-    print(f"结束时间: {end_time}")
-    print(f"共获取 {total_count} 条招聘信息")
-    
-    return all_jobs
-
-def save_jobs_to_json(jobs_data):
-    """保存招聘信息到JSON文件"""
-    os.makedirs('.', exist_ok=True)
-    
-    with open('jobs.json', 'w', encoding='utf-8') as f:
-        json.dump(jobs_data, f, ensure_ascii=False, indent=2)
-    
-    print(f"数据已保存到 jobs.json")
-    print(f"总计 {len(jobs_data)} 条招聘信息")
+    def save_to_json(self, filename='jobs.json'):
+        """保存结果到JSON文件"""
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(self.jobs, f, ensure_ascii=False, indent=2)
+        print(f"数据已保存到 {filename}")
 
 def main():
-    print("=" * 50)
-    print("南开大学招聘信息抓取工具（增强版）")
-    print("=" * 50)
-    print(f"当前时间: {get_current_time()}")
-    print(f"Python版本: {sys.version}")
-    print("=" * 50)
-    
-    # 抓取数据
-    jobs_data = fetch_jobs_from_nankai()
-    
-    # 保存数据
-    save_jobs_to_json(jobs_data)
-    
-    # 验证文件已保存
-    if os.path.exists('jobs.json'):
-        file_size = os.path.getsize('jobs.json')
-        print(f"\n文件 jobs.json 已创建，大小: {file_size} 字节")
-    else:
-        print("\n警告: jobs.json 文件未创建！")
-    
-    print("\n完成！")
+    spider = NankaiCareerSpider()
+    spider.crawl(max_pages=2)  # 只爬取前2页
+    spider.save_to_json('jobs.json')
 
 if __name__ == "__main__":
     main()
