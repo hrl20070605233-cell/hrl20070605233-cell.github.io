@@ -12,350 +12,177 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a237e, #283593);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1em;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 20px;
         }
         
-        header {
+        /* 搜索和筛选区域 */
+        .search-section {
             background: white;
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            text-align: center;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         
-        header h1 {
-            color: #333;
-            font-size: 28px;
-            margin-bottom: 10px;
+        .search-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
         }
         
-        header p {
+        .search-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .search-item label {
+            font-size: 0.9em;
             color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .search-item input,
+        .search-item select {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
             font-size: 14px;
         }
         
-        .last-update {
-            color: #999;
-            font-size: 12px;
-            margin-top: 10px;
+        .search-item input:focus,
+        .search-item select:focus {
+            outline: none;
+            border-color: #1a237e;
         }
         
-        .tabs {
+        .search-buttons {
             display: flex;
             gap: 10px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
+            justify-content: center;
         }
         
-        .tab-btn {
-            padding: 12px 24px;
+        .btn {
+            padding: 10px 30px;
             border: none;
-            border-radius: 25px;
-            background: white;
-            color: #666;
+            border-radius: 4px;
             cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            font-size: 16px;
+            transition: all 0.3s;
         }
         
-        .tab-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        
-        .tab-btn.active {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .btn-primary {
+            background: #1a237e;
             color: white;
         }
         
-        .tab-btn .count {
-            background: rgba(255,255,255,0.2);
-            padding: 2px 8px;
-            border-radius: 10px;
-            margin-left: 5px;
-            font-size: 12px;
+        .btn-primary:hover {
+            background: #283593;
         }
         
-        .tab-btn.active .count {
-            background: rgba(255,255,255,0.3);
+        .btn-secondary {
+            background: #f5f5f5;
+            color: #333;
+            border: 1px solid #ddd;
         }
         
-        .jobs-container {
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+        
+        /* 统计信息 */
+        .stats {
+            background: white;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .stats-info {
+            color: #666;
+        }
+        
+        .stats-info strong {
+            color: #1a237e;
+        }
+        
+        /* 招聘信息列表 */
+        .job-list {
             display: grid;
             gap: 15px;
         }
         
         .job-card {
             background: white;
-            border-radius: 12px;
+            border-radius: 8px;
             padding: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
             cursor: pointer;
         }
         
         .job-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
         
-        .job-title {
-            font-size: 16px;
-            font-weight: 600;
-            color: #333;
+        .job-card h3 {
+            color: #1a237e;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .job-card .company {
+            color: #666;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+        
+        .job-card .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
             margin-bottom: 10px;
         }
         
-        .job-info {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-        
-        .job-tag {
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 12px;
-            background: #f0f0f0;
-            color: #666;
-        }
-        
-        .job-tag.company {
-            background: #e3f2fd;
-            color: #1976d2;
-        }
-        
-        .job-tag.degree {
-            background: #fce4ec;
-            color: #c2185b;
-        }
-        
-        .job-tag.major {
-            background: #e8f5e9;
-            color: #388e3c;
-        }
-        
-        .job-source {
-            font-size: 12px;
-            color: #999;
-            margin-top: 10px;
-        }
-        
-        .no-data {
-            text-align: center;
-            padding: 50px;
-            color: #999;
-            background: white;
+        .tag {
+            padding: 3px 10px;
             border-radius: 12px;
+            font-size: 0.85em;
+            background: #e8eaf6;
+            color: #1a237e;
         }
         
-        .loading {
-            text-align: center;
-            padding: 50px;
-            color: #666;
-        }
-        
-        .loading::after {
-            content: '';
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 3px solid #f0f0f0;
-            border-top: 3px solid #667eea;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin-left: 10px;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        .error-message {
-            text-align: center;
-            padding: 30px;
-            background: #fff3f3;
-            border-radius: 12px;
-            color: #d32f2f;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>🎓 南开大学招聘信息</h1>
-            <p>自动抓取南开大学就业指导中心最新招聘信息</p>
-            <div class="last-update" id="lastUpdate">加载中...</div>
-        </header>
-        
-        <div class="tabs" id="tabs">
-            <button class="tab-btn active" data-tab="all">
-                全部 <span class="count" id="countAll">0</span>
-            </button>
-            <button class="tab-btn" data-tab="博士">
-                博士 <span class="count" id="count博士">0</span>
-            </button>
-            <button class="tab-btn" data-tab="硕士">
-                硕士 <span class="count" id="count硕士">0</span>
-            </button>
-            <button class="tab-btn" data-tab="本科">
-                本科 <span class="count" id="count本科">0</span>
-            </button>
-            <button class="tab-btn" data-tab="不限">
-                不限 <span class="count" id="count不限">0</span>
-            </button>
-        </div>
-        
-        <div class="jobs-container" id="jobsContainer">
-            <div class="loading">正在加载数据...</div>
-        </div>
-    </div>
-
-    <script>
-        // 获取所有数据
-        async function fetchJobs() {
-            try {
-                const response = await fetch('./jobs.json');
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const data = await response.json();
-                return data;
-            } catch (error) {
-                console.error('获取数据失败:', error);
-                return null;
-            }
-        }
-        
-        // 渲染工作卡片
-        function renderJobs(jobs, container) {
-            if (!jobs || jobs.length === 0) {
-                container.innerHTML = '<div class="no-data">暂无招聘信息</div>';
-                return;
-            }
-            
-            let html = '';
-            jobs.forEach(job => {
-                html += `
-                    <div class="job-card" onclick="window.open('${job.url || '#'}', '_blank')">
-                        <div class="job-title">${job.title || '未知岗位'}</div>
-                        <div class="job-info">
-                            ${job.company ? `<span class="job-tag company">🏢 ${job.company}</span>` : ''}
-                            ${job.degree ? `<span class="job-tag degree">🎓 ${job.degree}</span>` : ''}
-                            ${job.major ? `<span class="job-tag major">📚 ${job.major}</span>` : ''}
-                        </div>
-                        <div class="job-source">来源：${job.source || '南开大学就业指导中心'}</div>
-                    </div>
-                `;
-            });
-            
-            container.innerHTML = html;
-        }
-        
-        // 更新计数
-        function updateCounts(data) {
-            let total = 0;
-            const categories = ['博士', '硕士', '本科', '不限'];
-            
-            categories.forEach(cat => {
-                const count = (data[cat] || []).length;
-                total += count;
-                const el = document.getElementById(`count${cat}`);
-                if (el) el.textContent = count;
-            });
-            
-            document.getElementById('countAll').textContent = total;
-        }
-        
-        // 更新最后更新时间
-        function updateLastUpdate(data) {
-            const allJobs = [];
-            Object.values(data).forEach(jobs => {
-                if (Array.isArray(jobs)) {
-                    allJobs.push(...jobs);
-                }
-            });
-            
-            if (allJobs.length > 0 && allJobs[0].update_time) {
-                document.getElementById('lastUpdate').textContent = 
-                    `最后更新：${allJobs[0].update_time}`;
-            } else {
-                document.getElementById('lastUpdate').textContent = 
-                    `更新于：${new Date().toLocaleString('zh-CN')}`;
-            }
-        }
-        
-        // 主函数
-        async function init() {
-            const container = document.getElementById('jobsContainer');
-            const data = await fetchJobs();
-            
-            if (!data) {
-                container.innerHTML = `
-                    <div class="error-message">
-                        ❌ 数据加载失败，请稍后刷新页面重试
-                    </div>
-                `;
-                return;
-            }
-            
-            // 更新计数
-            updateCounts(data);
-            
-            // 更新最后更新时间
-            updateLastUpdate(data);
-            
-            // 默认显示全部
-            let currentTab = 'all';
-            let allJobs = [];
-            Object.values(data).forEach(jobs => {
-                if (Array.isArray(jobs)) {
-                    allJobs.push(...jobs);
-                }
-            });
-            
-            renderJobs(allJobs, container);
-            
-            // 标签切换功能
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    // 移除所有active
-                    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    const tab = this.dataset.tab;
-                    currentTab = tab;
-                    
-                    let jobsToShow = [];
-                    if (tab === 'all') {
-                        Object.values(data).forEach(jobs => {
-                            if (Array.isArray(jobs)) {
-                                jobsToShow.push(...jobs);
-                            }
-                        });
-                    } else {
-                        jobsToShow = data[tab] || [];
-                    }
-                    
-                    renderJobs(jobsToShow, container);
-                });
-            });
-        }
-        
-        // 页面加载完成后执行
-        document.addEventListener('DOMContentLoaded', init);
-    </script>
-</body>
-</html>
+        .tag-s
