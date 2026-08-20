@@ -194,18 +194,6 @@
             background: #667eea;
         }
 
-        .job-card.campus::before {
-            background: #48bb78;
-        }
-
-        .job-card.intern::before {
-            background: #4299e1;
-        }
-
-        .job-card.lecture::before {
-            background: #ed8936;
-        }
-
         .job-card h3 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
@@ -397,9 +385,10 @@
             
             <select id="degreeFilter">
                 <option value="all">全部学历</option>
-                <option value="本科及以上">本科及以上</option>
-                <option value="硕士及以上">硕士及以上</option>
-                <option value="博士及以上">博士及以上</option>
+                <option value="本科">本科</option>
+                <option value="硕士">硕士</option>
+                <option value="博士">博士</option>
+                <option value="不限">不限</option>
             </select>
             
             <select id="sortFilter">
@@ -456,18 +445,26 @@
                 }
                 
                 const data = await response.json();
-                allJobs = data.jobs || [];
+                
+                // 处理爬虫返回的数据格式
+                if (Array.isArray(data)) {
+                    allJobs = data;
+                } else if (data.jobs) {
+                    allJobs = data.jobs;
+                } else {
+                    allJobs = [];
+                }
                 
                 updateStats();
                 updateLocationFilter();
                 applyFilters();
                 
                 document.getElementById('updateTime').textContent = 
-                    `最后更新：${data.last_update || '未知'}`;
+                    `最后更新：${new Date().toLocaleString('zh-CN')}`;
                     
             } catch (error) {
                 console.error('加载数据失败:', error);
-                showError('数据加载失败，请稍后重试');
+                showError('数据加载失败，请确保已运行爬虫生成 jobs.json 文件');
             }
         }
 
@@ -511,12 +508,15 @@
             document.getElementById('lectureJobs').textContent = lectureJobs.length;
             
             const today = new Date().toISOString().split('T')[0];
-            const newJobs = allJobs.filter(job => job.pub_time === today);
+            const newJobs = allJobs.filter(job => {
+                const pubTime = job.pub_time || '';
+                return pubTime.includes(today);
+            });
             document.getElementById('newJobs').textContent = newJobs.length;
         }
 
         function updateLocationFilter() {
-            const locations = [...new Set(allJobs.map(job => job.location))];
+            const locations = [...new Set(allJobs.map(job => job.location).filter(Boolean))];
             const select = document.getElementById('locationFilter');
             
             select.innerHTML = '<option value="all">全部地点</option>';
@@ -579,12 +579,6 @@
             } else if (sortBy === 'company') {
                 filteredJobs.sort((a, b) => (a.company || '').localeCompare(b.company || ''));
             } else {
-                filteredJobs.sort((a, b) => (b.pub_time || '').localeCompare(a.pub_time || ''));
-            }
-            
-            displayJobs(filteredJobs);
-            document.getElementById('resultCount').textContent = `共 ${filteredJobs.length} 个职位`;
-        }
-
-        function displayJobs(jobs) {
-            const jobList
+                filteredJobs.sort((a, b) => {
+                    const timeA = a.pub_time || '';
+                    const timeB
