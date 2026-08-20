@@ -185,4 +185,424 @@
             color: #1a237e;
         }
         
-        .tag-s
+        .tag-salary {
+            background: #fff3e0;
+            color: #e65100;
+        }
+        
+        .tag-location {
+            background: #e8f5e9;
+            color: #1b5e20;
+        }
+        
+        .tag-category {
+            background: #fce4ec;
+            color: #880e4f;
+        }
+        
+        .tag-degree {
+            background: #e3f2fd;
+            color: #0d47a1;
+        }
+        
+        .tag-time {
+            background: #f3e5f5;
+            color: #4a148c;
+        }
+        
+        .job-card .description {
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 10px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        /* 加载状态 */
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+        }
+        
+        .loading .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #1a237e;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* 错误状态 */
+        .error {
+            text-align: center;
+            padding: 50px;
+            color: #c62828;
+        }
+        
+        .error .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        /* 空状态 */
+        .empty {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+        }
+        
+        .empty .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        /* 分页 */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .page-btn {
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            background: white;
+            transition: all 0.3s;
+        }
+        
+        .page-btn:hover {
+            background: #e8eaf6;
+        }
+        
+        .page-btn.active {
+            background: #1a237e;
+            color: white;
+            border-color: #1a237e;
+        }
+        
+        .page-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+            
+            .search-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .search-buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎓 南开大学招聘信息</h1>
+        <p>南开大学就业指导中心 - 最新招聘信息汇总</p>
+    </div>
+    
+    <div class="container">
+        <!-- 搜索和筛选区域 -->
+        <div class="search-section">
+            <div class="search-grid">
+                <div class="search-item">
+                    <label>🔍 企业名称</label>
+                    <input type="text" id="searchCompany" placeholder="输入企业名称搜索...">
+                </div>
+                <div class="search-item">
+                    <label>📍 工作地域</label>
+                    <select id="searchLocation">
+                        <option value="">全部地域</option>
+                    </select>
+                </div>
+                <div class="search-item">
+                    <label>📂 职业类别</label>
+                    <select id="searchCategory">
+                        <option value="">全部类别</option>
+                    </select>
+                </div>
+                <div class="search-item">
+                    <label>💰 薪资待遇</label>
+                    <select id="searchSalary">
+                        <option value="">全部薪资</option>
+                        <option value="面议">面议</option>
+                        <option value="5000以下">5000以下</option>
+                        <option value="5000-10000">5000-10000</option>
+                        <option value="10000-20000">10000-20000</option>
+                        <option value="20000以上">20000以上</option>
+                    </select>
+                </div>
+                <div class="search-item">
+                    <label>📅 发布时间</label>
+                    <select id="searchTime">
+                        <option value="">全部时间</option>
+                        <option value="today">今天</option>
+                        <option value="week">本周</option>
+                        <option value="month">本月</option>
+                        <option value="quarter">近三个月</option>
+                    </select>
+                </div>
+            </div>
+            <div class="search-buttons">
+                <button class="btn btn-primary" onclick="searchJobs()">搜索</button>
+                <button class="btn btn-secondary" onclick="resetSearch()">重置</button>
+            </div>
+        </div>
+        
+        <!-- 统计信息 -->
+        <div class="stats">
+            <div class="stats-info">
+                共找到 <strong id="totalCount">0</strong> 条招聘信息
+            </div>
+            <div class="stats-info">
+                当前显示第 <strong id="currentPage">1</strong> 页，共 <strong id="totalPages">0</strong> 页
+            </div>
+        </div>
+        
+        <!-- 招聘信息列表 -->
+        <div id="jobList" class="job-list">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>正在加载招聘信息...</p>
+            </div>
+        </div>
+        
+        <!-- 分页 -->
+        <div id="pagination" class="pagination" style="display: none;"></div>
+    </div>
+    
+    <script>
+        // 全局变量
+        let allJobs = [];
+        let filteredJobs = [];
+        let currentPage = 1;
+        const pageSize = 20;
+        
+        // 加载数据
+        async function loadJobs() {
+            try {
+                const response = await fetch('jobs.json');
+                if (!response.ok) {
+                    throw new Error('无法加载数据文件');
+                }
+                allJobs = await response.json();
+                console.log('加载了', allJobs.length, '条招聘信息');
+                
+                // 初始化筛选选项
+                initFilters();
+                
+                // 显示数据
+                filteredJobs = [...allJobs];
+                updateStats();
+                renderJobs();
+                
+            } catch (error) {
+                console.error('加载数据失败:', error);
+                document.getElementById('jobList').innerHTML = `
+                    <div class="error">
+                        <div class="icon">❌</div>
+                        <h3>加载失败</h3>
+                        <p>${error.message}</p>
+                        <p>请确保 jobs.json 文件存在且格式正确</p>
+                    </div>
+                `;
+            }
+        }
+        
+        // 初始化筛选选项
+        function initFilters() {
+            const locations = new Set();
+            const categories = new Set();
+            
+            allJobs.forEach(job => {
+                if (job.location) locations.add(job.location);
+                if (job.category) categories.add(job.category);
+            });
+            
+            // 填充工作地域选项
+            const locationSelect = document.getElementById('searchLocation');
+            locations.forEach(loc => {
+                const option = document.createElement('option');
+                option.value = loc;
+                option.textContent = loc;
+                locationSelect.appendChild(option);
+            });
+            
+            // 填充职业类别选项
+            const categorySelect = document.getElementById('searchCategory');
+            categories.forEach(cat => {
+                const option = document.createElement('option');
+                option.value = cat;
+                option.textContent = cat;
+                categorySelect.appendChild(option);
+            });
+        }
+        
+        // 搜索功能
+        function searchJobs() {
+            const company = document.getElementById('searchCompany').value.toLowerCase().trim();
+            const location = document.getElementById('searchLocation').value;
+            const category = document.getElementById('searchCategory').value;
+            const salary = document.getElementById('searchSalary').value;
+            const time = document.getElementById('searchTime').value;
+            
+            filteredJobs = allJobs.filter(job => {
+                // 企业名称筛选
+                if (company && !job.company.toLowerCase().includes(company) && !job.title.toLowerCase().includes(company)) {
+                    return false;
+                }
+                
+                // 工作地域筛选
+                if (location && job.location !== location) {
+                    return false;
+                }
+                
+                // 职业类别筛选
+                if (category && job.category !== category) {
+                    return false;
+                }
+                
+                // 薪资待遇筛选
+                if (salary) {
+                    if (salary === '面议' && job.salary !== '面议') {
+                        return false;
+                    } else if (salary !== '面议') {
+                        // 简单薪资匹配
+                        const salaryNum = parseInt(job.salary);
+                        if (isNaN(salaryNum)) {
+                            return false;
+                        }
+                        const [min, max] = salary.split('-').map(s => parseInt(s));
+                        if (max) {
+                            if (salaryNum < min || salaryNum > max) return false;
+                        } else {
+                            if (salaryNum < parseInt(salary)) return false;
+                        }
+                    }
+                }
+                
+                // 发布时间筛选
+                if (time) {
+                    const now = new Date();
+                    const jobTime = new Date(job.pub_time);
+                    if (isNaN(jobTime.getTime())) return true;
+                    
+                    const diffDays = Math.floor((now - jobTime) / (1000 * 60 * 60 * 24));
+                    
+                    switch(time) {
+                        case 'today':
+                            if (diffDays > 0) return false;
+                            break;
+                        case 'week':
+                            if (diffDays > 7) return false;
+                            break;
+                        case 'month':
+                            if (diffDays > 30) return false;
+                            break;
+                        case 'quarter':
+                            if (diffDays > 90) return false;
+                            break;
+                    }
+                }
+                
+                return true;
+            });
+            
+            // 重置到第一页
+            currentPage = 1;
+            updateStats();
+            renderJobs();
+        }
+        
+        // 重置搜索
+        function resetSearch() {
+            document.getElementById('searchCompany').value = '';
+            document.getElementById('searchLocation').value = '';
+            document.getElementById('searchCategory').value = '';
+            document.getElementById('searchSalary').value = '';
+            document.getElementById('searchTime').value = '';
+            
+            filteredJobs = [...allJobs];
+            currentPage = 1;
+            updateStats();
+            renderJobs();
+        }
+        
+        // 更新统计信息
+        function updateStats() {
+            const totalPages = Math.ceil(filteredJobs.length / pageSize);
+            document.getElementById('totalCount').textContent = filteredJobs.length;
+            document.getElementById('currentPage').textContent = currentPage;
+            document.getElementById('totalPages').textContent = totalPages || 1;
+        }
+        
+        // 渲染招聘信息
+        function renderJobs() {
+            const jobList = document.getElementById('jobList');
+            const pagination = document.getElementById('pagination');
+            
+            if (filteredJobs.length === 0) {
+                jobList.innerHTML = `
+                    <div class="empty">
+                        <div class="icon">📭</div>
+                        <h3>没有找到匹配的招聘信息</h3>
+                        <p>请尝试调整筛选条件</p>
+                    </div>
+                `;
+                pagination.style.display = 'none';
+                return;
+            }
+            
+            // 计算分页
+            const start = (currentPage - 1) * pageSize;
+            const end = Math.min(start + pageSize, filteredJobs.length);
+            const pageJobs = filteredJobs.slice(start, end);
+            
+            // 生成HTML
+            let html = '';
+            pageJobs.forEach(job => {
+                html += `
+                    <div class="job-card" onclick="window.open('${job.url}', '_blank')">
+                        <h3>${job.title}</h3>
+                        <div class="company">${job.company || '企业信息待更新'}</div>
+                        <div class="tags">
+                            ${job.salary ? `<span class="tag tag-salary">💰 ${job.salary}</span>` : ''}
+                            ${job.location ? `<span class="tag tag-location">📍 ${job.location}</span>` : ''}
+                            ${job.category ? `<span class="tag tag-category">📂 ${job.category}</span>` : ''}
+                            ${job.degree ? `<span class="tag tag-degree">🎓 ${job.degree}</span>` : ''}
+                            ${job.pub_time ? `<span class="tag tag-time">📅 ${job.pub_time}</span>` : ''}
+                        </div>
+                        ${job.description ? `<div class="description">${job.description}</div>` : ''}
+                    </div>
+                `;
+            });
+            
