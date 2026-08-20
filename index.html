@@ -1,0 +1,1706 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南开大学招聘信息汇总</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f5f5f5; padding: 15px; color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #1a5276, #2980b9);
+            color: white; padding: 20px; border-radius: 10px;
+            margin-bottom: 15px; text-align: center;
+        }
+        .header h1 { font-size: 20px; margin-bottom: 5px; }
+        .header .date { font-size: 13px; opacity: 0.9; }
+        
+        .tabs { display: flex; margin-bottom: 15px; gap: 5px; }
+        .tab {
+            flex: 1; padding: 10px; text-align: center;
+            background: #e0e0e0; border-radius: 8px;
+            cursor: pointer; font-size: 14px; font-weight: bold;
+            transition: all 0.3s;
+        }
+        .tab.active { background: #2980b9; color: white; }
+        .tab .count { font-size: 11px; opacity: 0.7; }
+        
+        .job-list { display: none; }
+        .job-list.active { display: block; }
+        
+        .job-item {
+            background: white; border-radius: 8px; padding: 15px;
+            margin-bottom: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .job-title { font-size: 16px; font-weight: bold; color: #1a5276; }
+        .job-company { font-size: 14px; color: #666; margin: 5px 0; }
+        .job-date { font-size: 12px; color: #999; }
+        .job-edu { 
+            display: inline-block; margin-top: 5px;
+            background: #e8f4f8; color: #2980b9; padding: 2px 8px;
+            border-radius: 3px; font-size: 12px;
+        }
+        .job-link { 
+            display: inline-block; margin-top: 8px;
+            background: #2980b9; color: white; padding: 5px 12px;
+            border-radius: 5px; text-decoration: none; font-size: 12px;
+        }
+        .empty { text-align: center; padding: 30px; color: #999; }
+    </style>
+    </head>
+    <body>
+    
+    <div class="header">
+        <h1>🎓 南开大学招聘信息汇总</h1>
+        <div class="date">更新时间：2026年08月19日</div>
+        <div class="date">共 200 条招聘信息</div>
+    </div>
+    
+    <div class="tabs">
+        <div class="tab active" onclick="showTab('本科')">
+            📚 本科
+            <div class="count">30条</div>
+        </div>
+        <div class="tab" onclick="showTab('硕士')">
+            📖 硕士
+            <div class="count">25条</div>
+        </div>
+        <div class="tab" onclick="showTab('博士')">
+            🎯 博士
+            <div class="count">145条</div>
+        </div>
+        <div class="tab" onclick="showTab('其他')">
+            📋 其他
+            <div class="count">0条</div>
+        </div>
+    </div>
+    <div class="job-list active" id="tab-本科">
+                <div class="job-item">
+                    <div class="job-title">AI驱动软件开发：从详细设计到代码生成与审核-招聘培训课程销售顾问</div>
+                    <div class="job-company">🏢 北京中际赛威文化发展有限公司</div>
+                    <div class="job-date">📅 2026-08-03</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116559.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">财务会计（校招专属）</div>
+                    <div class="job-company">🏢 中轻天科（天津）生物技术有限公司</div>
+                    <div class="job-date">📅 2026-07-28</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116504.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">嵌入式软件工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116496.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">外延工艺工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116495.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">供应链商务管培生</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116494.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">质量体系工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116493.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">可靠性工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116492.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">质量管培生</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116491.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">销售管理专员</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116490.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">采购专员</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116489.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">EDA设计工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116488.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">战略运营专员</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116487.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">AI应用工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116484.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">财务专员</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116481.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">项目管理专员</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116480.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">生产计划专员</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116479.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">供应商质量工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116477.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">生产测试维护工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116475.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">可靠性分析工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116474.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">封装仿真工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116473.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">封装工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116471.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">技术销售工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116465.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">客户营运专员</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116463.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">现场应用工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116461.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">系统应用工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116458.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">数字验证工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116457.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">数字后端工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116456.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">数字IC设计工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116451.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">应用工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116450.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">模拟IC设计工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116449.html" target="_blank">查看详情 →</a>
+                </div>
+                </div><div class="job-list " id="tab-硕士">
+                <div class="job-item">
+                    <div class="job-title">柠檬微趣2027届秋季校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116761.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">小初数学、英语主讲教师</div>
+                    <div class="job-company">🏢 晓禾科技（武汉）有限公司</div>
+                    <div class="job-date">📅 2026-08-03</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116560.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">哈尔滨城市职业学院招聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116539.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">小初线下主讲教师</div>
+                    <div class="job-company">🏢 晓禾科技（武汉）有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116534.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">电源硬件工程师</div>
+                    <div class="job-company">🏢 广州金升阳科技有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/91626.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">电源软件工程师</div>
+                    <div class="job-company">🏢 广州金升阳科技有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/91625.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">新东方大学生学习与发展中心 2027校园招聘</div>
+                    <div class="job-company">🏢 新东方无忧（北京）教育咨询有限公司</div>
+                    <div class="job-date">📅 2026-07-29</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116511.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">2027年青年干部储备</div>
+                    <div class="job-company">🏢 北京建工一建工程建设有限公司</div>
+                    <div class="job-date">📅 2026-07-28</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116502.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">植德律师事务所多领域法律实习生（留用及短期）</div>
+                    <div class="job-company">🏢 北京植德律师事务所</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116500.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">2026NS（武将专项）</div>
+                    <div class="job-company">🏢 中国平安人寿保险股份有限公司天津分公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116498.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">光学设计工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116486.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">硬件算法工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116485.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">ATE测试开发工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116483.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">工艺开发工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116482.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">失效分析工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116476.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">良率工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116469.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">产品工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116467.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">算法工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116460.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">宇通集团2027届校招提前批</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116459.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">器件工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116455.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">PDK工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116454.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">器件开发工程师</div>
+                    <div class="job-company">🏢 上海南芯半导体科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116453.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">小低英语主讲教师</div>
+                    <div class="job-company">🏢 晓禾科技（武汉）有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116452.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">北京以岭药业有限公司</div>
+                    <div class="job-company">🏢 北京以岭药业有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116434.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">中亦科技 人力管培生</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116421.html" target="_blank">查看详情 →</a>
+                </div>
+                </div><div class="job-list " id="tab-博士">
+                <div class="job-item">
+                    <div class="job-title">嘉兴市新闻传媒中心（传媒集团） 企编紧缺人才招聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-19</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116816.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">苏纳2027届全球校园招聘网申正式启动！</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-19</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116815.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">大连新东方|27届校园招聘提前批开始啦，offer提前到手，梦想即刻拥有</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-18</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116786.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">巨人网络2027校园招聘正式启动！</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-18</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116785.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">中国科学院青岛生物能源与过程研究所博士后(特别研究助理)招聘启事</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-18</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116784.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">中国科学院合肥物质科学研究院2026年博士后研究人员招聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-18</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116783.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">思特威2027届校园招聘正式启动</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116768.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">深蓝互动2027届秋季校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116767.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">武汉重型机床集团有限公司招聘计划</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116766.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">2026年中兵通信装备研究院招聘计划</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116765.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">徐州医科大学附属医院人才招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116764.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">运城职业技术大学2026年博士人才引进公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116763.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">科锐国际2026春季校招</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116762.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">广州恒晶智创科技发展有限公司招聘简章</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116760.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">得物2027届校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116759.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">中茵微电子|2027届校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116758.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">新东方华南区 2027秋季校园招聘提前批</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116757.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">迈塔兰斯2027届校招正式开启</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116756.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">北京雪迪龙科技股份有限公司</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116755.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">中国航天科工集团第六研究院41所招聘简章</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116754.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">四方股份2027届校招提前批正式启动</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116753.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">汇川技术27届首批校招正式启动！</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116752.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">河北师范大学2026年选聘博士辅导员公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116751.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">江西应用科技学院2026年高层次人才招聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116749.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">中共宁夏区委党校丨（宁夏行政学院）2026年预引进优秀在读博士工作公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116748.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">安徽信息工程学院2026年高层次人才招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116747.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">2026年招聘公告丨重庆轻工职业学院</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116746.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">萍乡学院2026年高层次人才（博士）引进补充公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116745.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">咸阳师范学院2026年第二批博士师资选聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116744.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">辽宁科技学院2026年面向社会公开招聘高层次和急需紧缺人才公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116743.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">2026年公开招聘公告丨湖南化工职业技术学院</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116742.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">上海民航职业技术学院2026年下半年公开招聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116741.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">仰恩大学2026年秋季招聘启事（自然科学类）</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116740.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">仰恩大学2026年秋季招聘启事（人文社会科学类）</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116739.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">中国农业大学烟台研究院丨2026年非事业编实验系列管理服务岗，工勤岗招聘启事</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116738.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">广州华立狮宝宝国际教育乐园丨园长招聘启事</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116737.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">重庆对外经贸学院丨2026年引进高层次人才公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116736.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">宿迁学院丨江苏省2026年高层次人才招聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116735.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">豫章师范学院丨2025年面向社会公开招聘博士教师公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116734.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">【校招】东风汽车所属岚图汽车2027届全球校园招聘正式启动</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116733.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">校招 | 米哈游2027校园招聘正式启动！</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116732.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">商丘工学院丨2026年教师招聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-17</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116731.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">联想2027校园招聘全面启动</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-10</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116636.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">驭势科技2027秋招</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-10</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116635.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">江苏中烟工业有限责任公司2026年度公开招收博士后研究人员公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-05</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116583.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">研发工程师（助理）</div>
+                    <div class="job-company">🏢 青岛康乔药业集团有限公司</div>
+                    <div class="job-date">📅 2026-08-04</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116568.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">深圳市人民医院2026年度博士后招聘简章</div>
+                    <div class="job-company">🏢 深圳市人民医院（深圳市呼吸疾病研究所）</div>
+                    <div class="job-date">📅 2026-08-04</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116567.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">芯源系统股份有限公司（MPS）2027校园招聘</div>
+                    <div class="job-company">🏢 成都芯源系统有限公司</div>
+                    <div class="job-date">📅 2026-08-04</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116565.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">财富管理经理</div>
+                    <div class="job-company">🏢 佰润国际商务深圳有限公司</div>
+                    <div class="job-date">📅 2026-08-03</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116316.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">西南民族大学2026年第二批考核招聘应届博士辅导员公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116557.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">自然资源部所属单位2026年度公开招聘工作人员公告（第四批）</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116556.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">中国航空发动机集团有限公司2027届校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116555.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">中国一汽2026夏季校园招聘火热进行中</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116552.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">中国电信天翼云2027届超级优才招聘正式启动！</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116551.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">名校师生山东行暨2026海内外博士(后)烟台对接交流大会</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116550.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">合合信息2027届校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116548.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">搜狐畅游 2027秋招提前批火热开启</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116547.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">迅雷2027届校园招聘提前批</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116546.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">远景能源2027届校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116545.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">晓禾教育2027校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116544.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">MiniMax招聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116543.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">平行线教育 2027 届校园招聘正式简章</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116542.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">江西樟树中医药职业学院招聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116541.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">肇庆学院2026年教学科研人员招聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116538.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">大同师范高等专科学校2026年公开招聘博士研究生公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-08-02</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116537.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">星宸科技股份有限公司2027届校园招聘</div>
+                    <div class="job-company">🏢 星宸科技股份有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116535.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">北方华创微电子-机械工程师-2027校园招聘（J15899）</div>
+                    <div class="job-company">🏢 北京北方华创微电子装备有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116533.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">北方华创微电子-算法工程师-2027校园招聘(J16414)</div>
+                    <div class="job-company">🏢 北京北方华创微电子装备有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116532.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">北方华创微电子-销售工程师-2027届校园招聘（J16239）</div>
+                    <div class="job-company">🏢 北京北方华创微电子装备有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116527.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">北方华创微电子-Agent开发工程师-2027校园招聘 (J16415)</div>
+                    <div class="job-company">🏢 北京北方华创微电子装备有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116531.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">北方华创微电子-业务赋能类-2027校园招聘（J15903）</div>
+                    <div class="job-company">🏢 北京北方华创微电子装备有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116530.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">北方华创微电子-技术支持类-2027校园招聘 (J15902)</div>
+                    <div class="job-company">🏢 北京北方华创微电子装备有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116529.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">北方华创微电子-软件测试工程师-2027校园招聘 (J16240)</div>
+                    <div class="job-company">🏢 北京北方华创微电子装备有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116528.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">北方华创微电子-系统工程师-2027校园招聘（J16238）</div>
+                    <div class="job-company">🏢 北京北方华创微电子装备有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116526.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">北方华创微电子-光学工程师-2027校园招聘（J15987）</div>
+                    <div class="job-company">🏢 北京北方华创微电子装备有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116525.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">北方华创微电子-射频工程师-2027校园招聘（J15901）</div>
+                    <div class="job-company">🏢 北京北方华创微电子装备有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116524.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">北方华创微电子-半导体工艺工程师-2027校园招聘（J15900）</div>
+                    <div class="job-company">🏢 北京北方华创微电子装备有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116523.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">北方华创微电子-软件工程师-2027校园招聘（J15898）</div>
+                    <div class="job-company">🏢 北京北方华创微电子装备有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116522.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">北方华创微电子-电气工程师-2027校园招聘（J15897）</div>
+                    <div class="job-company">🏢 北京北方华创微电子装备有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116521.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">STA工程师</div>
+                    <div class="job-company">🏢 中茵微电子（北京）股份有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116519.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">Meth Engineer</div>
+                    <div class="job-company">🏢 中茵微电子（北京）股份有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116518.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">封装Layout工程师</div>
+                    <div class="job-company">🏢 中茵微电子（北京）股份有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116517.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">SI/PI 仿真工程师</div>
+                    <div class="job-company">🏢 中茵微电子（北京）股份有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116516.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">可测性设计工程师（DFT）</div>
+                    <div class="job-company">🏢 中茵微电子（北京）股份有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116515.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">数字后端工程师</div>
+                    <div class="job-company">🏢 中茵微电子（北京）股份有限公司</div>
+                    <div class="job-date">📅 2026-07-31</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116514.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">招商银行·招银网络科技 2027秋季校园招聘简章</div>
+                    <div class="job-company">🏢 招银网络科技（杭州）有限公司</div>
+                    <div class="job-date">📅 2026-07-30</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116513.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">新东方深圳学校-27校招提前批进行时！</div>
+                    <div class="job-company">🏢 深圳新东方培训学校</div>
+                    <div class="job-date">📅 2026-07-30</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116512.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">杭州积海半导体有限公司2027校园招聘</div>
+                    <div class="job-company">🏢 杭州积海半导体有限公司</div>
+                    <div class="job-date">📅 2026-07-29</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/107842.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">（2027校招）芯片设计工程师</div>
+                    <div class="job-company">🏢 杭州积海半导体有限公司</div>
+                    <div class="job-date">📅 2026-07-29</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/107843.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">（2027校招）器件研发工程师</div>
+                    <div class="job-company">🏢 杭州积海半导体有限公司</div>
+                    <div class="job-date">📅 2026-07-29</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/107844.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">（2027校招）工艺整合工程师</div>
+                    <div class="job-company">🏢 杭州积海半导体有限公司</div>
+                    <div class="job-date">📅 2026-07-29</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/107845.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">（2027校招）工艺研发工程师</div>
+                    <div class="job-company">🏢 杭州积海半导体有限公司</div>
+                    <div class="job-date">📅 2026-07-29</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/107846.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">电商独角兽---掌上先机/慧策---2027 校园/实习招聘</div>
+                    <div class="job-company">🏢 北京掌上先机网络科技有限公司</div>
+                    <div class="job-date">📅 2026-07-28</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116503.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">理想汽车2027届顶尖技术人才专项“理想+”计划全面启动</div>
+                    <div class="job-company">🏢 北京理想汽车有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116499.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">银河通用机器人2027秋季校园招聘 具身领航者人才计划</div>
+                    <div class="job-company">🏢 北京银河通用机器人股份有限公司</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116497.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">【兵器未来科学家·2027届博士招聘提前批正式启动】</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116470.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">广东岭南职业技术学院丨2026年招聘岗位简章</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116464.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">广州软件学院丨百万英才汇南粤2026年专任教师招聘启事</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116462.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">清华大学天津高端装备研究院2026人才招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116448.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">影石2027届秋季校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116447.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">汉江师范学院丨2026年人才引进公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116445.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">武汉生物工程学院2026年博士教师招聘简章</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116443.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">齐鲁理工学院2026年诚聘海内外优秀人才</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116442.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">杭州科技职业技术学院2026年人才引进（招聘）公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116441.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">NVIDIA 2027 校园招聘正式启动！</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116440.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">商汤「无限原力」顶尖人才计划丨难的事才值得做，难的路才值得走</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116439.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">网易互娱2027校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116435.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">禾赛科技2027届 校招提前批正式启航</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116433.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">河南科技学院软件学院招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116432.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">普渡机器人27届校招&28届实习生项目</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116431.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">vivo蓝极星计划校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116430.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">河南省科学院光资源与环境科学研究所 博士后招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116428.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">新奥能源研究院2026届校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116427.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">重庆轻工职业学院2026年招聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116426.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">湛江科技学院2026年优秀人才招聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116425.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">百度2027届校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116424.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">天锐星通 2027届星锐计划</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116423.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">点点互动 Elite Program+项目</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116422.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">运达能源科技集团股份有限公司招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116420.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">西安康本材料有限公司 2026年春季招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116419.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">康冠科技27届校园大使</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116417.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">长飞2027全球校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-27</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116416.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">东海实验室四周年系列活动「百博汇东海·青创向深蓝 百名青年博士生科创实践活动正式开后</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116415.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">中国航空工业集团贵阳电机</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116414.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">多益网络 2027届校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116413.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">前海国际事务研究院2026年博士后及研究员招聘启事</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116412.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">衡阳师范学院2026博士招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116411.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">「智元 AGIBOT」顶尖技术人才招聘项目2027届“优才计划”全球启动!</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116410.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">山西新华防化装备研究院</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116409.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">湖北东湖实验室</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116408.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">中茵微电子2027届校园招聘</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116407.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">山东省科学院海洋仪器仪表研究所</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116406.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">河南省科学院先进陶瓷研究所</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116405.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">电信科学技术第十研究所有限公司</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116404.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">国防科技大学理学院 2026年博士后 招聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116403.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">济南微生态生物医学省实验室</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116402.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">甘肃医学院 博士人才引进公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116401.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">四川大学锦江学院2026年春季学期招聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116400.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">中国科学院成都生物研究所</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116399.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">西北工业大学宁波研究院 2026 全球招聘博士后</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116397.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">广东岭南职业技术学院2026年招聘岗位简章</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116393.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">智汇江淮 创领未来——江淮实验室2026年高层次人才招聘公告</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116392.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">格见半导体2027届校园招聘进行中</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 本科 / 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116391.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">2026年高层次人才招聘简章丨河南工程学院</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116387.html" target="_blank">查看详情 →</a>
+                </div>
+                
+                <div class="job-item">
+                    <div class="job-title">福建农林大学金山学院丨57人！这些岗位“职”等你来</div>
+                    <div class="job-company">🏢 南开大学学生就业指导中心代发</div>
+                    <div class="job-date">📅 2026-07-26</div>
+                    <div class="job-edu">🎓 硕士研究生 / 博士研究生</div>
+                    <a class="job-link" href="https://career.nankai.edu.cn/correcruit/content/id/116385.html" target="_blank">查看详情 →</a>
+                </div>
+                </div><div class="job-list " id="tab-其他"><div class="empty">暂无相关招聘信息</div></div>
+    <script>
+    function showTab(category) {
+        // 隐藏所有列表
+        document.querySelectorAll('.job-list').forEach(el => {
+            el.classList.remove('active');
+        });
+        // 显示选中的列表
+        document.getElementById('tab-' + category).classList.add('active');
+        
+        // 更新标签样式
+        document.querySelectorAll('.tab').forEach(el => {
+            el.classList.remove('active');
+        });
+        // 找到被点击的tab
+        document.querySelectorAll('.tab').forEach(el => {
+            if(el.textContent.includes(category)) {
+                el.classList.add('active');
+            }
+        });
+    }
+    </script>
+    
+    </body>
+    </html>
+    
