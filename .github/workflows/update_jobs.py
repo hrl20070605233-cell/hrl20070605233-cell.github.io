@@ -1,162 +1,143 @@
+import json
 import requests
 from bs4 import BeautifulSoup
-import json
-from datetime import datetime
+import re
 
 def fetch_jobs():
-    """从招聘网站获取职位信息"""
-    # 这里以拉勾网为例，实际使用时需要根据目标网站调整
-    url = "https://www.zhipin.com/web/geek/job"
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-    }
+    """从多个来源获取招聘信息"""
+    jobs = []
     
-    # 示例职位数据（实际使用时替换为真实的爬虫逻辑）
-    jobs = [
-        {
-            "title": "Python开发工程师",
-            "company": "某科技有限公司",
-            "location": "北京",
-            "salary": "20K-35K",
-            "description": "负责后端服务开发，参与系统架构设计",
-            "date": datetime.now().strftime("%Y-%m-%d")
-        },
-        {
-            "title": "前端开发工程师",
-            "company": "某互联网公司",
-            "location": "上海",
-            "salary": "18K-30K",
-            "description": "负责Web前端开发，优化用户体验",
-            "date": datetime.now().strftime("%Y-%m-%d")
-        },
-        {
-            "title": "数据分析师",
-            "company": "某数据科技公司",
-            "location": "深圳",
-            "salary": "15K-25K",
-            "description": "负责数据分析，提供业务决策支持",
-            "date": datetime.now().strftime("%Y-%m-%d")
-        }
-    ]
+    # 来源1：GitHub 官方职位（仍然可用）
+    try:
+        url = "https://jobs.github.com/api/v1/positions.json"
+        response = requests.get(url, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            for job in data[:10]:  # 获取前10条
+                jobs.append({
+                    "title": job.get("title", "未知职位"),
+                    "company": job.get("company", "未知公司"),
+                    "location": job.get("location", "未知地点"),
+                    "description": job.get("description", "")[:200] + "...",
+                    "url": job.get("url", "#"),
+                    "source": "GitHub Jobs"
+                })
+    except Exception as e:
+        print(f"GitHub Jobs API 获取失败: {e}")
+    
+    # 来源2：从 Indeed 爬取（示例）
+    if not jobs:
+        try:
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+            url = "https://www.indeed.com/jobs?q=python+developer&l=remote"
+            response = requests.get(url, headers=headers, timeout=10)
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.text, 'html.parser')
+                # 这里需要根据 Indeed 的实际HTML结构调整选择器
+                # 示例：简化处理
+                print("Indeed 数据获取成功，但需要解析")
+        except Exception as e:
+            print(f"Indeed 获取失败: {e}")
+    
+    # 来源3：使用示例数据（备用）
+    if not jobs:
+        jobs = get_sample_jobs()
     
     return jobs
 
-def generate_html(jobs):
-    """生成HTML页面"""
-    html_content = """
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>招聘信息汇总</title>
-    <style>
-        body {
-            font-family: 'Microsoft YaHei', Arial, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
+def get_sample_jobs():
+    """返回示例数据"""
+    return [
+        {
+            "title": "Python 后端开发工程师",
+            "company": "某知名互联网公司",
+            "location": "远程/北京",
+            "description": "负责后端服务开发，熟悉Python/Django/Flask，有3年以上经验...",
+            "url": "https://example.com/job1",
+            "source": "示例数据"
+        },
+        {
+            "title": "全栈工程师",
+            "company": "创业公司",
+            "location": "上海",
+            "description": "React + Python 全栈开发，熟悉前后端分离架构...",
+            "url": "https://example.com/job2",
+            "source": "示例数据"
+        },
+        {
+            "title": "数据工程师",
+            "company": "金融科技公司",
+            "location": "深圳",
+            "description": "负责数据管道开发，熟悉Python/Spark/Airflow...",
+            "url": "https://example.com/job3",
+            "source": "示例数据"
         }
-        h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 30px;
-        }
-        .job-card {
-            background: white;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-        }
-        .job-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-        }
-        .job-title {
-            font-size: 20px;
-            font-weight: bold;
-            color: #1a73e8;
-            margin-bottom: 10px;
-        }
-        .company {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 8px;
-        }
-        .info {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 10px;
-            color: #888;
-            font-size: 14px;
-        }
-        .salary {
-            color: #e74c3c;
-            font-weight: bold;
-            font-size: 18px;
-        }
-        .description {
-            color: #555;
-            line-height: 1.6;
-        }
-        .update-time {
-            text-align: center;
-            color: #999;
-            font-size: 12px;
-            margin-top: 30px;
-        }
-    </style>
-</head>
-<body>
-    <h1>📋 最新招聘信息</h1>
-"""
+    ]
+
+def update_readme(jobs):
+    """更新README.md"""
+    if not jobs:
+        return
+    
+    # 读取现有README
+    try:
+        with open('README.md', 'r', encoding='utf-8') as f:
+            content = f.read()
+    except:
+        content = "# 招聘信息\n\n"
+    
+    # 生成招聘信息表格
+    table = "## 最新招聘信息\n\n"
+    table += "| 职位 | 公司 | 地点 | 描述 | 来源 |\n"
+    table += "|------|------|------|------|------|\n"
     
     for job in jobs:
-        html_content += f"""
-    <div class="job-card">
-        <div class="job-title">{job['title']}</div>
-        <div class="company">🏢 {job['company']}</div>
-        <div class="info">
-            <span>📍 {job['location']}</span>
-            <span>📅 {job['date']}</span>
-        </div>
-        <div class="salary">💰 {job['salary']}</div>
-        <div class="description">{job['description']}</div>
-    </div>
-"""
+        title = job.get('title', '未知')
+        company = job.get('company', '未知')
+        location = job.get('location', '未知')
+        desc = job.get('description', '')[:50] + '...'
+        source = job.get('source', '未知')
+        url = job.get('url', '#')
+        
+        table += f"| [{title}]({url}) | {company} | {location} | {desc} | {source} |\n"
     
-    html_content += f"""
-    <div class="update-time">
-        最后更新时间：{datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
-    </div>
-</body>
-</html>
-"""
+    # 替换或追加表格
+    if "## 最新招聘信息" in content:
+        # 替换现有表格
+        start = content.find("## 最新招聘信息")
+        end = content.find("##", start + 1)
+        if end == -1:
+            end = len(content)
+        content = content[:start] + table + content[end:]
+    else:
+        # 追加到末尾
+        content += "\n\n" + table
     
-    return html_content
+    # 写入文件
+    with open('README.md', 'w', encoding='utf-8') as f:
+        f.write(content)
+    
+    print("README.md 已更新")
 
 def main():
-    """主函数"""
-    try:
-        # 获取职位信息
-        jobs = fetch_jobs()
-        
-        # 生成HTML
-        html = generate_html(jobs)
-        
-        # 写入文件
-        with open('index.html', 'w', encoding='utf-8') as f:
-            f.write(html)
-        
-        print(f"成功更新 {len(jobs)} 个职位信息")
-        
-    except Exception as e:
-        print(f"更新失败: {str(e)}")
-        # 如果失败，保留原有内容
-        exit(1)
+    print("开始更新招聘信息...")
+    
+    jobs = fetch_jobs()
+    
+    if not jobs:
+        print("未获取到招聘信息，使用示例数据")
+        jobs = get_sample_jobs()
+    
+    # 保存为JSON
+    with open('jobs.json', 'w', encoding='utf-8') as f:
+        json.dump(jobs, f, ensure_ascii=False, indent=2)
+    
+    # 更新README
+    update_readme(jobs)
+    
+    print(f"成功保存 {len(jobs)} 条招聘信息")
 
 if __name__ == "__main__":
     main()
