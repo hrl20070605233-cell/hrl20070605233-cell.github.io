@@ -2,12 +2,19 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 import time
+
+# 设置时区为东八区（北京时间）
+BJ_TZ = timezone(timedelta(hours=8))
 
 # 南开大学就业指导中心招聘信息页面
 BASE_URL = "https://career.nankai.edu.cn"
 RECRUITMENT_URL = f"{BASE_URL}/correcruit/index.html"
+
+def get_current_time():
+    """获取当前北京时间"""
+    return datetime.now(BJ_TZ).strftime('%Y-%m-%d %H:%M:%S')
 
 def fetch_jobs_from_nankai():
     """
@@ -32,6 +39,10 @@ def fetch_jobs_from_nankai():
     max_pages = 50
     total_count = 0
     
+    # 记录开始时间
+    start_time = get_current_time()
+    print(f"开始抓取时间: {start_time}")
+    
     for page in range(1, max_pages + 1):
         if page == 1:
             url = RECRUITMENT_URL
@@ -52,7 +63,8 @@ def fetch_jobs_from_nankai():
             # 解析HTML
             soup = BeautifulSoup(response.text, 'html.parser')
             
-            # 查找招聘信息列表
+            # 查找招聘信息列表 - 根据南开大学网站结构
+            # 通常招聘信息在 <div class="recruit-list"> 或 <ul class="news-list"> 中
             job_list = soup.find('div', class_='recruit-list') or soup.find('ul', class_='news-list')
             
             if not job_list:
@@ -82,15 +94,15 @@ def fetch_jobs_from_nankai():
                         if url and not url.startswith('http'):
                             url = BASE_URL + url
                         
-                        # 跳过非招聘链接
-                        if not title or len(title) < 5:
+                        # 跳过空标题或太短的标题
+                        if not title or len(title) < 3:
                             continue
                         
                         # 提取发布时间
                         time_span = item.find('span', class_='time') or item.find('span', class_='date')
                         pub_time = time_span.get_text(strip=True) if time_span else ''
                         
-                        # 根据标题判断学历要求
+                        # 根据标题判断学历要求（简单规则）
                         degree = '不限'
                         if any(kw in title for kw in ['博士', '博士后', 'PhD', 'Ph.D']):
                             degree = '博士'
@@ -99,13 +111,13 @@ def fetch_jobs_from_nankai():
                         elif any(kw in title for kw in ['本科', '学士', 'Bachelor', '本科及以上']):
                             degree = '本科'
                         
-                        # 提取公司名称
+                        # 提取公司名称（如果有）
                         company = ''
                         company_span = item.find('span', class_='company') or item.find('span', class_='unit')
                         if company_span:
                             company = company_span.get_text(strip=True)
                         
-                        # 提取专业要求
+                        # 提取专业要求（如果有）
                         major = ''
                         major_span = item.find('span', class_='major') or item.find('span', class_='specialty')
                         if major_span:
@@ -118,7 +130,7 @@ def fetch_jobs_from_nankai():
                             'degree': degree,
                             'major': major,
                             'source': '南开大学就业指导中心',
-                            'update_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                            'update_time': get_current_time(),  # 使用北京时间
                             'pub_time': pub_time
                         }
                         
@@ -133,7 +145,7 @@ def fetch_jobs_from_nankai():
                 
             else:
                 print(f"第 {page} 页未找到招聘信息列表，尝试直接查找所有链接...")
-                # 直接查找所有链接
+                # 直接查找所有链接，不限制必须包含"招聘"关键词
                 all_links = soup.find_all('a', href=True)
                 page_count = 0
                 for link in all_links:
@@ -141,46 +153,58 @@ def fetch_jobs_from_nankai():
                         title = link.get('title') or link.get_text(strip=True)
                         href = link.get('href', '')
                         
-                        # 过滤：只保留包含招聘关键词的链接
-                        if title and len(title) > 5 and '招聘' in title:
-                            if href and not href.startswith('http'):
-                                href = BASE_URL + href
-                            
-                            degree = '不限'
-                            if any(kw in title for kw in ['博士', '博士后']):
-                                degree = '博士'
-                            elif any(kw in title for kw in ['硕士', '研究生']):
-                                degree = '硕士'
-                            elif any(kw in title for kw in ['本科', '学士']):
-                                degree = '本科'
-                            
-                            job_info = {
-                                'title': title,
-                                'url': href,
-                                'company': '',
-                                'degree': degree,
-                                'major': '',
-                                'source': '南开大学就业指导中心',
-                                'update_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                                'pub_time': ''
-                            }
-                            
-                            all_jobs[degree].append(job_info)
-                            page_count += 1
-                            total_count += 1
+                        # 过滤掉导航链接、空链接等
+                        if not title or len(title) < 3:
+                            continue
+                        if not href or href.startswith('#') or href.startswith('javascript'):
+                            continue
+                        if any(keyword in title for keyword in ['首页', '上一页', '下一页', '末页', '跳转', '搜索']):
+                            continue
+                        
+                        # 处理相对链接
+                        if href and not href.startswith('http'):
+                            href = BASE_URL + href
+                        
+                        degree = '不限'
+                        if any(kw in title for kw in ['博士', '博士后']):
+                            degree = '博士'
+                        elif any(kw in title for kw in ['硕士', '研究生']):
+                            degree = '硕士'
+                        elif any(kw in title for kw in ['本科', '学士']):
+                            degree = '本科'
+                        
+                        job_info = {
+                            'title': title,
+                            'url': href,
+                            'company': '',
+                            'degree': degree,
+                            'major': '',
+                            'source': '南开大学就业指导中心',
+                            'update_time': get_current_time(),  # 使用北京时间
+                            'pub_time': ''
+                        }
+                        
+                        all_jobs[degree].append(job_info)
+                        page_count += 1
+                        total_count += 1
                     except:
                         continue
                 
                 print(f"第 {page} 页共抓取 {page_count} 条信息")
             
-            # 每页之间等待1秒，避免请求过快
-            time.sleep(1)
+            # 每页之间等待0.5秒，避免请求过快
+            time.sleep(0.5)
             
         except Exception as e:
             print(f"抓取第 {page} 页时出错: {e}")
             continue
     
-    print(f"\n抓取完成！共获取 {total_count} 条招聘信息")
+    # 记录结束时间
+    end_time = get_current_time()
+    print(f"\n抓取完成！")
+    print(f"开始时间: {start_time}")
+    print(f"结束时间: {end_time}")
+    print(f"共获取 {total_count} 条招聘信息")
     return all_jobs
 
 def save_jobs_to_json(jobs_data):
