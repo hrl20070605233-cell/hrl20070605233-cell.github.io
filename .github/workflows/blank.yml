@@ -1,0 +1,31 @@
+name: 自动更新招聘信息
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: 设置Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: 安装依赖
+        run: pip install requests beautifulsoup4
+      
+      - name: 运行更新脚本
+        run: python update_jobs.py
+      
+      - name: 提交更改
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add index.html
+          git diff --quiet && git diff --staged --quiet || git commit -m "自动更新招聘信息 $(date +'%Y-%m-%d')"
+          git push
