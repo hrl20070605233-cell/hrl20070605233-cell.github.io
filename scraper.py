@@ -264,7 +264,7 @@ class NankaiCareerSpider:
 # 运行爬虫
 if __name__ == "__main__":
     spider = NankaiCareerSpider()
-    spider.crawl_pages(1, 3)  # 爬取前3页
+    spider.crawl_pages(1, 50)  # 爬取50页
     spider.save_to_json('jobs.json')
     
     # 显示爬取结果摘要
