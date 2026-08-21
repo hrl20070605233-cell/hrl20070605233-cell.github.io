@@ -67,9 +67,10 @@ html
 <body>
     <div class="container">
         <div class="header">
-            <h1>🎓 南开大学招聘信息</h1>
-            <p>发现优质工作机会，开启职业新征程</p>
-        </div>
+        <h1>🎓 南开大学招聘信息</h1>
+        <p>发现优质工作机会，开启职业新征程</p>
+        <p style="font-size: 0.9em; opacity: 0.7; margin-top: 8px;" id="updateTime">数据更新时间：加载中...</p>
+    </div>
         <div class="search-section">
             <div class="search-main">
                 <input type="text" class="search-input" id="searchInput" placeholder="搜索公司名称、职位..." onkeypress="if(event.key==='Enter') search()">
@@ -123,17 +124,28 @@ html
         window.addEventListener('DOMContentLoaded', loadData);
 
         async function loadData() {
-            try {
-                const response = await fetch('jobs.json');
-                if (!response.ok) throw new Error(`HTTP错误: ${response.status}`);
-                allJobs = await response.json();
-                filteredJobs = [...allJobs];
-                updateFilters();
-                renderPage(1);
-            } catch (error) {
-                document.getElementById('jobList').innerHTML = '<div class="no-results"><h3>数据加载失败</h3><p>请检查jobs.json文件</p></div>';
-            }
+    try {
+        const response = await fetch('jobs.json');
+        if (!response.ok) throw new Error(`HTTP错误: ${response.status}`);
+        allJobs = await response.json();
+        filteredJobs = [...allJobs];
+        
+        // 更新数据更新时间
+        const now = new Date();
+        const timeStr = now.getFullYear() + '-' + 
+                       String(now.getMonth() + 1).padStart(2, '0') + '-' + 
+                       String(now.getDate()).padStart(2, '0') + ' ' +
+                       String(now.getHours()).padStart(2, '0') + ':' + 
+                       String(now.getMinutes()).padStart(2, '0') + ':' + 
+                       String(now.getSeconds()).padStart(2, '0');
+        document.getElementById('updateTime').textContent = '数据更新时间：' + timeStr;
+        
+        updateFilters();
+        renderPage(1);
+    } catch (error) {
+        document.getElementById('jobList').innerHTML = '<div class="no-results"><h3>数据加载失败</h3><p>请检查jobs.json文件</p></div>';
         }
+    }
 
         function updateFilters() {
             const locations = new Set();
@@ -212,20 +224,21 @@ html
         }
 
         function createJobCard(job) {
-            return '<div class="job-card" onclick="window.open(\'' + (job.link || '#') + '\', \'_blank\')">' +
-                '<div class="job-title"><a href="' + (job.link || '#') + '" target="_blank">' + (job.title || '未命名职位') + '</a></div>' +
-                '<div class="job-info">' +
-                '<div class="info-item"><span class="info-icon">🏢</span><div><div class="info-label">公司名称</div><div class="info-value">' + (job.company_name || '未提供') + '</div></div></div>' +
-                '<div class="info-item"><span class="info-icon">📍</span><div><div class="info-label">工作地点</div><div class="info-value">' + (job.work_location || '未提供') + '</div></div></div>' +
-                '<div class="info-item"><span class="info-icon">🎓</span><div><div class="info-label">学历要求</div><div class="info-value">' + (job.education_requirement || '未提供') + '</div></div></div>' +
-                '<div class="info-item"><span class="info-icon">💰</span><div><div class="info-label">薪资待遇</div><div class="info-value salary-highlight">' + (job.salary || '面议') + '</div></div></div>' +
-                '</div>' +
-                '<div class="job-tags">' +
-                (job.work_location ? '<span class="tag tag-location">📍 ' + job.work_location + '</span>' : '') +
-                (job.education_requirement ? '<span class="tag tag-education">🎓 ' + job.education_requirement + '</span>' : '') +
-                (job.major_requirement ? '<span class="tag tag-major">📚 ' + job.major_requirement + '</span>' : '') +
-                '</div></div>';
-        }
+    return '<div class="job-card" onclick="window.open(\'' + (job.link || '#') + '\', \'_blank\')">' +
+        '<div class="job-title"><a href="' + (job.link || '#') + '" target="_blank">' + (job.title || '未命名职位') + '</a></div>' +
+        '<div class="job-info">' +
+        '<div class="info-item"><span class="info-icon">🏢</span><div><div class="info-label">公司名称</div><div class="info-value">' + (job.company_name || '未提供') + '</div></div></div>' +
+        '<div class="info-item"><span class="info-icon">📍</span><div><div class="info-label">工作地点</div><div class="info-value">' + (job.work_location || '未提供') + '</div></div></div>' +
+        '<div class="info-item"><span class="info-icon">🎓</span><div><div class="info-label">学历要求</div><div class="info-value">' + (job.education_requirement || '未提供') + '</div></div></div>' +
+        '<div class="info-item"><span class="info-icon">📅</span><div><div class="info-label">发布时间</div><div class="info-value">' + (job.publish_time || '未提供') + '</div></div></div>' +
+        '<div class="info-item"><span class="info-icon">💰</span><div><div class="info-label">薪资待遇</div><div class="info-value salary-highlight">' + (job.salary || '面议') + '</div></div></div>' +
+        '</div>' +
+        '<div class="job-tags">' +
+        (job.work_location ? '<span class="tag tag-location">📍 ' + job.work_location + '</span>' : '') +
+        (job.education_requirement ? '<span class="tag tag-education">🎓 ' + job.education_requirement + '</span>' : '') +
+        (job.major_requirement ? '<span class="tag tag-major">📚 ' + job.major_requirement + '</span>' : '') +
+        '</div></div>';
+}
 
         function renderPagination(totalPages) {
             const pagination = document.getElementById('pagination');
