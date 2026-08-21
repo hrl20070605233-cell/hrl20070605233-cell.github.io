@@ -33,19 +33,28 @@ class NankaiCareerSpider:
         soup = BeautifulSoup(html, 'html.parser')
         links = []
         
-        # 查找招聘信息列表
-        job_list = soup.find_all('a', href=re.compile(r'/correcruit/content/id/\d+\.html'))
+        # 查找招聘信息列表 - 根据实际页面结构调整选择器
+        job_items = soup.find_all('a', href=re.compile(r'/correcruit/content/id/\d+\.html'))
         
-        for job in job_list:
+        for job in job_items:
             title = job.get_text(strip=True)
             link = urljoin(self.base_url, job.get('href'))
-            if title and link:
+            # 过滤掉空标题或无效链接
+            if title and link and 'content/id/' in link:
                 links.append({
                     'title': title,
                     'link': link
                 })
         
-        return links
+        # 去重
+        seen = set()
+        unique_links = []
+        for item in links:
+            if item['link'] not in seen:
+                seen.add(item['link'])
+                unique_links.append(item)
+        
+        return unique_links
     
     def get_detail_page(self, url):
         """获取详情页"""
@@ -62,7 +71,7 @@ class NankaiCareerSpider:
             return None
     
     def parse_detail_page(self, html, title, link):
-        """解析详情页，提取所需信息"""
+        """解析详情页，根据实际文本结构提取信息"""
         soup = BeautifulSoup(html, 'html.parser')
         
         job_info = {
@@ -78,50 +87,71 @@ class NankaiCareerSpider:
         }
         
         try:
-            # 查找招聘信息表格
-            # 通常这些信息在表格中
-            table = soup.find('table')
-            if table:
-                rows = table.find_all('tr')
-                for row in rows:
-                    cells = row.find_all(['td', 'th'])
-                    if len(cells) >= 2:
-                        key = cells[0].get_text(strip=True).replace('：', '').replace(':', '')
-                        value = cells[1].get_text(strip=True)
-                        
-                        if '单位名称' in key or '公司名称' in key:
-                            job_info['company_name'] = value
-                        elif '学历要求' in key:
-                            job_info['education_requirement'] = value
-                        elif '专业要求' in key:
-                            job_info['major_requirement'] = value
-                        elif '薪资' in key or '薪酬' in key:
-                            job_info['salary'] = value
-                        elif '工作地区' in key or '工作地点' in key:
-                            job_info['work_location'] = value
-                        elif '岗位类别' in key or '职位类别' in key:
-                            job_info['job_category'] = value
-                        elif '发布时间' in key or '发布日期' in key:
-                            job_info['publish_time'] = value
+            # 获取页面的纯文本内容
+            # 先找到主要内容区域
+            content_div = soup.find('div', class_='content') or soup.find('div', class_='article') or soup.find('body')
             
-            # 如果表格中没有找到，尝试其他方式
-            # 查找包含这些信息的div或p标签
-            if not job_info['company_name']:
-                # 尝试从页面标题或其他位置获取公司名称
-                company_elem = soup.find('h1') or soup.find('h2') or soup.find('h3')
-                if company_elem:
-                    text = company_elem.get_text(strip=True)
-                    # 公司名称通常在标题中
-                    if '【' in text and '】' in text:
-                        company_match = re.search(r'【(.+?)】', text)
-                        if company_match:
-                            job_info['company_name'] = company_match.group(1)
-            
-            # 查找发布时间
-            if not job_info['publish_time']:
-                time_pattern = re.findall(r'\d{4}-\d{2}-\d{2}', html)
-                if time_pattern:
-                    job_info['publish_time'] = time_pattern[0]
+            if content_div:
+                # 获取所有文本行
+                text = content_div.get_text(separator='\n', strip=True)
+                lines = [line.strip() for line in text.split('\n') if line.strip()]
+                
+                # 根据你提供的文本结构解析
+                for i, line in enumerate(lines):
+                    # 1. 查找薪资（包含"元"的数字）
+                    if re.search(r'\d+.*元', line) and not job_info['salary']:
+                        job_info['salary'] = line.strip()
+                    
+                    # 2. 查找公司名称（通常在薪资后面，且不包含特殊关键词）
+                    elif (job_info['salary'] and not job_info['company_name'] and 
+                          '工作地域' not in line and '职位类别' not in line and 
+                          '学历要求' not in line and '招聘人数' not in line and
+                          '发布时间' not in line and '浏览量' not in line and
+                          '专业要求' not in line and '职位投递' not in line and
+                          'http' not in line and not re.search(r'\d+.*元', line)):
+                        # 这可能是公司名称
+                        if len(line) > 2 and len(line) < 100:  # 合理的公司名称长度
+                            job_info['company_name'] = line.strip()
+                    
+                    # 3. 查找工作地域
+                    if '工作地域' in line:
+                        location = line.replace('工作地域：', '').replace('工作地域:', '').strip()
+                        job_info['work_location'] = location
+                    
+                    # 4. 查找职位类别
+                    if '职位类别' in line:
+                        category = line.replace('职位类别：', '').replace('职位类别:', '').strip()
+                        job_info['job_category'] = category
+                    
+                    # 5. 查找学历要求
+                    if '学历要求' in line:
+                        education = line.replace('学历要求：', '').replace('学历要求:', '').strip()
+                        job_info['education_requirement'] = education
+                    
+                    # 6. 查找发布时间
+                    if '发布时间' in line:
+                        time_match = re.search(r'\d{4}-\d{2}-\d{2}', line)
+                        if time_match:
+                            job_info['publish_time'] = time_match.group()
+                    
+                    # 7. 查找专业要求（可能在下一行）
+                    if '专业要求' in line:
+                        # 专业要求可能在当前行或下一行
+                        major_text = line.replace('专业要求：', '').replace('专业要求:', '').replace('*', '').strip()
+                        if major_text:
+                            job_info['major_requirement'] = major_text
+                        elif i + 1 < len(lines):
+                            # 检查下一行是否是专业要求内容
+                            next_line = lines[i + 1]
+                            if not any(keyword in next_line for keyword in ['工作地域', '职位类别', '学历要求', '招聘人数', '发布时间', '浏览量']):
+                                job_info['major_requirement'] = next_line.strip()
+                
+                # 如果还没找到公司名称，尝试从标题中提取
+                if not job_info['company_name']:
+                    # 标题格式通常是：公司名称 + 招聘信息
+                    company_match = re.match(r'^(.+?)(?:\s*\d{4}\s*校园招聘|\s*招聘|\s*校园)', title)
+                    if company_match:
+                        job_info['company_name'] = company_match.group(1).strip()
             
         except Exception as e:
             print(f"解析详情页出错：{link}，错误：{e}")
@@ -146,16 +176,21 @@ class NankaiCareerSpider:
             
             # 爬取每个详情页
             for i, job in enumerate(job_links, 1):
-                print(f"  正在爬取第{i}个：{job['title'][:30]}...")
+                print(f"  正在爬取第{i}个：{job['title'][:50]}...")
                 
                 detail_html = self.get_detail_page(job['link'])
                 if detail_html:
                     job_info = self.parse_detail_page(detail_html, job['title'], job['link'])
                     self.jobs.append(job_info)
-                    print(f"    成功提取：{job_info['company_name']} - {job_info['work_location']}")
+                    
+                    # 显示提取结果
+                    print(f"    公司：{job_info['company_name']}")
+                    print(f"    薪资：{job_info['salary']}")
+                    print(f"    地点：{job_info['work_location']}")
+                    print(f"    学历：{job_info['education_requirement']}")
                 
                 # 添加延时，避免请求过快
-                time.sleep(1)
+                time.sleep(1.5)
             
             # 页面间延时
             time.sleep(2)
@@ -167,6 +202,10 @@ class NankaiCareerSpider:
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(self.jobs, f, ensure_ascii=False, indent=2)
         print(f"数据已保存到{filename}")
+        
+        # 显示统计信息
+        filled_jobs = sum(1 for job in self.jobs if job['company_name'] and job['salary'])
+        print(f"成功提取完整信息的职位：{filled_jobs}/{len(self.jobs)}")
 
 # 运行爬虫
 if __name__ == "__main__":
@@ -175,12 +214,13 @@ if __name__ == "__main__":
     spider.save_to_json('jobs.json')
     
     # 显示爬取结果摘要
-    print("\n爬取结果摘要：")
+    print("\n爬取结果摘要（前5条）：")
     for i, job in enumerate(spider.jobs[:5], 1):
-        print(f"{i}. {job['title']}")
+        print(f"\n{i}. {job['title']}")
         print(f"   公司：{job['company_name']}")
+        print(f"   薪资：{job['salary']}")
         print(f"   地点：{job['work_location']}")
         print(f"   学历：{job['education_requirement']}")
-        print(f"   薪资：{job['salary']}")
+        print(f"   专业：{job['major_requirement'][:50] if job['major_requirement'] else '无'}")
+        print(f"   类别：{job['job_category']}")
         print(f"   时间：{job['publish_time']}")
-        print()
