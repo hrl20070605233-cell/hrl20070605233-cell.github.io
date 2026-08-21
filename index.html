@@ -1,391 +1,90 @@
-<!DOCTYPE html>
+<!DOCTYPE 
+html
+>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>南开大学招聘信息</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
+            min-height: 100vh; padding: 20px;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .header {
-            text-align: center;
-            color: white;
-            margin-bottom: 30px;
-        }
-
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }
-
-        .header p {
-            font-size: 1.1em;
-            opacity: 0.9;
-        }
-
-        /* 搜索区域 */
-        .search-section {
-            background: white;
-            border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .search-main {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-
-        .search-input {
-            flex: 1;
-            min-width: 200px;
-            padding: 12px 20px;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            font-size: 16px;
-            transition: all 0.3s;
-        }
-
-        .search-input:focus {
-            outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-        }
-
-        .btn {
-            padding: 12px 25px;
-            border: none;
-            border-radius: 10px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-weight: 500;
-            white-space: nowrap;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-        }
-
-        .btn-secondary {
-            background: #f5f5f5;
-            color: #666;
-        }
-
-        .btn-secondary:hover {
-            background: #e0e0e0;
-        }
-
-        .btn-toggle {
-            background: transparent;
-            color: #667eea;
-            padding: 8px 15px;
-            font-size: 14px;
-            border: 1px solid #667eea;
-        }
-
-        .btn-toggle:hover {
-            background: rgba(102, 126, 234, 0.1);
-        }
-
-        /* 高级搜索 */
-        .advanced-search {
-            display: none;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-        }
-
-        .advanced-search.active {
-            display: grid;
-        }
-
-        .filter-group {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .filter-group label {
-            font-size: 14px;
-            color: #666;
-            font-weight: 500;
-        }
-
-        .filter-group select,
-        .filter-group input {
-            padding: 10px 15px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-size: 14px;
-            transition: all 0.3s;
-        }
-
-        .filter-group select:focus,
-        .filter-group input:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-
-        /* 统计信息 */
-        .stats {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            color: white;
-            padding: 0 10px;
-        }
-
-        .stats span {
-            font-size: 14px;
-            opacity: 0.9;
-        }
-
-        /* 招聘列表 */
-        .job-list {
-            display: grid;
-            gap: 20px;
-        }
-
-        .job-card {
-            background: white;
-            border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s;
-            cursor: pointer;
-        }
-
-        .job-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        }
-
-        .job-title {
-            font-size: 1.3em;
-            color: #333;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        .job-title a {
-            color: #333;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .job-title a:hover {
-            color: #667eea;
-        }
-
-        .job-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 12px;
-            margin-bottom: 15px;
-        }
-
-        .info-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 8px;
-            font-size: 14px;
-            color: #666;
-        }
-
-        .info-icon {
-            width: 20px;
-            height: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-            flex-shrink: 0;
-        }
-
-        .info-label {
-            color: #999;
-            font-size: 12px;
-        }
-
-        .info-value {
-            color: #333;
-            font-weight: 500;
-        }
-
-        .salary-highlight {
-            color: #e74c3c;
-            font-weight: 600;
-            font-size: 1.1em;
-        }
-
-        .job-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 10px;
-        }
-
-        .tag {
-            padding: 4px 12px;
-            background: #f0f0f0;
-            border-radius: 20px;
-            font-size: 12px;
-            color: #666;
-        }
-
-        .tag-location {
-            background: #e3f2fd;
-            color: #1976d2;
-        }
-
-        .tag-education {
-            background: #f3e5f5;
-            color: #7b1fa2;
-        }
-
-        .tag-major {
-            background: #e8f5e8;
-            color: #388e3c;
-        }
-
-        /* 分页 */
-        .pagination {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            margin-top: 30px;
-            padding: 20px;
-            flex-wrap: wrap;
-        }
-
-        .page-btn {
-            padding: 10px 15px;
-            border: 2px solid white;
-            background: transparent;
-            color: white;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-size: 14px;
-        }
-
-        .page-btn:hover:not(:disabled) {
-            background: white;
-            color: #667eea;
-        }
-
-        .page-btn.active {
-            background: white;
-            color: #667eea;
-            font-weight: 600;
-        }
-
-        .page-btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-
-        .page-info {
-            color: white;
-            font-size: 14px;
-        }
-
-        /* 响应式设计 */
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { text-align: center; color: white; margin-bottom: 30px; }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .header p { font-size: 1.1em; opacity: 0.9; }
+        .search-section { background: white; border-radius: 15px; padding: 25px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .search-main { display: flex; gap: 15px; margin-bottom: 20px; flex-wrap: wrap; }
+        .search-input { flex: 1; min-width: 200px; padding: 12px 20px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px; }
+        .search-input:focus { outline: none; border-color: #667eea; }
+        .btn { padding: 12px 25px; border: none; border-radius: 10px; font-size: 16px; cursor: pointer; font-weight: 500; white-space: nowrap; }
+        .btn-primary { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(102,126,234,0.4); }
+        .btn-secondary { background: #f5f5f5; color: #666; }
+        .btn-toggle { background: transparent; color: #667eea; border: 1px solid #667eea; }
+        .advanced-search { display: none; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; padding-top: 20px; border-top: 1px solid #e0e0e0; }
+        .advanced-search.active { display: grid; }
+        .filter-group { display: flex; flex-direction: column; gap: 8px; }
+        .filter-group label { font-size: 14px; color: #666; font-weight: 500; }
+        .filter-group select, .filter-group input { padding: 10px 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 14px; }
+        .stats { display: flex; justify-content: space-between; margin-bottom: 20px; color: white; }
+        .job-list { display: grid; gap: 20px; }
+        .job-card { background: white; border-radius: 15px; padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); cursor: pointer; }
+        .job-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+        .job-title { font-size: 1.3em; color: #333; margin-bottom: 15px; font-weight: 600; }
+        .job-title a { color: #333; text-decoration: none; }
+        .job-title a:hover { color: #667eea; }
+        .job-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 15px; }
+        .info-item { display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #666; }
+        .info-icon { font-size: 16px; flex-shrink: 0; }
+        .info-label { color: #999; font-size: 12px; }
+        .info-value { color: #333; font-weight: 500; }
+        .salary-highlight { color: #e74c3c; font-weight: 600; font-size: 1.1em; }
+        .job-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+        .tag { padding: 4px 12px; border-radius: 20px; font-size: 12px; }
+        .tag-location { background: #e3f2fd; color: #1976d2; }
+        .tag-education { background: #f3e5f5; color: #7b1fa2; }
+        .tag-major { background: #e8f5e8; color: #388e3c; }
+        .pagination { display: flex; justify-content: center; gap: 10px; margin-top: 30px; padding: 20px; flex-wrap: wrap; }
+        .page-btn { padding: 10px 15px; border: 2px solid white; background: transparent; color: white; border-radius: 8px; cursor: pointer; }
+        .page-btn:hover:not(:disabled) { background: white; color: #667eea; }
+        .page-btn.active { background: white; color: #667eea; font-weight: 600; }
+        .page-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .loading { text-align: center; padding: 40px; color: white; font-size: 18px; }
+        .no-results { text-align: center; padding: 60px 20px; color: white; }
+        .no-results h3 { font-size: 1.5em; margin-bottom: 10px; }
         @media (max-width: 768px) {
-            .search-main {
-                flex-direction: column;
-            }
-            
-            .job-info {
-                grid-template-columns: 1fr;
-            }
-            
-            .header h1 {
-                font-size: 1.8em;
-            }
-        }
-
-        .loading {
-            text-align: center;
-            padding: 40px;
-            color: white;
-            font-size: 18px;
-        }
-
-        .no-results {
-            text-align: center;
-            padding: 60px 20px;
-            color: white;
-        }
-
-        .no-results h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
+            .search-main { flex-direction: column; }
+            .job-info { grid-template-columns: 1fr; }
+            .header h1 { font-size: 1.8em; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- 头部 -->
         <div class="header">
             <h1>🎓 南开大学招聘信息</h1>
             <p>发现优质工作机会，开启职业新征程</p>
         </div>
-
-        <!-- 搜索区域 -->
         <div class="search-section">
             <div class="search-main">
                 <input type="text" class="search-input" id="searchInput" placeholder="搜索公司名称、职位..." onkeypress="if(event.key==='Enter') search()">
                 <button class="btn btn-primary" onclick="search()">🔍 搜索</button>
                 <button class="btn btn-secondary" onclick="resetSearch()">重置</button>
-                <button class="btn btn-toggle" onclick="toggleAdvanced()" id="toggleBtn">
-                    ⚙️ 高级筛选
-                </button>
+                <button class="btn btn-toggle" onclick="toggleAdvanced()" id="toggleBtn">⚙️ 高级筛选</button>
             </div>
-
-            <!-- 高级搜索 -->
             <div class="advanced-search" id="advancedSearch">
                 <div class="filter-group">
                     <label>工作地域</label>
-                    <select id="locationFilter" onchange="search()">
-                        <option value="">全部</option>
-                    </select>
+                    <select id="locationFilter" onchange="search()"><option value="">全部</option></select>
                 </div>
                 <div class="filter-group">
                     <label>学历要求</label>
-                    <select id="educationFilter" onchange="search()">
-                        <option value="">全部</option>
-                    </select>
+                    <select id="educationFilter" onchange="search()"><option value="">全部</option></select>
                 </div>
                 <div class="filter-group">
                     <label>专业要求</label>
@@ -405,165 +104,78 @@
                 </div>
             </div>
         </div>
-
-        <!-- 统计信息 -->
         <div class="stats">
             <span id="resultCount">共 0 条招聘信息</span>
             <span id="pageInfo">第 1 页</span>
         </div>
-
-        <!-- 招聘列表 -->
         <div class="job-list" id="jobList">
             <div class="loading">加载中...</div>
         </div>
-
-        <!-- 分页 -->
         <div class="pagination" id="pagination"></div>
     </div>
 
     <script>
-        // 全局变量
         let allJobs = [];
         let filteredJobs = [];
         let currentPage = 1;
         const pageSize = 10;
 
-        // 页面加载时自动加载数据
         window.addEventListener('DOMContentLoaded', loadData);
 
-        // 加载数据
         async function loadData() {
             try {
-                console.log('开始加载数据...');
                 const response = await fetch('jobs.json');
-                console.log('响应状态:', response.status);
-                
-                if (!response.ok) {
-                    throw new Error(`HTTP错误: ${response.status}`);
-                }
-                
+                if (!response.ok) throw new Error(`HTTP错误: ${response.status}`);
                 allJobs = await response.json();
-                console.log('成功加载数据:', allJobs.length, '条记录');
-                
                 filteredJobs = [...allJobs];
                 updateFilters();
                 renderPage(1);
             } catch (error) {
-                console.error('加载数据失败:', error);
-                document.getElementById('jobList').innerHTML = 
-                    `<div class="no-results">
-                        <h3>数据加载失败</h3>
-                        <p>错误信息: ${error.message}</p>
-                        <p>请确保jobs.json文件在根目录且格式正确</p>
-                    </div>`;
+                document.getElementById('jobList').innerHTML = '<div class="no-results"><h3>数据加载失败</h3><p>请检查jobs.json文件</p></div>';
             }
         }
 
-        // 更新筛选器选项
         function updateFilters() {
-            // 提取所有唯一的工作地域
             const locations = new Set();
             const educations = new Set();
-            
             allJobs.forEach(job => {
-                if (job.work_location) {
-                    job.work_location.split('/').forEach(loc => {
-                        const trimmed = loc.trim();
-                        if (trimmed) locations.add(trimmed);
-                    });
-                }
-                if (job.education_requirement) {
-                    job.education_requirement.split('/').forEach(edu => {
-                        const trimmed = edu.trim();
-                        if (trimmed) educations.add(trimmed);
-                    });
-                }
+                if (job.work_location) job.work_location.split('/').forEach(loc => { const t = loc.trim(); if (t) locations.add(t); });
+                if (job.education_requirement) job.education_requirement.split('/').forEach(edu => { const t = edu.trim(); if (t) educations.add(t); });
             });
-
-            // 填充工作地域下拉框
             const locationSelect = document.getElementById('locationFilter');
-            // 保留第一个"全部"选项
             locationSelect.innerHTML = '<option value="">全部</option>';
-            Array.from(locations).sort().forEach(loc => {
-                const option = document.createElement('option');
-                option.value = loc;
-                option.textContent = loc;
-                locationSelect.appendChild(option);
-            });
-
-            // 填充学历要求下拉框
+            Array.from(locations).sort().forEach(loc => { const o = document.createElement('option'); o.value = loc; o.textContent = loc; locationSelect.appendChild(o); });
             const educationSelect = document.getElementById('educationFilter');
-            // 保留第一个"全部"选项
             educationSelect.innerHTML = '<option value="">全部</option>';
-            Array.from(educations).sort().forEach(edu => {
-                const option = document.createElement('option');
-                option.value = edu;
-                option.textContent = edu;
-                educationSelect.appendChild(option);
-            });
+            Array.from(educations).sort().forEach(edu => { const o = document.createElement('option'); o.value = edu; o.textContent = edu; educationSelect.appendChild(o); });
         }
 
-        // 搜索功能
         function search() {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
             const locationFilter = document.getElementById('locationFilter').value;
             const educationFilter = document.getElementById('educationFilter').value;
             const majorFilter = document.getElementById('majorFilter').value.toLowerCase().trim();
             const salaryFilter = document.getElementById('salaryFilter').value;
-
             filteredJobs = allJobs.filter(job => {
-                // 关键词搜索
                 if (searchTerm) {
-                    const searchFields = [
-                        job.title || '',
-                        job.company_name || '',
-                        job.major_requirement || '',
-                        job.work_location || '',
-                        job.education_requirement || ''
-                    ].join(' ').toLowerCase();
-                    
-                    if (!searchFields.includes(searchTerm)) {
-                        return false;
-                    }
+                    const fields = [job.title||'', job.company_name||'', job.major_requirement||'', job.work_location||'', job.education_requirement||''].join(' ').toLowerCase();
+                    if (!fields.includes(searchTerm)) return false;
                 }
-
-                // 工作地域筛选
-                if (locationFilter && job.work_location && !job.work_location.includes(locationFilter)) {
-                    return false;
-                }
-
-                // 学历要求筛选
-                if (educationFilter && job.education_requirement && !job.education_requirement.includes(educationFilter)) {
-                    return false;
-                }
-
-                // 专业要求筛选
-                if (majorFilter && job.major_requirement && !job.major_requirement.toLowerCase().includes(majorFilter)) {
-                    return false;
-                }
-
-                // 薪资筛选
+                if (locationFilter && job.work_location && !job.work_location.includes(locationFilter)) return false;
+                if (educationFilter && job.education_requirement && !job.education_requirement.includes(educationFilter)) return false;
+                if (majorFilter && job.major_requirement && !job.major_requirement.toLowerCase().includes(majorFilter)) return false;
                 if (salaryFilter && job.salary) {
                     const [min, max] = salaryFilter.split('-').map(Number);
-                    const salaryMatch = job.salary.match(/(\d+)/);
-                    if (salaryMatch) {
-                        const salary = parseInt(salaryMatch[1]);
-                        if (salary < min || salary > max) {
-                            return false;
-                        }
-                    } else {
-                        return false;
-                    }
+                    const m = job.salary.match(/(\d+)/);
+                    if (m) { const s = parseInt(m[1]); if (s < min || s > max) return false; }
+                    else return false;
                 }
-
                 return true;
             });
-
             currentPage = 1;
             renderPage(currentPage);
         }
 
-        // 重置搜索
         function resetSearch() {
             document.getElementById('searchInput').value = '';
             document.getElementById('locationFilter').value = '';
@@ -575,7 +187,6 @@
             renderPage(currentPage);
         }
 
-        // 切换高级搜索
         function toggleAdvanced() {
             const advancedSearch = document.getElementById('advancedSearch');
             const toggleBtn = document.getElementById('toggleBtn');
@@ -583,99 +194,53 @@
             toggleBtn.textContent = advancedSearch.classList.contains('active') ? '收起筛选' : '⚙️ 高级筛选';
         }
 
-        // 渲染页面
-      function renderPage(page) {
-    currentPage = page;
-    const start = (page - 1) * pageSize;
-    const end = start + pageSize;
-    const pageJobs = filteredJobs.slice(start, end);
-    const totalPages = Math.ceil(filteredJobs.length / pageSize);
-
-    // 更新统计信息
-    document.getElementById('resultCount').textContent = `共 ${filteredJobs.length} 条招聘信息`;
-    document.getElementById('pageInfo').textContent = `第 ${page} 页 / 共 ${totalPages} 页`;
-
-    // 渲染招聘列表
-    const jobList = document.getElementById('jobList');
-    if (pageJobs.length === 0) {
-        jobList.innerHTML = `
-            <div class="no-results">
-                <h3>没有找到匹配的招聘信息</h3>
-                <p>请尝试调整筛选条件</p>
-            </div>`;
-    } else {
-        jobList.innerHTML = pageJobs.map(job => `
-            <div class="job-card">
-                <div class="job-title">
-                    <a href="${job.link || '#'}" target="_blank">${job.title || '未命名职位'}</a>
-                </div>
-                <div class="job-info">
-                    <div class="info-item">
-                        <span class="info-icon">🏢</span>
-                        <div>
-                            <div class="info-label">公司名称</div>
-                            <div class="info-value">${job.company_name || '未提供'}</div>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon">📍</span>
-                        <div>
-                            <div class="info-label">工作地点</div>
-                            <div class="info-value">${job.work_location || '未提供'}</div>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon">🎓</span>
-                        <div>
-                            <div class="info-label">学历要求</div>
-                            <div class="info-value">${job.education_requirement || '未提供'}</div>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-icon">💰</span>
-                        <div>
-                            <div class="info-label">薪资待遇</div>
-                            <div class="info-value salary-highlight">${job.salary || '面议'}</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="job-tags">
-                    ${job.work_location ? `<span class="tag tag-location">📍 ${job.work_location}</span>` : ''}
-                    ${job.education_requirement ? `<span class="tag tag-education">🎓 ${job.education_requirement}</span>` : ''}
-                    ${job.major_requirement ? `<span class="tag tag-major">📚 ${job.major_requirement}</span>` : ''}
-                </div>
-            </div>
-        `).join('');
-    }
-
-    // 渲染分页
-    renderPagination(totalPages);
-}
-
-// 分页渲染
-function renderPagination(totalPages) {
-    const pagination = document.getElementById('pagination');
-    if (totalPages <= 1) {
-        pagination.innerHTML = '';
-        return;
-    }
-
-    let html = '';
-    
-    // 上一页按钮
-    html += `<button class="page-btn" onclick="renderPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>上一页</button>`;
-    
-    // 页码按钮
-    for (let i = 1; i <= totalPages; i++) {
-        if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
-            html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="renderPage(${i})">${i}</button>`;
-        } else if (i === currentPage - 3 || i === currentPage + 3) {
-            html += '<span class="page-info">...</span>';
+        function renderPage(page) {
+            currentPage = page;
+            const start = (page - 1) * pageSize;
+            const end = start + pageSize;
+            const pageJobs = filteredJobs.slice(start, end);
+            const totalPages = Math.ceil(filteredJobs.length / pageSize);
+            document.getElementById('resultCount').textContent = '共 ' + filteredJobs.length + ' 条招聘信息';
+            document.getElementById('pageInfo').textContent = '第 ' + page + ' 页 / 共 ' + totalPages + ' 页';
+            const jobList = document.getElementById('jobList');
+            if (pageJobs.length === 0) {
+                jobList.innerHTML = '<div class="no-results"><h3>没有找到匹配的招聘信息</h3><p>请尝试调整筛选条件</p></div>';
+            } else {
+                jobList.innerHTML = pageJobs.map(job => createJobCard(job)).join('');
+            }
+            renderPagination(totalPages);
         }
-    }
-    
-    // 下一页按钮
-    html += `<button class="page-btn" onclick="renderPage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>下一页</button>`;
-    
-    pagination.innerHTML = html;
-}
+
+        function createJobCard(job) {
+            return '<div class="job-card" onclick="window.open(\'' + (job.link || '#') + '\', \'_blank\')">' +
+                '<div class="job-title"><a href="' + (job.link || '#') + '" target="_blank">' + (job.title || '未命名职位') + '</a></div>' +
+                '<div class="job-info">' +
+                '<div class="info-item"><span class="info-icon">🏢</span><div><div class="info-label">公司名称</div><div class="info-value">' + (job.company_name || '未提供') + '</div></div></div>' +
+                '<div class="info-item"><span class="info-icon">📍</span><div><div class="info-label">工作地点</div><div class="info-value">' + (job.work_location || '未提供') + '</div></div></div>' +
+                '<div class="info-item"><span class="info-icon">🎓</span><div><div class="info-label">学历要求</div><div class="info-value">' + (job.education_requirement || '未提供') + '</div></div></div>' +
+                '<div class="info-item"><span class="info-icon">💰</span><div><div class="info-label">薪资待遇</div><div class="info-value salary-highlight">' + (job.salary || '面议') + '</div></div></div>' +
+                '</div>' +
+                '<div class="job-tags">' +
+                (job.work_location ? '<span class="tag tag-location">📍 ' + job.work_location + '</span>' : '') +
+                (job.education_requirement ? '<span class="tag tag-education">🎓 ' + job.education_requirement + '</span>' : '') +
+                (job.major_requirement ? '<span class="tag tag-major">📚 ' + job.major_requirement + '</span>' : '') +
+                '</div></div>';
+        }
+
+        function renderPagination(totalPages) {
+            const pagination = document.getElementById('pagination');
+            if (totalPages <= 1) { pagination.innerHTML = ''; return; }
+            let html = '<button class="page-btn" onclick="renderPage(' + (currentPage - 1) + ')" ' + (currentPage === 1 ? 'disabled' : '') + '>上一页</button>';
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+                    html += '<button class="page-btn' + (i === currentPage ? ' active' : '') + '" onclick="renderPage(' + i + ')">' + i + '</button>';
+                } else if (i === currentPage - 3 || i === currentPage + 3) {
+                    html += '<span style="color:white">...</span>';
+                }
+            }
+            html += '<button class="page-btn" onclick="renderPage(' + (currentPage + 1) + ')" ' + (currentPage === totalPages ? 'disabled' : '') + '>下一页</button>';
+            pagination.innerHTML = html;
+        }
+    </script>
+</body>
+</html>
