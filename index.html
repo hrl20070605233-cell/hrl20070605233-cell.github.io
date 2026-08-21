@@ -251,13 +251,14 @@ html
             renderPagination(totalPages);
         }
 
-        function createJobCard(job) {
+       function createJobCard(job) {
     return '<div class="job-card" onclick="window.open(\'' + (job.link || '#') + '\', \'_blank\')">' +
         '<div class="job-title"><a href="' + (job.link || '#') + '" target="_blank">' + (job.title || '未命名职位') + '</a></div>' +
         '<div class="job-info">' +
         '<div class="info-item"><span class="info-icon">🏢</span><div><div class="info-label">公司名称</div><div class="info-value">' + (job.company_name || '未提供') + '</div></div></div>' +
         '<div class="info-item"><span class="info-icon">📍</span><div><div class="info-label">工作地点</div><div class="info-value">' + (job.work_location || '未提供') + '</div></div></div>' +
         '<div class="info-item"><span class="info-icon">🎓</span><div><div class="info-label">学历要求</div><div class="info-value">' + (job.education_requirement || '未提供') + '</div></div></div>' +
+        '<div class="info-item"><span class="info-icon">💼</span><div><div class="info-label">职位类别</div><div class="info-value">' + (job.job_category || '-') + '</div></div></div>' +
         '<div class="info-item"><span class="info-icon">📅</span><div><div class="info-label">发布时间</div><div class="info-value">' + (job.publish_time || '未提供') + '</div></div></div>' +
         '<div class="info-item"><span class="info-icon">💰</span><div><div class="info-label">薪资待遇</div><div class="info-value salary-highlight">' + (job.salary || '面议') + '</div></div></div>' +
         '</div>' +
