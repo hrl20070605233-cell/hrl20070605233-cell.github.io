@@ -53,10 +53,12 @@
             display: flex;
             gap: 15px;
             margin-bottom: 20px;
+            flex-wrap: wrap;
         }
 
         .search-input {
             flex: 1;
+            min-width: 200px;
             padding: 12px 20px;
             border: 2px solid #e0e0e0;
             border-radius: 10px;
@@ -78,6 +80,7 @@
             cursor: pointer;
             transition: all 0.3s;
             font-weight: 500;
+            white-space: nowrap;
         }
 
         .btn-primary {
@@ -104,6 +107,7 @@
             color: #667eea;
             padding: 8px 15px;
             font-size: 14px;
+            border: 1px solid #667eea;
         }
 
         .btn-toggle:hover {
@@ -211,7 +215,7 @@
 
         .info-item {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 8px;
             font-size: 14px;
             color: #666;
@@ -224,6 +228,7 @@
             align-items: center;
             justify-content: center;
             font-size: 16px;
+            flex-shrink: 0;
         }
 
         .info-label {
@@ -280,6 +285,7 @@
             gap: 10px;
             margin-top: 30px;
             padding: 20px;
+            flex-wrap: wrap;
         }
 
         .page-btn {
@@ -359,7 +365,7 @@
         <!-- 搜索区域 -->
         <div class="search-section">
             <div class="search-main">
-                <input type="text" class="search-input" id="searchInput" placeholder="搜索公司名称、职位...">
+                <input type="text" class="search-input" id="searchInput" placeholder="搜索公司名称、职位..." onkeypress="if(event.key==='Enter') search()">
                 <button class="btn btn-primary" onclick="search()">🔍 搜索</button>
                 <button class="btn btn-secondary" onclick="resetSearch()">重置</button>
                 <button class="btn btn-toggle" onclick="toggleAdvanced()" id="toggleBtn">
@@ -371,23 +377,23 @@
             <div class="advanced-search" id="advancedSearch">
                 <div class="filter-group">
                     <label>工作地域</label>
-                    <select id="locationFilter">
+                    <select id="locationFilter" onchange="search()">
                         <option value="">全部</option>
                     </select>
                 </div>
                 <div class="filter-group">
                     <label>学历要求</label>
-                    <select id="educationFilter">
+                    <select id="educationFilter" onchange="search()">
                         <option value="">全部</option>
                     </select>
                 </div>
                 <div class="filter-group">
                     <label>专业要求</label>
-                    <input type="text" id="majorFilter" placeholder="输入专业关键词">
+                    <input type="text" id="majorFilter" placeholder="输入专业关键词" onkeypress="if(event.key==='Enter') search()">
                 </div>
                 <div class="filter-group">
                     <label>薪资范围</label>
-                    <select id="salaryFilter">
+                    <select id="salaryFilter" onchange="search()">
                         <option value="">全部</option>
                         <option value="0-5000">5000元以下</option>
                         <option value="5000-10000">5000-10000元</option>
@@ -422,18 +428,34 @@
         let currentPage = 1;
         const pageSize = 10;
 
+        // 页面加载时自动加载数据
+        window.addEventListener('DOMContentLoaded', loadData);
+
         // 加载数据
         async function loadData() {
             try {
+                console.log('开始加载数据...');
                 const response = await fetch('jobs.json');
+                console.log('响应状态:', response.status);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP错误: ${response.status}`);
+                }
+                
                 allJobs = await response.json();
+                console.log('成功加载数据:', allJobs.length, '条记录');
+                
                 filteredJobs = [...allJobs];
                 updateFilters();
                 renderPage(1);
             } catch (error) {
                 console.error('加载数据失败:', error);
                 document.getElementById('jobList').innerHTML = 
-                    '<div class="no-results"><h3>数据加载失败</h3><p>请检查jobs.json文件是否存在</p></div>';
+                    `<div class="no-results">
+                        <h3>数据加载失败</h3>
+                        <p>错误信息: ${error.message}</p>
+                        <p>请确保jobs.json文件在根目录且格式正确</p>
+                    </div>`;
             }
         }
 
@@ -460,6 +482,8 @@
 
             // 填充工作地域下拉框
             const locationSelect = document.getElementById('locationFilter');
+            // 保留第一个"全部"选项
+            locationSelect.innerHTML = '<option value="">全部</option>';
             Array.from(locations).sort().forEach(loc => {
                 const option = document.createElement('option');
                 option.value = loc;
@@ -469,6 +493,8 @@
 
             // 填充学历要求下拉框
             const educationSelect = document.getElementById('educationFilter');
+            // 保留第一个"全部"选项
+            educationSelect.innerHTML = '<option value="">全部</option>';
             Array.from(educations).sort().forEach(edu => {
                 const option = document.createElement('option');
                 option.value = edu;
@@ -489,11 +515,11 @@
                 // 关键词搜索
                 if (searchTerm) {
                     const searchFields = [
-                        job.title,
-                        job.company_name,
-                        job.major_requirement,
-                        job.work_location,
-                        job.education_requirement
+                        job.title || '',
+                        job.company_name || '',
+                        job.major_requirement || '',
+                        job.work_location || '',
+                        job.education_requirement || ''
                     ].join(' ').toLowerCase();
                     
                     if (!searchFields.includes(searchTerm)) {
@@ -502,22 +528,22 @@
                 }
 
                 // 工作地域筛选
-                if (locationFilter && !job.work_location.includes(locationFilter)) {
+                if (locationFilter && job.work_location && !job.work_location.includes(locationFilter)) {
                     return false;
                 }
 
                 // 学历要求筛选
-                if (educationFilter && !job.education_requirement.includes(educationFilter)) {
+                if (educationFilter && job.education_requirement && !job.education_requirement.includes(educationFilter)) {
                     return false;
                 }
 
                 // 专业要求筛选
-                if (majorFilter && !job.major_requirement.toLowerCase().includes(majorFilter)) {
+                if (majorFilter && job.major_requirement && !job.major_requirement.toLowerCase().includes(majorFilter)) {
                     return false;
                 }
 
                 // 薪资筛选
-                if (salaryFilter) {
+                if (salaryFilter && job.salary) {
                     const [min, max] = salaryFilter.split('-').map(Number);
                     const salaryMatch = job.salary.match(/(\d+)/);
                     if (salaryMatch) {
@@ -563,44 +589,13 @@
             const start = (page - 1) * pageSize;
             const end = start + pageSize;
             const pageJobs = filteredJobs.slice(start, end);
+            const totalPages = Math.ceil(filteredJobs.length / pageSize);
 
             // 更新统计信息
             document.getElementById('resultCount').textContent = `共 ${filteredJobs.length} 条招聘信息`;
-            document.getElementById('pageInfo').textContent = `第 ${page} 页 / 共 ${Math.ceil(filteredJobs.length / pageSize)} 页`;
+            document.getElementById('pageInfo').textContent = `第 ${page} 页 / 共 ${totalPages} 页`;
 
             // 渲染招聘列表
             const jobList = document.getElementById('jobList');
             if (pageJobs.length === 0) {
-                jobList.innerHTML = '<div class="no-results"><h3>没有找到匹配的招聘信息</h3><p>请尝试调整搜索条件</p></div>';
-            } else {
-                jobList.innerHTML = pageJobs.map(job => createJobCard(job)).join('');
-            }
-
-            // 渲染分页
-            renderPagination(page);
-        }
-
-        // 创建招聘卡片
-        function createJobCard(job) {
-            const salaryClass = job.salary ? 'salary-highlight' : '';
-            const locationTags = job.work_location ? 
-                job.work_location.split('/').map(loc => 
-                    `<span class="tag tag-location">${loc.trim()}</span>`
-                ).join('') : '';
-            
-            const educationTags = job.education_requirement ?
-                job.education_requirement.split('/').map(edu =>
-                    `<span class="tag tag-education">${edu.trim()}</span>`
-                ).join('') : '';
-
-            return `
-                <div class="job-card" onclick="window.open('${job.link}', '_blank')">
-                    <div class="job-title">
-                        <a href="${job.link}" target="_blank">${job.title}</a>
-                    </div>
-                    <div class="job-info">
-                        <div class="info-item">
-                            <span class="info-icon">🏢</span>
-                            <div>
-                                <div class="info-label">公司名称</div>
-                                <div class="info-value">
+                jobList.innerHTML = '<div class="no-results"><h3>没有找到匹配的招聘信息</h3><p
