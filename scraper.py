@@ -33,13 +33,12 @@ class NankaiCareerSpider:
         soup = BeautifulSoup(html, 'html.parser')
         links = []
         
-        # 查找招聘信息列表 - 根据实际页面结构调整选择器
+        # 查找招聘信息列表
         job_items = soup.find_all('a', href=re.compile(r'/correcruit/content/id/\d+\.html'))
         
         for job in job_items:
             title = job.get_text(strip=True)
             link = urljoin(self.base_url, job.get('href'))
-            # 过滤掉空标题或无效链接
             if title and link and 'content/id/' in link:
                 links.append({
                     'title': title,
@@ -88,70 +87,115 @@ class NankaiCareerSpider:
         
         try:
             # 获取页面的纯文本内容
-            # 先找到主要内容区域
             content_div = soup.find('div', class_='content') or soup.find('div', class_='article') or soup.find('body')
             
             if content_div:
-                # 获取所有文本行
+                # 获取原始文本，保留更多信息
                 text = content_div.get_text(separator='\n', strip=True)
                 lines = [line.strip() for line in text.split('\n') if line.strip()]
                 
-                # 根据你提供的文本结构解析
-                for i, line in enumerate(lines):
-                    # 1. 查找薪资（包含"元"的数字）
-                    if re.search(r'\d+.*元', line) and not job_info['salary']:
-                        job_info['salary'] = line.strip()
-                    
-                    # 2. 查找公司名称（通常在薪资后面，且不包含特殊关键词）
-                    elif (job_info['salary'] and not job_info['company_name'] and 
-                          '工作地域' not in line and '职位类别' not in line and 
-                          '学历要求' not in line and '招聘人数' not in line and
-                          '发布时间' not in line and '浏览量' not in line and
-                          '专业要求' not in line and '职位投递' not in line and
-                          'http' not in line and not re.search(r'\d+.*元', line)):
-                        # 这可能是公司名称
-                        if len(line) > 2 and len(line) < 100:  # 合理的公司名称长度
-                            job_info['company_name'] = line.strip()
-                    
-                    # 3. 查找工作地域
-                    if '工作地域' in line:
-                        location = line.replace('工作地域：', '').replace('工作地域:', '').strip()
-                        job_info['work_location'] = location
-                    
-                    # 4. 查找职位类别
-                    if '职位类别' in line:
-                        category = line.replace('职位类别：', '').replace('职位类别:', '').strip()
-                        job_info['job_category'] = category
-                    
-                    # 5. 查找学历要求
-                    if '学历要求' in line:
-                        education = line.replace('学历要求：', '').replace('学历要求:', '').strip()
-                        job_info['education_requirement'] = education
-                    
-                    # 6. 查找发布时间
-                    if '发布时间' in line:
-                        time_match = re.search(r'\d{4}-\d{2}-\d{2}', line)
-                        if time_match:
-                            job_info['publish_time'] = time_match.group()
-                    
-                    # 7. 查找专业要求（可能在下一行）
-                    if '专业要求' in line:
-                        # 专业要求可能在当前行或下一行
-                        major_text = line.replace('专业要求：', '').replace('专业要求:', '').replace('*', '').strip()
-                        if major_text:
-                            job_info['major_requirement'] = major_text
-                        elif i + 1 < len(lines):
-                            # 检查下一行是否是专业要求内容
-                            next_line = lines[i + 1]
-                            if not any(keyword in next_line for keyword in ['工作地域', '职位类别', '学历要求', '招聘人数', '发布时间', '浏览量']):
-                                job_info['major_requirement'] = next_line.strip()
+                # 打印前几行用于调试（可选）
+                # print(f"调试信息 - 前10行文本：")
+                # for i, line in enumerate(lines[:10]):
+                #     print(f"  {i}: {line}")
                 
-                # 如果还没找到公司名称，尝试从标题中提取
+                # 直接使用正则表达式提取关键信息
+                full_text = '\n'.join(lines)
+                
+                # 1. 提取工作地域
+                location_patterns = [
+                    r'工作地域[：:]\s*(.+?)(?:\n|$)',
+                    r'工作地点[：:]\s*(.+?)(?:\n|$)',
+                    r'工作地区[：:]\s*(.+?)(?:\n|$)'
+                ]
+                for pattern in location_patterns:
+                    match = re.search(pattern, full_text)
+                    if match:
+                        job_info['work_location'] = match.group(1).strip()
+                        break
+                
+                # 2. 提取学历要求
+                education_patterns = [
+                    r'学历要求[：:]\s*(.+?)(?:\n|$)',
+                    r'学历[：:]\s*(.+?)(?:\n|$)',
+                    r'学位要求[：:]\s*(.+?)(?:\n|$)'
+                ]
+                for pattern in education_patterns:
+                    match = re.search(pattern, full_text)
+                    if match:
+                        job_info['education_requirement'] = match.group(1).strip()
+                        break
+                
+                # 3. 提取职位类别
+                category_patterns = [
+                    r'职位类别[：:]\s*(.+?)(?:\n|$)',
+                    r'岗位类别[：:]\s*(.+?)(?:\n|$)',
+                    r'工作类型[：:]\s*(.+?)(?:\n|$)'
+                ]
+                for pattern in category_patterns:
+                    match = re.search(pattern, full_text)
+                    if match:
+                        job_info['job_category'] = match.group(1).strip()
+                        break
+                
+                # 4. 提取发布时间
+                time_patterns = [
+                    r'发布时间[：:]\s*(\d{4}-\d{2}-\d{2})',
+                    r'发布日期[：:]\s*(\d{4}-\d{2}-\d{2})',
+                    r'(\d{4}-\d{2}-\d{2})'
+                ]
+                for pattern in time_patterns:
+                    match = re.search(pattern, full_text)
+                    if match:
+                        job_info['publish_time'] = match.group(1).strip()
+                        break
+                
+                # 5. 提取专业要求
+                major_patterns = [
+                    r'专业要求[：:]\s*(.+?)(?:\n|$)',
+                    r'专业[：:]\s*(.+?)(?:\n|$)'
+                ]
+                for pattern in major_patterns:
+                    match = re.search(pattern, full_text)
+                    if match:
+                        major_text = match.group(1).strip()
+                        # 如果专业要求内容很短，可能内容在下一行
+                        if len(major_text) < 5 and match.end() < len(full_text):
+                            next_line_match = re.search(r'\n(.+?)(?:\n|$)', full_text[match.end():])
+                            if next_line_match:
+                                major_text = next_line_match.group(1).strip()
+                        job_info['major_requirement'] = major_text
+                        break
+                
+                # 6. 提取薪资（包含"元"的数字）
+                salary_patterns = [
+                    r'(\d+-\d+元)',
+                    r'(\d+元)',
+                    r'薪资[：:]\s*(.+?)(?:\n|$)',
+                    r'薪酬[：:]\s*(.+?)(?:\n|$)'
+                ]
+                for pattern in salary_patterns:
+                    match = re.search(pattern, full_text)
+                    if match:
+                        job_info['salary'] = match.group(1).strip()
+                        break
+                
+                # 7. 提取公司名称
+                # 方法1：从标题中提取
+                company_match = re.match(r'^(.+?)(?:\s*\d{4}\s*校园招聘|\s*招聘|\s*校园|\s*202[0-9])', title)
+                if company_match:
+                    job_info['company_name'] = company_match.group(1).strip()
+                
+                # 方法2：从文本中查找（通常在薪资后面）
                 if not job_info['company_name']:
-                    # 标题格式通常是：公司名称 + 招聘信息
-                    company_match = re.match(r'^(.+?)(?:\s*\d{4}\s*校园招聘|\s*招聘|\s*校园)', title)
-                    if company_match:
-                        job_info['company_name'] = company_match.group(1).strip()
+                    for i, line in enumerate(lines):
+                        if re.search(r'\d+.*元', line) and i + 1 < len(lines):
+                            # 薪资行的下一行可能是公司名称
+                            next_line = lines[i + 1]
+                            if not any(keyword in next_line for keyword in ['工作地域', '工作地点', '职位类别', '学历要求', '招聘人数', '发布时间', '浏览量', '专业要求', 'http', 'www']):
+                                if len(next_line) > 3 and len(next_line) < 100:
+                                    job_info['company_name'] = next_line.strip()
+                                    break
             
         except Exception as e:
             print(f"解析详情页出错：{link}，错误：{e}")
@@ -188,6 +232,7 @@ class NankaiCareerSpider:
                     print(f"    薪资：{job_info['salary']}")
                     print(f"    地点：{job_info['work_location']}")
                     print(f"    学历：{job_info['education_requirement']}")
+                    print(f"    专业：{job_info['major_requirement'][:30] if job_info['major_requirement'] else '无'}...")
                 
                 # 添加延时，避免请求过快
                 time.sleep(1.5)
@@ -204,8 +249,17 @@ class NankaiCareerSpider:
         print(f"数据已保存到{filename}")
         
         # 显示统计信息
-        filled_jobs = sum(1 for job in self.jobs if job['company_name'] and job['salary'])
-        print(f"成功提取完整信息的职位：{filled_jobs}/{len(self.jobs)}")
+        total = len(self.jobs)
+        with_location = sum(1 for job in self.jobs if job['work_location'])
+        with_education = sum(1 for job in self.jobs if job['education_requirement'])
+        with_salary = sum(1 for job in self.jobs if job['salary'])
+        with_company = sum(1 for job in self.jobs if job['company_name'])
+        
+        print(f"\n提取统计：")
+        print(f"  工作地域：{with_location}/{total}")
+        print(f"  学历要求：{with_education}/{total}")
+        print(f"  薪资：{with_salary}/{total}")
+        print(f"  公司名称：{with_company}/{total}")
 
 # 运行爬虫
 if __name__ == "__main__":
