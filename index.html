@@ -163,30 +163,58 @@ html
         }
 
         function search() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
-            const locationFilter = document.getElementById('locationFilter').value;
-            const educationFilter = document.getElementById('educationFilter').value;
-            const majorFilter = document.getElementById('majorFilter').value.toLowerCase().trim();
-            const salaryFilter = document.getElementById('salaryFilter').value;
-            filteredJobs = allJobs.filter(job => {
-                if (searchTerm) {
-                    const fields = [job.title||'', job.company_name||'', job.major_requirement||'', job.work_location||'', job.education_requirement||''].join(' ').toLowerCase();
-                    if (!fields.includes(searchTerm)) return false;
-                }
-                if (locationFilter && job.work_location && !job.work_location.includes(locationFilter)) return false;
-                if (educationFilter && job.education_requirement && !job.education_requirement.includes(educationFilter)) return false;
-                if (majorFilter && job.major_requirement && !job.major_requirement.toLowerCase().includes(majorFilter)) return false;
-                if (salaryFilter && job.salary) {
-                    const [min, max] = salaryFilter.split('-').map(Number);
-                    const m = job.salary.match(/(\d+)/);
-                    if (m) { const s = parseInt(m[1]); if (s < min || s > max) return false; }
-                    else return false;
-                }
-                return true;
-            });
-            currentPage = 1;
-            renderPage(currentPage);
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+    const locationFilter = document.getElementById('locationFilter').value;
+    const educationFilter = document.getElementById('educationFilter').value;
+    const majorFilter = document.getElementById('majorFilter').value.toLowerCase().trim();
+    const salaryFilter = document.getElementById('salaryFilter').value;
+
+    filteredJobs = allJobs.filter(job => {
+        // 关键词搜索：在标题、公司名称、专业要求中搜索
+        if (searchTerm) {
+            const title = (job.title || '').toLowerCase();
+            const company = (job.company_name || '').toLowerCase();
+            const major = (job.major_requirement || '').toLowerCase();
+            
+            // 只要任意一个字段包含搜索词就通过
+            if (!title.includes(searchTerm) && !company.includes(searchTerm) && !major.includes(searchTerm)) {
+                return false;
+            }
         }
+
+        // 工作地域筛选
+        if (locationFilter && job.work_location && !job.work_location.includes(locationFilter)) {
+            return false;
+        }
+
+        // 学历要求筛选
+        if (educationFilter && job.education_requirement && !job.education_requirement.includes(educationFilter)) {
+            return false;
+        }
+
+        // 专业要求筛选（高级筛选的独立字段）
+        if (majorFilter && job.major_requirement && !job.major_requirement.toLowerCase().includes(majorFilter)) {
+            return false;
+        }
+
+        // 薪资筛选
+        if (salaryFilter && job.salary) {
+            const [min, max] = salaryFilter.split('-').map(Number);
+            const m = job.salary.match(/(\d+)/);
+            if (m) {
+                const s = parseInt(m[1]);
+                if (s < min || s > max) return false;
+            } else {
+                return false;
+            }
+        }
+
+        return true;
+    });
+
+    currentPage = 1;
+    renderPage(currentPage);
+}
 
         function resetSearch() {
             document.getElementById('searchInput').value = '';
