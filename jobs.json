@@ -1,5 +1,115 @@
 [
   {
+    "title": "东方财富2027届校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/117244.html",
+    "company_name": "东方财富",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市 / 上海市 / 江苏省 / 广东省 / 四川省",
+    "job_category": "工程技术人员 / 经济业务人员 / 金融业务人员 / 法律专业人员",
+    "publish_time": "2026-08-31"
+  },
+  {
+    "title": "长城证券2027届秋季校园招聘简章",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/117243.html",
+    "company_name": "长城证券",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "20000元",
+    "work_location": "北京市 / 上海市 / 广东省",
+    "job_category": "-",
+    "publish_time": "2026-08-31"
+  },
+  {
+    "title": "财务管理",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/117238.html",
+    "company_name": "山东花物堂生物科技有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "会计学 财务管理等专业",
+    "salary": "10000-15000元",
+    "work_location": "山东省 / 广东省",
+    "job_category": "其他人员",
+    "publish_time": "2026-08-31"
+  },
+  {
+    "title": "人力资源管理",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/117240.html",
+    "company_name": "山东花物堂生物科技有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "人力资源管理、行政管理、劳动与社会保障等相关专业",
+    "salary": "10000-15000元",
+    "work_location": "山东省",
+    "job_category": "其他人员",
+    "publish_time": "2026-08-31"
+  },
+  {
+    "title": "法务",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/117241.html",
+    "company_name": "山东花物堂生物科技有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "工作职责",
+    "salary": "6000-8000元",
+    "work_location": "山东省",
+    "job_category": "-",
+    "publish_time": "2026-08-31"
+  },
+  {
+    "title": "市场研究",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/117242.html",
+    "company_name": "山东花物堂生物科技有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "统计学、数学、市场营销、财务金融学等相关专业",
+    "salary": "10000-15000元",
+    "work_location": "山东省",
+    "job_category": "其他人员",
+    "publish_time": "2026-08-31"
+  },
+  {
+    "title": "远景动力 2027 届校招正式启动",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/117010.html",
+    "company_name": "远景动力",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "工程管理、能源类、电气、国际贸易、商务英语",
+    "salary": "",
+    "work_location": "上海市 / 河北省 / 江苏省 / 湖北省 / 内蒙古自治区",
+    "job_category": "其他人员",
+    "publish_time": "2026-08-31"
+  },
+  {
+    "title": "销售内勤",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/117239.html",
+    "company_name": "",
+    "education_requirement": "本科",
+    "major_requirement": "市场营销、国际经济与贸易等相关专业",
+    "salary": "",
+    "work_location": "天津市",
+    "job_category": "办事人员和有关人员 / 其他人员",
+    "publish_time": "2026-08-31"
+  },
+  {
+    "title": "人力资源管理",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/117237.html",
+    "company_name": "",
+    "education_requirement": "本科",
+    "major_requirement": "人力资源、工商管理、法律等相关专业",
+    "salary": "",
+    "work_location": "天津市",
+    "job_category": "法律专业人员 / 办事人员和有关人员 / 其他人员",
+    "publish_time": "2026-08-31"
+  },
+  {
+    "title": "研发工程师",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/117236.html",
+    "company_name": "",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "化工、化学、材料学、高分子材料相关专业",
+    "salary": "",
+    "work_location": "天津市",
+    "job_category": "工程技术人员",
+    "publish_time": "2026-08-31"
+  },
+  {
     "title": "New Star管培生岗",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/117214.html",
     "company_name": "中国平安人寿保险股份有限公司河北分公司",
@@ -96,17 +206,6 @@
     "salary": "10000-15000元",
     "work_location": "上海市",
     "job_category": "商业和服务业人员",
-    "publish_time": "2026-08-31"
-  },
-  {
-    "title": "北方集成电路技术创新中心（北京）有限公司2027届校园招聘火热进行中",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/117210.html",
-    "company_name": "北方集成电路技术创新中心（北京）有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "北方集成电路技术创新中心（北京）有限公司2027届校园招聘火热进行中",
-    "salary": "",
-    "work_location": "北京市",
-    "job_category": "其他人员",
     "publish_time": "2026-08-31"
   },
   {
@@ -10899,104 +10998,5 @@
     "work_location": "上海市",
     "job_category": "-",
     "publish_time": "2026-04-09"
-  },
-  {
-    "title": "量化研究实习生 （实习｜校招）",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/109196.html",
-    "company_name": "上海喜岳投资管理有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "1、理工科背景计算机、金融工程、数学、统计、电子信息工程等专业优先；",
-    "salary": "6000-8000元",
-    "work_location": "上海市",
-    "job_category": "金融业务人员",
-    "publish_time": "2026-04-09"
-  },
-  {
-    "title": "量化交易实习生  （实习｜校招）",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/109197.html",
-    "company_name": "上海喜岳投资管理有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "1、研究生及以上学历，金融工程、计算机、数学等理工科背景；",
-    "salary": "6000-8000元",
-    "work_location": "上海市",
-    "job_category": "经济业务人员 / 金融业务人员",
-    "publish_time": "2026-04-09"
-  },
-  {
-    "title": "量化分析实习生（实习｜校招）",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/109198.html",
-    "company_name": "上海喜岳投资管理有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "1、研究生及以上学历，数据科学、金融工程、计算机、电子信息等理工科背景；",
-    "salary": "6000-8000元",
-    "work_location": "上海市",
-    "job_category": "经济业务人员 / 金融业务人员",
-    "publish_time": "2026-04-09"
-  },
-  {
-    "title": "系统开发实习生 （校招/应届生优先）",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/109199.html",
-    "company_name": "上海喜岳投资管理有限公司",
-    "education_requirement": "本科",
-    "major_requirement": "1、本科及以上学历，计算机、电子、自动化、金融工程、数学、统计等专业优先；",
-    "salary": "4500-6000元",
-    "work_location": "上海市",
-    "job_category": "经济业务人员 / 金融业务人员",
-    "publish_time": "2026-04-09"
-  },
-  {
-    "title": "基金运营实习生 （实习｜校招）",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/109200.html",
-    "company_name": "上海喜岳投资管理有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "1、本科及以上学历，教育背景为经济学、财经、法律等相关专业优先；",
-    "salary": "4500-6000元",
-    "work_location": "上海市",
-    "job_category": "经济业务人员 / 金融业务人员",
-    "publish_time": "2026-04-09"
-  },
-  {
-    "title": "市场营销岗 （校招）",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/109202.html",
-    "company_name": "上海喜岳投资管理有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "1、硕士学历在读，中文，英语，市场营销、新闻广告等相关专业优先；",
-    "salary": "4500-6000元",
-    "work_location": "上海市",
-    "job_category": "经济业务人员 / 金融业务人员",
-    "publish_time": "2026-04-09"
-  },
-  {
-    "title": "东莞华明灯具有限公司2026届管培生招聘",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/114997.html",
-    "company_name": "东莞华明灯具有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "机械类、材料类、电子信息类、市场营销，国际经济与贸易、英语、机械工程、照明等",
-    "salary": "8000-10000元",
-    "work_location": "广东省",
-    "job_category": "其他人员",
-    "publish_time": "2026-04-09"
-  },
-  {
-    "title": "数学老师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/114992.html",
-    "company_name": "邵阳市大祥区启航巨人教育培训学校",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "10000-15000元",
-    "work_location": "湖南省",
-    "job_category": "教学人员",
-    "publish_time": "2026-04-09"
-  },
-  {
-    "title": "台州职业技术学院2026年公开招聘人员公告",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/114978.html",
-    "company_name": "台州职业技术学院",
-    "education_requirement": "博士研究生",
-    "major_requirement": "",
-    "salary": "15000-20000元",
-    "work_location": "浙江省",
-    "job_category": "-",
-    "publish_time": "2026-04-08"
   }
 ]
