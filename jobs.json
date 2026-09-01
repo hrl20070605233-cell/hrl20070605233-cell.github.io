@@ -676,7 +676,7 @@
     "company_name": "",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "中国",
-    "salary": "15000-20000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "-",
     "publish_time": "2026-09-01"
@@ -1371,17 +1371,6 @@
     "major_requirement": "请登录招聘网站(http://zhaopin.neeq.com.cn)查看招聘职位具体信息，选择“校园招聘”在线申请职位。每人仅可投递一个职位。",
     "salary": "15000-20000元",
     "work_location": "北京市",
-    "job_category": "-",
-    "publish_time": "2026-09-01"
-  },
-  {
-    "title": "储备财务经理",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/108862.html",
-    "company_name": "福龙马集团股份有限公司",
-    "education_requirement": "本科",
-    "major_requirement": "任职要求：",
-    "salary": "4500-6000元",
-    "work_location": "江苏省 / 福建省 / 江西省 / 海南省 / 内蒙古自治区",
     "job_category": "-",
     "publish_time": "2026-09-01"
   },
@@ -6710,17 +6699,6 @@
     "publish_time": "2026-08-28"
   },
   {
-    "title": "中国心 中国梦 心驱动 梦启航 中国航发涡轮院2027届校园招聘简章",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/117155.html",
-    "company_name": "中国心 中国梦 心驱动 梦启航 中国航发涡轮院",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "重点需求专业:",
-    "salary": "10000-15000元",
-    "work_location": "四川省",
-    "job_category": "-",
-    "publish_time": "2026-08-28"
-  },
-  {
     "title": "JAVA后端开发工程师（集中交付）",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/99996.html",
     "company_name": "上海汉得信息技术股份有限公司",
@@ -10994,6 +10972,28 @@
     "company_name": "深圳大漠大智控技术有限公司",
     "education_requirement": "硕士研究生",
     "major_requirement": "电子电气、自动化、控制",
+    "salary": "20000元",
+    "work_location": "广东省",
+    "job_category": "其他人员",
+    "publish_time": "2026-08-19"
+  },
+  {
+    "title": "电机动力工程师",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/116807.html",
+    "company_name": "深圳大漠大智控技术有限公司",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "电机与电器、电力电子、磁力学、机械电气一体化",
+    "salary": "20000元",
+    "work_location": "广东省",
+    "job_category": "其他人员",
+    "publish_time": "2026-08-19"
+  },
+  {
+    "title": "结构工程师",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/116806.html",
+    "company_name": "深圳大漠大智控技术有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "机械设计制造及其自动化、工程力学、飞行器制造工程、材料工程",
     "salary": "20000元",
     "work_location": "广东省",
     "job_category": "其他人员",
