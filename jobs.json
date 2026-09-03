@@ -1,5 +1,104 @@
 [
   {
+    "title": "采购管理岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/104079.html",
+    "company_name": "双胞胎（集团）股份有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "经济类、管理类相关专业",
+    "salary": "10000-15000元",
+    "work_location": "江西省",
+    "job_category": "经济业务人员",
+    "publish_time": "2026-09-03"
+  },
+  {
+    "title": "营销储备干部",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/104078.html",
+    "company_name": "双胞胎（集团）股份有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "经济类、管理类相关专业",
+    "salary": "10000-15000元",
+    "work_location": "江苏省 / 江西省 / 山东省",
+    "job_category": "经济业务人员",
+    "publish_time": "2026-09-03"
+  },
+  {
+    "title": "人力资源管理",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/104077.html",
+    "company_name": "双胞胎（集团）股份有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "人力资源管理、工商管理、行政管理、公共事业管理等相关人力资源专业",
+    "salary": "10000-15000元",
+    "work_location": "江西省",
+    "job_category": "办事人员和有关人员",
+    "publish_time": "2026-09-03"
+  },
+  {
+    "title": "法务岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/100551.html",
+    "company_name": "双胞胎（集团）股份有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "法律、法学类相关专业",
+    "salary": "10000-15000元",
+    "work_location": "江西省",
+    "job_category": "其他人员",
+    "publish_time": "2026-09-03"
+  },
+  {
+    "title": "信息研究员",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/100547.html",
+    "company_name": "双胞胎（集团）股份有限公司",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "数学、经济学、金融学、统计学等相关专业",
+    "salary": "15000-20000元",
+    "work_location": "江西省",
+    "job_category": "其他人员",
+    "publish_time": "2026-09-03"
+  },
+  {
+    "title": "人力资源岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/100544.html",
+    "company_name": "双胞胎（集团）股份有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "工商管理、行政管理、公共事业管理、应用心理学、劳动经济学、统计学、人力资源管理相关专业",
+    "salary": "10000-15000元",
+    "work_location": "江西省",
+    "job_category": "其他人员",
+    "publish_time": "2026-09-03"
+  },
+  {
+    "title": "财经管理岗(总部)",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/95114.html",
+    "company_name": "双胞胎（集团）股份有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "会计学、金融学、财政学、审计学、统计学、财务管理等相关专业",
+    "salary": "10000-15000元",
+    "work_location": "江西省",
+    "job_category": "经济业务人员",
+    "publish_time": "2026-09-03"
+  },
+  {
+    "title": "专任教师",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/116916.html",
+    "company_name": "无锡工艺职业技术学院",
+    "education_requirement": "博士研究生",
+    "major_requirement": "设计学、艺术设计、设计学、艺术学、设计艺术学、机械制造及其自动化、智能制造技术、机械工程",
+    "salary": "15000-20000元",
+    "work_location": "江苏省",
+    "job_category": "科学研究人员 / 教学人员",
+    "publish_time": "2026-09-03"
+  },
+  {
+    "title": "职能管培生",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/105801.html",
+    "company_name": "山东汇通金融租赁有限公司",
+    "education_requirement": "硕士研究生 / 博士研究生",
+    "major_requirement": "法律、会计、金融等相关专业优先",
+    "salary": "20000元",
+    "work_location": "山东省",
+    "job_category": "金融业务人员",
+    "publish_time": "2026-09-03"
+  },
+  {
     "title": "电子化学品研发工程师",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/110832.html",
     "company_name": "南通华祥医药科技有限公司",
@@ -1284,17 +1383,6 @@
     "salary": "8000-10000元",
     "work_location": "北京市",
     "job_category": "金融业务人员",
-    "publish_time": "2026-09-02"
-  },
-  {
-    "title": "专任教师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/116916.html",
-    "company_name": "无锡工艺职业技术学院",
-    "education_requirement": "博士研究生",
-    "major_requirement": "设计学、艺术设计、设计学、艺术学、设计艺术学、机械制造及其自动化、智能制造技术、机械工程",
-    "salary": "15000-20000元",
-    "work_location": "江苏省",
-    "job_category": "科学研究人员 / 教学人员",
     "publish_time": "2026-09-02"
   },
   {
@@ -3726,17 +3814,6 @@
     "salary": "10000-15000元",
     "work_location": "四川省",
     "job_category": "科学研究人员",
-    "publish_time": "2026-09-01"
-  },
-  {
-    "title": "管理培训生",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/114001.html",
-    "company_name": "",
-    "education_requirement": "硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "",
-    "work_location": "天津市",
-    "job_category": "-",
     "publish_time": "2026-09-01"
   },
   {
@@ -7865,50 +7942,6 @@
     "publish_time": "2026-08-28"
   },
   {
-    "title": "具身智能算法工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/117078.html",
-    "company_name": "千觉机器人科技（上海）有限公司",
-    "education_requirement": "硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "20000元",
-    "work_location": "上海市",
-    "job_category": "-",
-    "publish_time": "2026-08-28"
-  },
-  {
-    "title": "机器人系统与数采工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/117080.html",
-    "company_name": "千觉机器人科技（上海）有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "20000元",
-    "work_location": "上海市",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-08-28"
-  },
-  {
-    "title": "具身数据基础设施工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/117082.html",
-    "company_name": "千觉机器人科技（上海）有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "",
-    "salary": "20000元",
-    "work_location": "上海市",
-    "job_category": "-",
-    "publish_time": "2026-08-28"
-  },
-  {
-    "title": "触觉传感器工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/117085.html",
-    "company_name": "千觉机器人科技（上海）有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "20000元",
-    "work_location": "上海市",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-08-28"
-  },
-  {
     "title": "软件测试开发工程师",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/117074.html",
     "company_name": "千觉机器人科技（上海）有限公司",
@@ -9174,39 +9207,6 @@
     "publish_time": "2026-08-27"
   },
   {
-    "title": "材料工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/117089.html",
-    "company_name": "千觉机器人科技（上海）有限公司",
-    "education_requirement": "硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "20000元",
-    "work_location": "上海市",
-    "job_category": "科学研究人员",
-    "publish_time": "2026-08-27"
-  },
-  {
-    "title": "嵌入式硬件工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/117090.html",
-    "company_name": "千觉机器人科技（上海）有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "电子信息工程、电子科学与技术、通信工程、自动化、嵌入式等相关专业，本科及以上学历.",
-    "salary": "20000元",
-    "work_location": "上海市",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-08-27"
-  },
-  {
-    "title": "结构工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/117088.html",
-    "company_name": "千觉机器人科技（上海）有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "20000元",
-    "work_location": "上海市",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-08-27"
-  },
-  {
     "title": "北方华创微电子-研发工艺支持工程师-2027校园招聘",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/117087.html",
     "company_name": "北方华创微电子-研发工艺支持工程师-",
@@ -9215,39 +9215,6 @@
     "salary": "10000-15000元",
     "work_location": "北京市 / 浙江省 / 安徽省 / 湖北省 / 广东省",
     "job_category": "工程技术人员 / 其他专业技术人员",
-    "publish_time": "2026-08-27"
-  },
-  {
-    "title": "机械工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/117086.html",
-    "company_name": "千觉机器人科技（上海）有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "20000元",
-    "work_location": "上海市",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-08-27"
-  },
-  {
-    "title": "机器人解决方案工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/117084.html",
-    "company_name": "千觉机器人科技（上海）有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "20000元",
-    "work_location": "上海市",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-08-27"
-  },
-  {
-    "title": "机器人产品测试工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/117083.html",
-    "company_name": "千觉机器人科技（上海）有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "20000元",
-    "work_location": "上海市",
-    "job_category": "工程技术人员",
     "publish_time": "2026-08-27"
   },
   {
@@ -10997,6 +10964,39 @@
     "salary": "10000-15000元",
     "work_location": "北京市",
     "job_category": "-",
+    "publish_time": "2026-08-24"
+  },
+  {
+    "title": "中芯国际2027届校园招聘简章",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/116683.html",
+    "company_name": "中芯国际",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "电子信息类、集成电路类、材料类、物理类、化学类、光学类、机械类、自动化与控制类、计算机信息技术类、智能制造类、数学类、环境与安全类、管理科学与工程类、管理类等相关专业",
+    "salary": "15000-20000元",
+    "work_location": "北京市 / 天津市 / 上海市 / 广东省",
+    "job_category": "-",
+    "publish_time": "2026-08-24"
+  },
+  {
+    "title": "佳期投资2027校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/116933.html",
+    "company_name": "佳期投资",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "关于佳期",
+    "salary": "20000元",
+    "work_location": "北京市 / 上海市",
+    "job_category": "科学研究人员 / 工程技术人员 / 金融业务人员",
+    "publish_time": "2026-08-24"
+  },
+  {
+    "title": "经济管理类教材学术专著编辑",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/105811.html",
+    "company_name": "中国科技出版传媒股份有限公司",
+    "education_requirement": "硕士研究生 / 博士研究生",
+    "major_requirement": "经济管理类、统计学等专业",
+    "salary": "10000-15000元",
+    "work_location": "北京市",
+    "job_category": "新闻出版和文化工作人员",
     "publish_time": "2026-08-24"
   }
 ]
