@@ -1,5 +1,38 @@
 [
   {
+    "title": "核电厂生产技术管理人员",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/96009.html",
+    "company_name": "中电投广西核电有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "机械、自动化、电气、能动、核工程等",
+    "salary": "10000元",
+    "work_location": "广西壮族自治区",
+    "job_category": "工程技术人员",
+    "publish_time": "2026-09-07"
+  },
+  {
+    "title": "职能管理",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/67213.html",
+    "company_name": "中建八局发展建设有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "党的建设、马克思主义哲学类、人力资源管理、企业管理、社会保障、劳动经济学、劳动关系学、公共管理、行政管理、汉语言文学、新闻学、法学、软件工程、信息与计算科学类、会计学、财务管理、审计学、税务学等。",
+    "salary": "8000-10000元",
+    "work_location": "北京市 / 上海市 / 河北省 / 山东省 / 河南省",
+    "job_category": "工程技术人员",
+    "publish_time": "2026-09-07"
+  },
+  {
+    "title": "工程师，职能管理",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/53598.html",
+    "company_name": "中建八局发展建设有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "材料类/自动化类/管理科学与工程类/金融财务/职能管理",
+    "salary": "8000-10000元",
+    "work_location": "北京市 / 重庆市 / 上海市 / 河北省 / 山东省",
+    "job_category": "工程技术人员",
+    "publish_time": "2026-09-07"
+  },
+  {
     "title": "生产管理、技术岗",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/97003.html",
     "company_name": "上海中远海运重工有限公司",
@@ -2252,17 +2285,6 @@
     "salary": "8000-10000元",
     "work_location": "上海市",
     "job_category": "-",
-    "publish_time": "2026-09-04"
-  },
-  {
-    "title": "中国工商银行深圳市分行2027年度校园招聘",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/114587.html",
-    "company_name": "中国工商银行深圳市分行",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "10000-15000元",
-    "work_location": "广东省",
-    "job_category": "经济业务人员 / 金融业务人员 / 办事人员和有关人员 / 其他专业技术人员 / 商业和服务业人员 / 其他人员",
     "publish_time": "2026-09-04"
   },
   {
@@ -10975,28 +10997,6 @@
     "salary": "6000-8000元",
     "work_location": "天津市",
     "job_category": "其他人员",
-    "publish_time": "2026-09-01"
-  },
-  {
-    "title": "售前管培生-校招/实习（J15244）",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/117362.html",
-    "company_name": "北京掌上先机网络科技有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "【岗位职责】",
-    "salary": "8000-10000元",
-    "work_location": "上海市 / 江苏省 / 福建省 / 广东省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-01"
-  },
-  {
-    "title": "软件算法工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/117361.html",
-    "company_name": "易思维（杭州）科技有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "计算机科学、软件工程或机械电子类专业",
-    "salary": "15000-20000元",
-    "work_location": "浙江省",
-    "job_category": "-",
     "publish_time": "2026-09-01"
   }
 ]
