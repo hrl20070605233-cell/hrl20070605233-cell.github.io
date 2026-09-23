@@ -1540,17 +1540,6 @@
     "publish_time": "2026-09-17"
   },
   {
-    "title": "云览科技 2027 校园招聘",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118940.html",
-    "company_name": "云览科技",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "",
-    "work_location": "四川省",
-    "job_category": "工程技术人员 / 其他专业技术人员",
-    "publish_time": "2026-09-17"
-  },
-  {
     "title": "国寿安保基金2027年度校园招聘",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/118939.html",
     "company_name": "国寿安保基金",
@@ -2667,7 +2656,7 @@
     "company_name": "中国电科34所",
     "education_requirement": "硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "10000-15000元",
+    "salary": "",
     "work_location": "广西壮族自治区",
     "job_category": "科学研究人员 / 工程技术人员 / 其他专业技术人员",
     "publish_time": "2026-09-14"
@@ -10879,39 +10868,6 @@
     "publish_time": "2026-09-08"
   },
   {
-    "title": "电机研发工程师/控制研发工程师/会计",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118127.html",
-    "company_name": "贵州航天林泉电机有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "1.电机研发工程师：电气工程、电机、机械类相关专业",
-    "salary": "10000-15000元",
-    "work_location": "江苏省 / 贵州省",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-09-08"
-  },
-  {
-    "title": "化工工艺工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/86869.html",
-    "company_name": "南通江山农药化工股份有限公司",
-    "education_requirement": "本科",
-    "major_requirement": "化学工程与工艺、过程装备及其他化工机械类化工设备类",
-    "salary": "10000-15000元",
-    "work_location": "江苏省 / 湖北省 / 贵州省",
-    "job_category": "生产和运输设备操作人员",
-    "publish_time": "2026-09-08"
-  },
-  {
-    "title": "山东世纪阳光纸业集团有限公司2026届校园简章",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/109047.html",
-    "company_name": "山东世纪阳光纸业集团有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "（一）技术研发岗：轻化工程、制浆造纸、高分子、材料、应用化学、包装印刷、计算机、人工智能、电子通信、软件、机械、电气自动化或其他理工科相关专业均可报名。",
-    "salary": "15000-20000元",
-    "work_location": "山东省",
-    "job_category": "科学研究人员 / 工程技术人员 / 其他人员",
-    "publish_time": "2026-09-08"
-  },
-  {
     "title": "山东世纪阳光纸业集团有限公司2027届招聘简章",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/118126.html",
     "company_name": "山东世纪阳光纸业集团有限公司",
@@ -10994,6 +10950,17 @@
     "company_name": "",
     "education_requirement": "-",
     "major_requirement": "机械及热能工程相关专业",
+    "salary": "",
+    "work_location": "福建省 / 四川省 / 贵州省",
+    "job_category": "-",
+    "publish_time": "2026-09-08"
+  },
+  {
+    "title": "工艺工程师",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/91687.html",
+    "company_name": "",
+    "education_requirement": "-",
+    "major_requirement": "材料类（材料科学与工程、新能源材料与器件、金属材料、材料物理、材料化学等）/冶金化学化工类（冶金工程、化学工程与工艺、环境工程等）相关专业；硕博士研究方向为锂离子正极材料或前驱体材料（三元材料、钴酸锂、锰酸锂、磷酸铁锂等）者优先",
     "salary": "",
     "work_location": "福建省 / 四川省 / 贵州省",
     "job_category": "-",
