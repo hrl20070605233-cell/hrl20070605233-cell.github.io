@@ -1,11 +1,748 @@
 [
   {
+    "title": "美的集团2027届秋招火热进行",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119437.html",
+    "company_name": "美的集团",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市 / 重庆市 / 上海市 / 江苏省 / 广东省",
+    "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "优博讯 2027校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119435.html",
+    "company_name": "优博讯",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "上海市 / 湖北省 / 广东省",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "满帮集团 2027届校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119434.html",
+    "company_name": "满帮集团",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市 / 上海市 / 江苏省",
+    "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "中国银行深圳市分行2027年校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119433.html",
+    "company_name": "中国银行深圳市分行",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "广东省",
+    "job_category": "工程技术人员 / 经济业务人员 / 金融业务人员 / 商业和服务业人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "深蓝互动 2027秋季校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119432.html",
+    "company_name": "深蓝互动",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "广东省",
+    "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 文学艺术工作人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "卧安机器人 2027届 秋季校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119431.html",
+    "company_name": "卧安机器人",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "浙江省 / 广东省",
+    "job_category": "科学研究人员 / 工程技术人员 / 商业和服务业人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "吴一源2027届源动力校园招聘正式启动",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119430.html",
+    "company_name": "吴一源",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市 / 湖北省 / 广东省",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "中国化工橡胶有限公司 2027年“榕新力”管培生计划校园招聘正式启动",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119429.html",
+    "company_name": "中国化工橡胶有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市 / 上海市 / 山东省 / 河南省",
+    "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员 / 办事人员和有关人员 / 商业和服务业人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "北京航天动力研究所2027届校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119428.html",
+    "company_name": "北京航天动力研究所",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "航空宇航科学与技术类",
+    "salary": "",
+    "work_location": "北京市",
+    "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "思谋科技 2027届校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119427.html",
+    "company_name": "思谋科技",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "上海市 / 广东省",
+    "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "海康威视27校招 | 海康机器人8大类岗位热招中",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119426.html",
+    "company_name": "",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市 / 上海市 / 湖北省 / 广东省",
+    "job_category": "科学研究人员 / 工程技术人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "三七互娱2027 秋季校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119425.html",
+    "company_name": "三七互娱",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市 / 上海市 / 广东省",
+    "job_category": "工程技术人员 / 办事人员和有关人员 / 其他专业技术人员 / 文学艺术工作人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "友塔游戏2027校园招聘正式启动!",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119424.html",
+    "company_name": "友塔游戏",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市 / 上海市",
+    "job_category": "科学研究人员 / 工程技术人员 / 文学艺术工作人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "江西江铃进出口有限责任公司 2027届校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119423.html",
+    "company_name": "江西江铃进出口有限责任公司",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "江西省",
+    "job_category": "科学研究人员 / 工程技术人员 / 其他专业技术人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "华橙网络 2027届全球校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119422.html",
+    "company_name": "华橙网络",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "浙江省 / 陕西省",
+    "job_category": "科学研究人员 / 经济业务人员 / 其他专业技术人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "天津港航2027校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119421.html",
+    "company_name": "天津港航",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "天津市 / 河北省 / 山东省 / 广东省 / 海南省",
+    "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 法律专业人员 / 其他专业技术人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "龙岩学院 公开招聘高层次人才方案",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119420.html",
+    "company_name": "龙岩学院 公开",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "福建省",
+    "job_category": "科学研究人员 / 教学人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "TP-Link联洲2027届 秋季校园招聘启动",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119419.html",
+    "company_name": "TP-Link联洲",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "上海市 / 广东省 / 四川省",
+    "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "杉川集团2027届校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119418.html",
+    "company_name": "杉川集团",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "江苏省 / 安徽省 / 广东省",
+    "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员 / 法律专业人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "扬腾创新|2027届校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119417.html",
+    "company_name": "扬腾创新|",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市 / 浙江省 / 安徽省 / 广东省 / 香港特别行政区",
+    "job_category": "工程技术人员 / 经济业务人员 / 商业和服务业人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "建投投资/建投华文 2027届校园招聘正式启动",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119416.html",
+    "company_name": "建投投资/建投华文",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "中国中车2027全球招聘-天津站招聘会",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119415.html",
+    "company_name": "中国中车",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市 / 天津市 / 重庆市 / 河北省 / 山西省",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "中国移动财务公司2027校园招聘正式启动！",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119414.html",
+    "company_name": "中国移动财务公司",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市",
+    "job_category": "经济业务人员 / 金融业务人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "中科信公司2027届秋季校园招聘正式启动",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119413.html",
+    "company_name": "中科信公司",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市",
+    "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员 / 办事人员和有关人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "平安产险2027届校招宣讲会·天津站即将开启",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119412.html",
+    "company_name": "平安产险",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "天津市",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "邮你炫 耀出彩 | 中邮理财2027校园招聘正式启动",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119409.html",
+    "company_name": "邮你炫 耀出彩 | 中邮理财",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市",
+    "job_category": "经济业务人员 / 金融业务人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "硬件工程师",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119406.html",
+    "company_name": "广东圣大电子有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "电子信息工程、通信工程、电子科学与技术、电子与通信工程、电子信息科学与技术、电路与系统、电子信息、电磁场与无线技术等相关专业",
+    "salary": "10000-15000元",
+    "work_location": "广东省",
+    "job_category": "其他专业技术人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "嵌入式软件工程师",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/102974.html",
+    "company_name": "福建睿能科技股份有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "10000-15000元",
+    "work_location": "浙江省 / 福建省",
+    "job_category": "其他专业技术人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "横店集团2027届校园招聘简章",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119405.html",
+    "company_name": "横店集团",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "计算机科学与技术/网络工程/通信/电子/生物/制药/数学/物理/化工/材料类/机电/自动化/文史法哲教",
+    "salary": "",
+    "work_location": "浙江省",
+    "job_category": "其他人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "南昌启明星教师",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119404.html",
+    "company_name": "南昌市新东方教育科技有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "教师类",
+    "salary": "10000-15000元",
+    "work_location": "江西省",
+    "job_category": "教学人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "审计员（立信会计师事务所北京分所2027校招）",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119403.html",
+    "company_name": "审计员（立信会计师事务所北京分所",
+    "education_requirement": "本科",
+    "major_requirement": "1、大学本科及以上学历，审计、会计等相关专业；",
+    "salary": "8000-10000元",
+    "work_location": "北京市",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "企业发展规划管理岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119402.html",
+    "company_name": "中国石化集团胜利石油管理局有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "会计学、会计硕士、财务管理、税务硕士；审计学、审计硕士；法学（民商法学、经济法学、诉讼法学、环境与资源保护法学、国际法学方向）、法律硕士；马克思主义理论、思想政治教育、教育学；中国语言文学（限汉语言文字学、中国现当代文学方向）；工商管理、电子商务、企业管理、国际商务、人力资源管理",
+    "salary": "10000-15000元",
+    "work_location": "山东省 / 新疆维吾尔自治区",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "智能油田信息技术研究岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119401.html",
+    "company_name": "中国石化集团胜利石油管理局有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "计算机科学与技术、软件工程、大数据技术与工程、人工智能、智能科学与技术、网络空间安全、电子信息（限计算机技术方向）",
+    "salary": "10000-15000元",
+    "work_location": "山东省 / 新疆维吾尔自治区",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "智能油田技术高级研究岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119400.html",
+    "company_name": "中国石化集团胜利石油管理局有限公司",
+    "education_requirement": "博士研究生",
+    "major_requirement": "计算机科学与技术、软件工程、电子科学与技术（限计算机技术方向）、人工智能、油气人工智能、计算机技术与资源信息工程、大数据处理与高性能计算",
+    "salary": "10000-15000元",
+    "work_location": "山东省",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "海洋船舶工程岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119399.html",
+    "company_name": "中国石化集团胜利石油管理局有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "轮机工程、航海技术；交通运输（限港航、港口航运方向）；救助与打捞工程",
+    "salary": "10000-15000元",
+    "work_location": "山东省",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "炼油化工技术岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119398.html",
+    "company_name": "中国石化集团胜利石油管理局有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "化学工程、化学工艺、化学工程与技术、化学工程与工艺、精细化工、能源化学工程、工业催化、材料与化工（限化学工程方向）；动力工程及工程热物理（限化工过程机械方向）、化工过程机械、过程装备与控制工程",
+    "salary": "10000-15000元",
+    "work_location": "山东省",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "多点数智 2027 校园招聘正式启动——招聘简章",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119397.html",
+    "company_name": "多点数智",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市 / 湖北省 / 四川省",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "安全环保及工程建设管理岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119396.html",
+    "company_name": "中国石化集团胜利石油管理局有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "安全科学与工程、安全工程、化工安全工程、环境安全工程、环境科学与工程、环境工程、环境科学、环境生态工程、环保设备工程、资源与环境（限环境工程、安全工程方向）；",
+    "salary": "10000-15000元",
+    "work_location": "山东省 / 新疆维吾尔自治区",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "新能源、新材料及机械电气研究岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119395.html",
+    "company_name": "中国石化集团胜利石油管理局有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "可再生能源与清洁能源、新能源科学与工程、储能科学与工程、可持续能源、氢能科学与工程；机械工程、机械制造及其自动化、机械电子工程、机械设计及理论、智能制造工程；船舶与海洋结构物设计制造、船舶与海洋工程；材料成型及控制工程、金属材料工程、无机非金属材料工程、纳米材料与技术、功能材料、材料与化工（限材料方向）、材料科学与工程、材料加工工程、高分子材料与工程、复合材料与工程、材料化学、材料物理、新能源材料与器件、储能与节能新材料、焊接技术与工程、增材制造工程；电气工程、电气工程及其自动化、电力系统及其自动化、电机与电器、高电压与绝缘技术、电力电子与电力传动、电气系统检测与控制、智能电网信息工程、智慧能源工程、电气工程与智能控制；能源与动力工程、热能工程、动力机械及工程、工程热物理、热能动力与新能源；控制科学与工程、控制理论与控制工程、检测技术与自动化装置、系统工程、模式识别与智能系统、自动化、机器人工程、智能装备与系统；测试计量技术与仪器、仪器仪表工程、测控技术与仪器、精密仪器、精密测量与测控仪器；电子信息（限仪器仪表、控制方向）",
+    "salary": "10000-15000元",
+    "work_location": "山东省 / 新疆维吾尔自治区",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "井下作业工程技术岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119394.html",
+    "company_name": "中国石化集团胜利石油管理局有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "机械工程、机械制造及其自动化、机械电子工程、机械设计及理论；控制科学与工程、控制理论与控制工程、自动化、机器人工程、智能装备与系统；地质资源与地质工程、矿产普查与勘探、资源勘查工程、地质工程；石油与天然气工程、油气田开发工程、油气井工程、石油工程、海洋油气工程；资源与环境（限地质工程、石油与天然气方向）",
+    "salary": "10000-15000元",
+    "work_location": "山东省 / 新疆维吾尔自治区",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "油气勘探开发工程研究岗（三地）",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119393.html",
+    "company_name": "中国石化集团胜利石油管理局有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "地质资源与地质工程、地球探测与信息技术、矿产普查与勘探、地质工程、地质学、矿物学岩石学矿床学、构造地质学、地球化学、古生物学与地层学、能源地质工程、沉积学、海洋地质、海洋科学（限海洋地质方向）、资源勘查工程；石油与天然气工程、油气田开发工程、油气井工程、石油工程、海洋油气工程；地球物理学（地球探测与信息技术、固体地球物理学、勘查技术与工程；资源与环境（限地质工程、石油与天然气方向）",
+    "salary": "10000-15000元",
+    "work_location": "山东省 / 新疆维吾尔自治区",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "油气储运及油田化学研究岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119392.html",
+    "company_name": "中国石化集团胜利石油管理局有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "油气储运工程、石油与天然气工程（限油气储运方向）；化学、应用化学、无机化学、分析化学、高分子化学与物理、物理化学、有机化学",
+    "salary": "10000-15000元",
+    "work_location": "山东省 / 新疆维吾尔自治区",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "油气地质研究岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119389.html",
+    "company_name": "中国石化集团胜利石油管理局有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "地质资源与地质工程、矿产普查与勘探、资源勘查工程、地质工程、资源与环境（限地质工程方向）、地质学、矿物学岩石学矿床学、构造地质学、地球化学、古生物学与地层学、能源地质工程、沉积学、海洋地质、海洋科学（限海洋地质方向）、地球信息科学与技术、非常规油气地质学；生物医学工程（限储层核磁实验方向）",
+    "salary": "10000-15000元",
+    "work_location": "山东省 / 新疆维吾尔自治区",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "石油工程研究岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119390.html",
+    "company_name": "中国石化集团胜利石油管理局有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "石油与天然气工程、油气田开发工程、油气井工程、资源与环境（限石油与天然气、煤层气、地热方向）、石油工程、海洋油气工程；矿业工程（限石油与天然气、煤层气、地热方向）；流体力学、工程力学；碳储科学与工程、碳中和科学与工程",
+    "salary": "10000-15000元",
+    "work_location": "山东省 / 新疆维吾尔自治区",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "物探测井研究岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119391.html",
+    "company_name": "中国石化集团胜利石油管理局有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "地球物理学、地质工程（限物探测井方向）、地球探测与信息技术、固体地球物理学、地质资源与地质工程（限物探测井方向）、地球物理测井、勘查技术与工程、智能地球探测；资源与环境（限物探测井方向）；光学工程（限分布式光纤监测方向）",
+    "salary": "10000-15000元",
+    "work_location": "山东省 / 新疆维吾尔自治区",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "新能源开发利用高级研究岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119388.html",
+    "company_name": "中国石化集团胜利石油管理局有限公司",
+    "education_requirement": "博士研究生",
+    "major_requirement": "新能源科学与工程及相关专业",
+    "salary": "10000-15000元",
+    "work_location": "山东省 / 新疆维吾尔自治区",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "油气勘探开发高级研究岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119387.html",
+    "company_name": "中国石化集团胜利石油管理局有限公司",
+    "education_requirement": "博士研究生",
+    "major_requirement": "地质资源与地质工程、地球探测与信息技术、矿产普查与勘探、地质工程、地质学、矿物学岩石学矿床学、构造地质学、古生物学与地层学、地球化学、能源地质工程、油气田开发地质；石油与天然气工程、油气田开发工程、油气井工程；物理学；动力工程及工程热物理；机械工程；材料科学与工程；数学；化学",
+    "salary": "10000-15000元",
+    "work_location": "山东省 / 新疆维吾尔自治区",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "国元保险总部2026年度管培生招聘公告",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119386.html",
+    "company_name": "国元保险总部",
+    "education_requirement": "硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "安徽省",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "中邮投资2027年度校园招聘公告",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119385.html",
+    "company_name": "中邮投资",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "专业全覆盖，包括经济金融类、财务会计类、管理学类、数理统计类、法律类及信息科技类、软件工程类、理工科类等相关专业。",
+    "salary": "",
+    "work_location": "北京市",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "青春与塔同行 | 中国铁塔2027年秋季校园招聘简章",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119384.html",
+    "company_name": "青春与塔同行 | 中国铁塔",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "详见网申职位描述",
+    "salary": "",
+    "work_location": "北京市",
+    "job_category": "其他人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "中国石油吉林石化公司2026年秋季高校 毕业生招聘公告",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119383.html",
+    "company_name": "中国石油吉林石化公司",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "10000-15000元",
+    "work_location": "吉林省 / 广东省",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "保利集团2027届校园招聘  暨保利集团启航计划管培生项目校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119382.html",
+    "company_name": "保利集团",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "保利集团2027届校园招聘",
+    "salary": "",
+    "work_location": "北京市",
+    "job_category": "其他人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "中邮保险广西分公司2027年度校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119358.html",
+    "company_name": "中邮保险广西分公司",
+    "education_requirement": "硕士研究生 / 博士研究生",
+    "major_requirement": "临床医学类、金融学类、经济学类、统计学类、计算机类、工商管理类、邮政管理类或其他相关专业。",
+    "salary": "10000-15000元",
+    "work_location": "广西壮族自治区",
+    "job_category": "金融业务人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "理工类：计算机科学与技术（人工智能、图像处理、机器学习、自然语言处理等），物理学（加速器物理、电磁控制、粒子物理与原子核物理、等离子体物理、束流物理等），核科学与技术（辐射防护与核安全等），电子科学与技术，动力工程及工程热物理等 文史经管类：法学，经济学，工商管理、市场营销、人力资源管理、财务管理、新闻传播等",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119381.html",
+    "company_name": "凤麟核科技有限公司",
+    "education_requirement": "硕士研究生 / 博士研究生",
+    "major_requirement": "本科毕业于经教育部认可的QS世界排名前100院校；",
+    "salary": "20000元",
+    "work_location": "重庆市 / 江苏省 / 安徽省 / 山东省",
+    "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "九丰能源集团 2027届校园招聘简章",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119380.html",
+    "company_name": "九丰能源集团",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "广东省",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "外贸专员（海外）",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119379.html",
+    "company_name": "陕西西大华特科技实业有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "植物保护类、农学类、外语类等专业",
+    "salary": "6000-8000元",
+    "work_location": "陕西省",
+    "job_category": "农林牧渔业技术人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "技术营销管培生",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119378.html",
+    "company_name": "陕西西大华特科技实业有限公司",
+    "education_requirement": "本科",
+    "major_requirement": "农学类、植物保护类等专业",
+    "salary": "4500-6000元",
+    "work_location": "陕西省",
+    "job_category": "农林牧渔业技术人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "中国银行股份有限公司河南省分行 2027年校园招聘公告",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119377.html",
+    "company_name": "中国银行股份有限公司河南省分行",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "河南省",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "中国联通湖南省分公司2027校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119376.html",
+    "company_name": "中国联通湖南省分公司",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "湖南省",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "数学主讲老师（西安）",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119375.html",
+    "company_name": "广州豌豆思维科技有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "豌豆思维",
+    "salary": "15000-20000元",
+    "work_location": "陕西省",
+    "job_category": "教学人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "数学主讲老师（武汉）",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119374.html",
+    "company_name": "广州豌豆思维科技有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "豌豆思维",
+    "salary": "15000-20000元",
+    "work_location": "湖北省",
+    "job_category": "教学人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "财经岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/95114.html",
+    "company_name": "双胞胎（集团）股份有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "会计学、财务管理、金融学、金融工程、税务学、审计学、资产评估、经济学、统计学、数学、大数据管理与应用、数据科学与大数据技术、金融科技",
+    "salary": "15000-20000元",
+    "work_location": "江西省",
+    "job_category": "经济业务人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "信息研究员",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/100547.html",
+    "company_name": "双胞胎（集团）股份有限公司",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "数学、经济学、金融学、统计学等相关专业",
+    "salary": "15000-20000元",
+    "work_location": "江西省",
+    "job_category": "其他人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "人力资源",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/104077.html",
+    "company_name": "双胞胎（集团）股份有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "人力资源管理、工商管理、行政管理、公共事业管理等相关人力资源专业",
+    "salary": "15000-20000元",
+    "work_location": "江西省",
+    "job_category": "办事人员和有关人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "营销工程师",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/104078.html",
+    "company_name": "双胞胎（集团）股份有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "市场营销、电子商务、国际贸易、经济管理等相关专业",
+    "salary": "15000-20000元",
+    "work_location": "江苏省 / 江西省 / 山东省",
+    "job_category": "经济业务人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "采购管理岗",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/104079.html",
+    "company_name": "双胞胎（集团）股份有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "国贸、市场营销、动医动科、工程、机械、电气、粮食、金融、统计、数学、小语种等相关专业",
+    "salary": "15000-20000元",
+    "work_location": "江西省",
+    "job_category": "经济业务人员",
+    "publish_time": "2026-09-29"
+  },
+  {
+    "title": "中国建设银行苏州分行2027校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119373.html",
+    "company_name": "中国建设银行苏州分行",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "江苏省",
+    "job_category": "-",
+    "publish_time": "2026-09-29"
+  },
+  {
     "title": "数据所(兴唐公司)2027届校园招聘",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/119372.html",
     "company_name": "数据所(兴唐公司)",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-28"
@@ -16,7 +753,7 @@
     "company_name": "陆军军医大学",
     "education_requirement": "硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "重庆市",
     "job_category": "卫生专业技术人员",
     "publish_time": "2026-09-28"
@@ -27,7 +764,7 @@
     "company_name": "开启世界新YOUNG贸|国贸股份",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 上海市 / 浙江省 / 四川省",
     "job_category": "经济业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-28"
@@ -49,7 +786,7 @@
     "company_name": "联通数字科技有限公司",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 江苏省 / 广东省 / 四川省 / 陕西省",
     "job_category": "工程技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-28"
@@ -82,7 +819,7 @@
     "company_name": "智闯金融 数赢未来 | 苏银凯基消费金融",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "江苏省",
     "job_category": "金融业务人员",
     "publish_time": "2026-09-28"
@@ -137,7 +874,7 @@
     "company_name": "卓裕家办",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "20000元",
     "work_location": "广东省 / 香港特别行政区",
     "job_category": "金融业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-28"
@@ -154,12 +891,298 @@
     "publish_time": "2026-09-28"
   },
   {
+    "title": "上海期货与衍生品研究院员工及上海期货交易所博士后2026年招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119353.html",
+    "company_name": "上海期货与衍生品研究院员工及上海期货交易所博士后",
+    "education_requirement": "硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "上海市",
+    "job_category": "-",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "中国移动财务公司（金融机构）2027秋季校园招聘简章",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119357.html",
+    "company_name": "中国移动财务公司（金融机构）",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "金融学、经济学、会计学、金融科技、计算机科学与技术等相关专业",
+    "salary": "",
+    "work_location": "北京市",
+    "job_category": "其他人员",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "深圳燃气 2027 届校园招聘简章",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119356.html",
+    "company_name": "深圳燃气",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "电气工程、 电力系统及其自动化、能源与动力工程、新能源科学与工程、暖通等相关专业。",
+    "salary": "",
+    "work_location": "广东省",
+    "job_category": "-",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "兴业银行深圳分行2027校园招聘公告",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119355.html",
+    "company_name": "兴业银行深圳分行",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "10000-15000元",
+    "work_location": "广东省",
+    "job_category": "经济业务人员 / 金融业务人员",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "南京天洑软件2026校园招聘职位",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119354.html",
+    "company_name": "南京天洑软件",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "数学，计算机，理工科专业等。",
+    "salary": "20000元",
+    "work_location": "江苏省",
+    "job_category": "其他专业技术人员",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "腾云天下 TalkingData 2027届校园招聘火热进行中",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119352.html",
+    "company_name": "腾云天下 TalkingData",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "",
+    "salary": "20000元",
+    "work_location": "北京市",
+    "job_category": "-",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "中国华电2027年度校园招聘公告",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119351.html",
+    "company_name": "中国华电",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市 / 天津市 / 重庆市 / 上海市 / 河北省",
+    "job_category": "生产和运输设备操作人员",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "“梦想靠岸”招商银行苏州分行2027届秋季校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119350.html",
+    "company_name": "“梦想靠岸”招商银行苏州分行",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "江苏省",
+    "job_category": "其他人员",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "“扬帆”计划",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/109952.html",
+    "company_name": "中国民生银行股份有限公司北京分行",
+    "education_requirement": "硕士研究生 / 博士研究生",
+    "major_requirement": "1.硕士研究生及以上学历，STEM（科学、技术、工程、数学）理工专业背景，或金融数学、金融科技等“STEM+金融”复合专业背景者优先；",
+    "salary": "10000-15000元",
+    "work_location": "北京市",
+    "job_category": "金融业务人员",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "“启航”计划",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/109953.html",
+    "company_name": "中国民生银行股份有限公司北京分行",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "1.本科及以上学历，STEM（科学、技术、工程、数学）理工专业背景，或金融数学、金融科技等“STEM+金融”复合专业背景者优先；",
+    "salary": "8000-10000元",
+    "work_location": "北京市",
+    "job_category": "金融业务人员",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "河北省天然气有限责任公司管培生招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119349.html",
+    "company_name": "河北省天然气有限责任公司管培生",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "详见招聘文稿",
+    "salary": "",
+    "work_location": "河北省",
+    "job_category": "-",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "国家开发银行青海分行2027年校园招聘-信贷管理类、信息科技类",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119348.html",
+    "company_name": "国家开发银行青海分行",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "8000-10000元",
+    "work_location": "青海省",
+    "job_category": "金融业务人员",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "浙江联通2027校园招聘正式启动！",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119347.html",
+    "company_name": "浙江联通",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "浙江省",
+    "job_category": "-",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "益智素养教师（数学方向）",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119346.html",
+    "company_name": "晓禾科技（武汉）有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "【",
+    "salary": "10000-15000元",
+    "work_location": "河南省 / 湖北省",
+    "job_category": "教学人员",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "【芯光闪耀，点亮未来】东莞市新兴产业投资有限公司2027校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119345.html",
+    "company_name": "【芯光闪耀，点亮未来】东莞市新兴产业投资有限公司",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "基本工资，绩效奖金，岗位津贴，绩优调薪",
+    "work_location": "广东省",
+    "job_category": "-",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "山东省科学院激光研究所/齐鲁工业大学光电科学与技术学部博士招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119344.html",
+    "company_name": "山东省科学院激光研究所/齐鲁工业大学光电科学与技术学部博士",
+    "education_requirement": "博士研究生",
+    "major_requirement": "",
+    "salary": "8000-10000元",
+    "work_location": "山东省",
+    "job_category": "科学研究人员 / 教学人员",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "中央结算公司博士后科研工作站2027年度招聘公告",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119343.html",
+    "company_name": "中央结算公司博士后科研工作站",
+    "education_requirement": "博士研究生",
+    "major_requirement": "金融类、技术类",
+    "salary": "",
+    "work_location": "北京市 / 上海市",
+    "job_category": "其他人员",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "电商独角兽-掌上先机/慧策集团-2027-校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119342.html",
+    "company_name": "电商独角兽-掌上先机/慧策集团-",
+    "education_requirement": "本科",
+    "major_requirement": "慧策集团-校园",
+    "salary": "10000-15000元",
+    "work_location": "北京市 / 天津市 / 上海市 / 浙江省 / 广东省",
+    "job_category": "其他人员",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "招商银行海口分行2027秋季校园招聘公告",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119341.html",
+    "company_name": "招商银行海口分行",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "1. 2027届境内外普通高等院校本科及以上学历应届毕业生。 境内院校毕业时间应在2027年1月1日至2027年7月31日之间，并获得教育部认可的毕业证和学位证；境外院校毕业时间应在2026年1月1日至2027年7月31日，并获得学校毕业证及国家教育部学历学位认证证书；",
+    "salary": "6000-8000元",
+    "work_location": "海南省",
+    "job_category": "金融业务人员",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "2027届渤海证券“明日之星”应届生招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119340.html",
+    "company_name": "2027届渤海证券“明日之星”应届生",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市 / 天津市 / 上海市",
+    "job_category": "金融业务人员",
+    "publish_time": "2026-09-28"
+  },
+  {
+    "title": "医学类博士生",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119339.html",
+    "company_name": "汕头大学医学院",
+    "education_requirement": "博士研究生",
+    "major_requirement": "",
+    "salary": "20000元",
+    "work_location": "广东省",
+    "job_category": "科学研究人员",
+    "publish_time": "2026-09-27"
+  },
+  {
+    "title": "中国能建国际集团2027届秋季校园招聘开始啦",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119338.html",
+    "company_name": "中国能建国际集团",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "管理科学与工程、工程造价、工程管理、经济学、 统计学等专业；能源与动力工程，新能源科学与工程、储能科学与工程、电气工程及其自动化等专业；国际法、经济法、民商法等专业；人力资源管理、劳动与社会保障等专业； 交通运输管理等专业；",
+    "salary": "15000-20000元",
+    "work_location": "北京市",
+    "job_category": "工程技术人员",
+    "publish_time": "2026-09-26"
+  },
+  {
+    "title": "全国可选-新东方高潜专项人才项目-高中教师",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/111889.html",
+    "company_name": "北京育达东方软件科技有限公司",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "不限专业，数学/物理/化学相关专业优先",
+    "salary": "15000-20000元",
+    "work_location": "北京市 / 江苏省 / 山东省 / 河南省 / 广东省",
+    "job_category": "教学人员",
+    "publish_time": "2026-09-25"
+  },
+  {
+    "title": "平安银行宁波分行公司培训生",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119337.html",
+    "company_name": "平安银行股份有限公司宁波分行",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "10000-15000元",
+    "work_location": "浙江省",
+    "job_category": "-",
+    "publish_time": "2026-09-25"
+  },
+  {
+    "title": "中国工商银行安徽省分行2027年度  校园招聘公告",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119336.html",
+    "company_name": "中国工商银行安徽省分行",
+    "education_requirement": "本科",
+    "major_requirement": "",
+    "salary": "6000-8000元",
+    "work_location": "安徽省",
+    "job_category": "-",
+    "publish_time": "2026-09-24"
+  },
+  {
+    "title": "广州凯乐石运动科技有限公司",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119335.html",
+    "company_name": "广州凯乐石运动科技有限公司",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "10000-15000元",
+    "work_location": "广东省",
+    "job_category": "其他人员",
+    "publish_time": "2026-09-24"
+  },
+  {
     "title": "武昌职业学院2026年诚聘优秀教职",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/119334.html",
     "company_name": "武昌职业学院",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "湖北省",
     "job_category": "科学研究人员 / 教学人员",
     "publish_time": "2026-09-24"
@@ -170,7 +1193,7 @@
     "company_name": "攀枝花学院",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "四川省",
     "job_category": "教学人员",
     "publish_time": "2026-09-24"
@@ -181,9 +1204,163 @@
     "company_name": "山东外事职业大学教师",
     "education_requirement": "硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "山东省",
     "job_category": "教学人员 / 办事人员和有关人员",
+    "publish_time": "2026-09-24"
+  },
+  {
+    "title": "产业投融类、经济金融类、外语类",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119331.html",
+    "company_name": "",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "1.国内普通高等院校本科及以上学历应届毕业生，获得国家认可的2027年度毕业证、学位证。",
+    "salary": "",
+    "work_location": "甘肃省",
+    "job_category": "-",
+    "publish_time": "2026-09-24"
+  },
+  {
+    "title": "东莞银行2027届秋季校园招聘简章",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119315.html",
+    "company_name": "东莞银行",
+    "education_requirement": "本科 / 硕士研究生",
+    "major_requirement": "",
+    "salary": "15000-20000元",
+    "work_location": "广东省",
+    "job_category": "其他人员",
+    "publish_time": "2026-09-24"
+  },
+  {
+    "title": "永芯科技（北京）有限公司2027届校园招聘简章",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/116992.html",
+    "company_name": "永芯科技（北京）有限公司",
+    "education_requirement": "硕士研究生 / 博士研究生",
+    "major_requirement": "集成电路类、微电子、光学、物理、电子信息、材料、化学类、光电、电气自动化、机械类、仪器类、通信工程、数学、计算机信息技术类、环境与安全工程类、管理科学与工程类、物流管理等相关专业。",
+    "salary": "10000-15000元",
+    "work_location": "北京市",
+    "job_category": "-",
+    "publish_time": "2026-09-24"
+  },
+  {
+    "title": "山海赴约 交绘星河 交通银行山东省分行 2027 校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119330.html",
+    "company_name": "山海赴约 交绘星河 交通银行山东省分行",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "山东省",
+    "job_category": "-",
+    "publish_time": "2026-09-24"
+  },
+  {
+    "title": "中国电子科技集团公司第十一研究所",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119305.html",
+    "company_name": "",
+    "education_requirement": "硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市 / 四川省 / 陕西省",
+    "job_category": "-",
+    "publish_time": "2026-09-24"
+  },
+  {
+    "title": "直管支行储备生/总行金融科技生/总行管理培训生/博士后工作站博士后研究人员",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119329.html",
+    "company_name": "重庆三峡银行股份有限公司",
+    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
+    "major_requirement": "",
+    "salary": "8000-10000元",
+    "work_location": "重庆市",
+    "job_category": "金融业务人员",
+    "publish_time": "2026-09-24"
+  },
+  {
+    "title": "北京医疗健康大模型有限公司 2027校园招聘简章",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119328.html",
+    "company_name": "北京医疗健康大模型有限公司",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "",
+    "salary": "",
+    "work_location": "北京市",
+    "job_category": "-",
+    "publish_time": "2026-09-24"
+  },
+  {
+    "title": "中国石油勘探开发研究院西北分院  —2027届研究生校园招聘",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119327.html",
+    "company_name": "中国石油勘探开发研究院西北分院  —",
+    "education_requirement": "硕士研究生 / 博士研究生",
+    "major_requirement": "地球探测与信息技术，地质工程（油气勘探方向），构造地质学，矿物学、岩石学、矿床学，地球化学，地球物理学，地质资源与地质工程（油气勘探方向），石油与天然气工程，油气田开发工程，固体力学，能源与环保，应用数学，信号与信息处理，信息与通信工程，电子与通信工程，计算机应用技术，计算机系统结构，人工智能，计算机科学与技术，计算机软件与理论，软件工程，人工智能，数据科学与大数据技术等油气勘探和信息化相关专业。",
+    "salary": "",
+    "work_location": "北京市 / 甘肃省",
+    "job_category": "其他人员",
+    "publish_time": "2026-09-24"
+  },
+  {
+    "title": "项目经理",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119326.html",
+    "company_name": "",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "电子、光电、微电子、材料、物理、项目管理或相关专业背景优先",
+    "salary": "",
+    "work_location": "江苏省",
+    "job_category": "-",
+    "publish_time": "2026-09-24"
+  },
+  {
+    "title": "硅光芯片设计工程师",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119325.html",
+    "company_name": "",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "微电子、光电信息、物理电子、光学工程等相关专业",
+    "salary": "",
+    "work_location": "江苏省",
+    "job_category": "-",
+    "publish_time": "2026-09-24"
+  },
+  {
+    "title": "上位机开发工程师",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119324.html",
+    "company_name": "",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "计算机软件等相关专业",
+    "salary": "",
+    "work_location": "江苏省",
+    "job_category": "-",
+    "publish_time": "2026-09-24"
+  },
+  {
+    "title": "光机结构设计工程师",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119323.html",
+    "company_name": "3、熟悉精密光学机械结构设计、钣金设计、各类表面处理和热处理。",
+    "education_requirement": "本科",
+    "major_requirement": "机械设计相关专业",
+    "salary": "",
+    "work_location": "江苏省",
+    "job_category": "-",
+    "publish_time": "2026-09-24"
+  },
+  {
+    "title": "光学系统工程师",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119322.html",
+    "company_name": "",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "光学、光电信息、物理学、精密仪器等相关专业",
+    "salary": "",
+    "work_location": "江苏省",
+    "job_category": "-",
+    "publish_time": "2026-09-24"
+  },
+  {
+    "title": "微纳光学研发工程师",
+    "link": "https://career.nankai.edu.cn/correcruit/content/id/119321.html",
+    "company_name": "",
+    "education_requirement": "硕士研究生",
+    "major_requirement": "半导体、物理学、光学等相关专业",
+    "salary": "",
+    "work_location": "江苏省",
+    "job_category": "-",
     "publish_time": "2026-09-24"
   },
   {
@@ -676,7 +1853,7 @@
     "company_name": "广发银行",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 河北省 / 江苏省 / 广东省",
     "job_category": "工程技术人员 / 金融业务人员",
     "publish_time": "2026-09-24"
@@ -687,7 +1864,7 @@
     "company_name": "浩鲸科技",
     "education_requirement": "本科 / 硕士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "江苏省 / 福建省 / 湖南省 / 广东省 / 陕西省",
     "job_category": "科学研究人员 / 经济业务人员 / 办事人员和有关人员",
     "publish_time": "2026-09-24"
@@ -695,10 +1872,10 @@
   {
     "title": "达能管培生项目",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/119283.html",
-    "company_name": "联通数字科技有限公司2027届秋季校园招聘正式启动",
+    "company_name": "",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "科学研究人员 / 经济业务人员 / 办事人员和有关人员",
     "publish_time": "2026-09-24"
@@ -709,7 +1886,7 @@
     "company_name": "四方股份",
     "education_requirement": "硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 河北省 / 江苏省",
     "job_category": "工程技术人员",
     "publish_time": "2026-09-24"
@@ -717,10 +1894,10 @@
   {
     "title": "康龙化成",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/119281.html",
-    "company_name": "联通数字科技有限公司2027届秋季校园招聘正式启动",
+    "company_name": "",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 江苏省 / 浙江省 / 陕西省",
     "job_category": "科学研究人员 / 卫生专业技术人员 / 经济业务人员",
     "publish_time": "2026-09-24"
@@ -731,7 +1908,7 @@
     "company_name": "中国航天科工二院七O六所",
     "education_requirement": "硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 四川省 / 陕西省",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-24"
@@ -739,10 +1916,10 @@
   {
     "title": "招商银特贵阳分行",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/119279.html",
-    "company_name": "联通数字科技有限公司2027届秋季校园招聘正式启动",
+    "company_name": "",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "贵州省",
     "job_category": "工程技术人员 / 经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-24"
@@ -750,10 +1927,10 @@
   {
     "title": "引力计划搜狐集团AI人才专项",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/119278.html",
-    "company_name": "联通数字科技有限公司2027届秋季校园招聘正式启动",
+    "company_name": "",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市",
     "job_category": "工程技术人员 / 经济业务人员 / 办事人员和有关人员",
     "publish_time": "2026-09-24"
@@ -761,10 +1938,10 @@
   {
     "title": "华宜清创",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/119277.html",
-    "company_name": "联通数字科技有限公司2027届秋季校园招聘正式启动",
+    "company_name": "",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "四川省",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-24"
@@ -775,7 +1952,7 @@
     "company_name": "9377游戏",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "其他专业技术人员",
     "publish_time": "2026-09-24"
@@ -808,7 +1985,7 @@
     "company_name": "中建电商（云筑）",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 山东省 / 广东省 / 四川省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 办事人员和有关人员",
     "publish_time": "2026-09-24"
@@ -819,7 +1996,7 @@
     "company_name": "武汉生物工程学院",
     "education_requirement": "博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "湖北省",
     "job_category": "教学人员",
     "publish_time": "2026-09-24"
@@ -830,7 +2007,7 @@
     "company_name": "黄河水利职业技术大学",
     "education_requirement": "博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "河南省",
     "job_category": "教学人员",
     "publish_time": "2026-09-24"
@@ -841,7 +2018,7 @@
     "company_name": "吉比特",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "工程技术人员 / 办事人员和有关人员 / 其他专业技术人员",
     "publish_time": "2026-09-24"
@@ -852,7 +2029,7 @@
     "company_name": "养生堂·农夫山泉·万泰生物",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 重庆市 / 上海市 / 河北省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 办事人员和有关人员",
     "publish_time": "2026-09-24"
@@ -863,7 +2040,7 @@
     "company_name": "领益智造",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 江苏省 / 河南省 / 广东省 / 四川省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 办事人员和有关人员",
     "publish_time": "2026-09-24"
@@ -896,7 +2073,7 @@
     "company_name": "华光为引 创启芯程 | 华创微",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "江苏省",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-24"
@@ -907,7 +2084,7 @@
     "company_name": "中国铁建",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 办事人员和有关人员",
     "publish_time": "2026-09-24"
@@ -940,7 +2117,7 @@
     "company_name": "广州期货交易所科技有限公司",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-24"
@@ -973,7 +2150,7 @@
     "company_name": "中邮投资｜",
     "education_requirement": "硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-24"
@@ -984,7 +2161,7 @@
     "company_name": "AAC瑞声科技",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "重庆市 / 上海市 / 江苏省 / 浙江省 / 湖北省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 办事人员和有关人员",
     "publish_time": "2026-09-24"
@@ -995,7 +2172,7 @@
     "company_name": "国企校招 | 浙江交通集团",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "浙江省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 办事人员和有关人员",
     "publish_time": "2026-09-24"
@@ -1006,7 +2183,7 @@
     "company_name": "中国大唐",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 重庆市 / 上海市 / 河北省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员 / 办事人员和有关人员",
     "publish_time": "2026-09-24"
@@ -1380,7 +2557,7 @@
     "company_name": "易点云",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "科学研究人员 / 经济业务人员 / 金融业务人员 / 其他专业技术人员",
     "publish_time": "2026-09-23"
@@ -1402,7 +2579,7 @@
     "company_name": "深圳燃气",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "安徽省 / 江西省 / 湖北省 / 广东省 / 内蒙古自治区",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员",
     "publish_time": "2026-09-23"
@@ -1413,7 +2590,7 @@
     "company_name": "清华大学天津高端装备研究院",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "天津市 / 河北省 / 广东省",
     "job_category": "-",
     "publish_time": "2026-09-23"
@@ -1424,7 +2601,7 @@
     "company_name": "江苏金融租赁",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "江苏省",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-23"
@@ -1435,7 +2612,7 @@
     "company_name": "影石",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "上海市 / 广东省",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-23"
@@ -1446,7 +2623,7 @@
     "company_name": "4399游戏",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "经济业务人员 / 办事人员和有关人员 / 文学艺术工作人员 / 商业和服务业人员",
     "publish_time": "2026-09-23"
@@ -1457,7 +2634,7 @@
     "company_name": "宇通集团",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "工程技术人员 / 经济业务人员 / 金融业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-23"
@@ -1468,7 +2645,7 @@
     "company_name": "江苏银行苏州分行",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "江苏省",
     "job_category": "经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-23"
@@ -1479,7 +2656,7 @@
     "company_name": "联想",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 上海市 / 湖北省 / 广东省",
     "job_category": "经济业务人员 / 办事人员和有关人员",
     "publish_time": "2026-09-23"
@@ -1501,7 +2678,7 @@
     "company_name": "长安大学",
     "education_requirement": "硕士研究生",
     "major_requirement": "1.政治面貌：中共党员（含中共预备党员）。2.年龄：截至2027年7月15日，年龄不超过38周岁（1988年7月15日以后出生）。3.学历学位：硕士研究生及以上学历学位，且各学习阶段均为统招毕业并取得相应学历学位。4.应届毕业（出站）时间：硕士研究生、博士研究生于2026年9月1日至2027年8月31日期间取得学历、学位证书，非定向出站博士后应未办理出站调动手续且于2027年8月31日前出站。★说明：国内应届毕业生已取得毕业证、学位证的，以证书所载毕业时间为准；尚未取得的，以教育部学籍在线验证报告的预计毕业时间为准。国（境）外毕业生以教育部留学服务中心《国外学历学位认证书》所载毕业时间为准。5.学生工作经历：具有不少于一年的学生工作经历（曾担任兼职辅导员、研究生支教团成员或党团班主要学生骨干）。6.学科专业背景：研究生教育阶段原则上应具有我校相关学科专业背景。★说明：应聘人员须根据国务院学位委员会、教育部印发的《研究生教育学科专业目录（2022年）》自行确认学科专业是否符合申报岗位要求。7.外语水平：全国大学英语六级成绩425分及以上，或GRE综合成绩300分及以上，或托福成绩72分及以上，或雅思成绩5.5分及以上",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "陕西省",
     "job_category": "教学人员",
     "publish_time": "2026-09-23"
@@ -1512,7 +2689,7 @@
     "company_name": "新城控股",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "天津市 / 重庆市 / 上海市 / 湖北省 / 湖南省",
     "job_category": "经济业务人员 / 法律专业人员 / 办事人员和有关人员",
     "publish_time": "2026-09-23"
@@ -1534,7 +2711,7 @@
     "company_name": "路特创新【全球母婴科技领军者，ROOT路特创新",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省 / 香港特别行政区",
     "job_category": "经济业务人员 / 办事人员和有关人员 / 文学艺术工作人员",
     "publish_time": "2026-09-23"
@@ -1545,7 +2722,7 @@
     "company_name": "建投投资/建投华文",
     "education_requirement": "本科 / 硕士研究生",
     "major_requirement": "2027届硕士研究生及以上学历应届毕业生",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "经济业务人员 / 金融业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-23"
@@ -3184,7 +4361,7 @@
     "company_name": "齐鲁银行",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "天津市 / 山东省",
     "job_category": "公务员 / 经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-18"
@@ -3195,7 +4372,7 @@
     "company_name": "九洲集团",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "重庆市 / 上海市 / 湖北省 / 广东省 / 四川省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 办事人员和有关人员 / 其他专业技术人员",
     "publish_time": "2026-09-18"
@@ -3206,7 +4383,7 @@
     "company_name": "中非发展基金",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市",
     "job_category": "公务员 / 科学研究人员 / 工程技术人员 / 卫生专业技术人员 / 办事人员和有关人员 / 其他专业技术人员 / 生产和运输设备操作人员",
     "publish_time": "2026-09-18"
@@ -3217,7 +4394,7 @@
     "company_name": "厦门国际银行集团",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市 / 福建省 / 广东省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员 / 办事人员和有关人员 / 新闻出版和文化工作人员 / 其他专业技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-18"
@@ -3225,10 +4402,10 @@
   {
     "title": "北京全路通信信号研究设计院社招开发工程师",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/119079.html",
-    "company_name": "联通数字科技有限公司2027届秋季校园招聘正式启动",
+    "company_name": "",
     "education_requirement": "硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "科学研究人员 / 工程技术人员 / 其他专业技术人员",
     "publish_time": "2026-09-18"
@@ -3239,7 +4416,7 @@
     "company_name": "汇川技术",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市 / 江苏省 / 湖北省 / 湖南省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员 / 法律专业人员 / 办事人员和有关人员 / 体育工作人员 / 新闻出版和文化工作人员 / 其他专业技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-18"
@@ -3250,7 +4427,7 @@
     "company_name": "华能澜沧江水电股份有限公司",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市",
     "job_category": "科学研究人员 / 工程技术人员 / 农林牧渔业技术人员 / 经济业务人员 / 金融业务人员 / 办事人员和有关人员 / 体育工作人员 / 新闻出版和文化工作人员 / 其他专业技术人员 / 文学艺术工作人员 / 商业和服务业人员",
     "publish_time": "2026-09-18"
@@ -3261,7 +4438,7 @@
     "company_name": "泰康保险集团",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员 / 法律专业人员 / 教学人员 / 办事人员和有关人员 / 其他专业技术人员",
     "publish_time": "2026-09-18"
@@ -3272,7 +4449,7 @@
     "company_name": "李森智能",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市",
     "job_category": "经济业务人员 / 金融业务人员 / 办事人员和有关人员 / 其他专业技术人员",
     "publish_time": "2026-09-18"
@@ -3283,7 +4460,7 @@
     "company_name": "中建四局投资发展公司",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市",
     "job_category": "工程技术人员 / 经济业务人员 / 金融业务人员 / 法律专业人员 / 体育工作人员 / 新闻出版和文化工作人员 / 商业和服务业人员",
     "publish_time": "2026-09-18"
@@ -3294,7 +4471,7 @@
     "company_name": "华泰证券",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市 / 江苏省 / 广东省",
     "job_category": "工程技术人员 / 经济业务人员 / 金融业务人员 / 办事人员和有关人员 / 其他专业技术人员",
     "publish_time": "2026-09-18"
@@ -3305,7 +4482,7 @@
     "company_name": "哈电电机",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "黑龙江省 / 江苏省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 办事人员和有关人员 / 其他专业技术人员 / 文学艺术工作人员",
     "publish_time": "2026-09-18"
@@ -3316,7 +4493,7 @@
     "company_name": "北京农商银行",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员 / 法律专业人员 / 办事人员和有关人员 / 新闻出版和文化工作人员 / 其他专业技术人员",
     "publish_time": "2026-09-18"
@@ -3327,7 +4504,7 @@
     "company_name": "中国能源建设股份有限公司",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 重庆市 / 上海市 / 河北省",
     "job_category": "工程技术人员 / 经济业务人员",
     "publish_time": "2026-09-18"
@@ -3338,7 +4515,7 @@
     "company_name": "北京理工大学附属实验学校教师",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "教学人员",
     "publish_time": "2026-09-18"
@@ -3349,7 +4526,7 @@
     "company_name": "中国银行",
     "education_requirement": "博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市",
     "job_category": "金融业务人员",
     "publish_time": "2026-09-18"
@@ -3360,7 +4537,7 @@
     "company_name": "汇智五三 浪涌奔流丨中建五局三公司",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 重庆市 / 湖北省 / 湖南省",
     "job_category": "工程技术人员",
     "publish_time": "2026-09-18"
@@ -3371,7 +4548,7 @@
     "company_name": "长光辰芯",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "吉林省",
     "job_category": "工程技术人员",
     "publish_time": "2026-09-18"
@@ -3382,7 +4559,7 @@
     "company_name": "中海地产",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 浙江省 / 湖北省 / 湖南省",
     "job_category": "工程技术人员 / 经济业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-18"
@@ -3393,7 +4570,7 @@
     "company_name": "中国航发四川燃气涡轮研究院",
     "education_requirement": "硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "四川省",
     "job_category": "科学研究人员 / 工程技术人员 / 办事人员和有关人员",
     "publish_time": "2026-09-18"
@@ -3401,10 +4578,10 @@
   {
     "title": "宣讲即将启动！加入军科，简历投递直通车已开启……",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/119062.html",
-    "company_name": "联通数字科技有限公司2027届秋季校园招聘正式启动",
+    "company_name": "",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "科学研究人员 / 工程技术人员 / 办事人员和有关人员 / 军人",
     "publish_time": "2026-09-18"
@@ -3415,7 +4592,7 @@
     "company_name": "中国中化",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-18"
@@ -3426,7 +4603,7 @@
     "company_name": "圣邦微电子",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市 / 浙江省 / 湖北省 / 四川省",
     "job_category": "工程技术人员",
     "publish_time": "2026-09-18"
@@ -3437,7 +4614,7 @@
     "company_name": "与宁同行，银领未来｜宁波银行",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市 / 江苏省 / 广东省",
     "job_category": "经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-18"
@@ -3445,10 +4622,10 @@
   {
     "title": "2027友邦人寿管理培训生项目正式启动！",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/119057.html",
-    "company_name": "联通数字科技有限公司2027届秋季校园招聘正式启动",
+    "company_name": "",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "上海市",
     "job_category": "经济业务人员 / 金融业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-18"
@@ -3459,7 +4636,7 @@
     "company_name": "工银理财",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-18"
@@ -3470,7 +4647,7 @@
     "company_name": "交通银行",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 上海市 / 浙江省 / 四川省",
     "job_category": "金融业务人员",
     "publish_time": "2026-09-18"
@@ -3899,7 +5076,7 @@
     "company_name": "2026年闽南师范大学引进高层次人才",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "福建省",
     "job_category": "教学人员",
     "publish_time": "2026-09-18"
@@ -3910,7 +5087,7 @@
     "company_name": "重庆轻工职业学院",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "重庆市",
     "job_category": "教学人员",
     "publish_time": "2026-09-18"
@@ -3932,7 +5109,7 @@
     "company_name": "华橙网络",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "浙江省",
     "job_category": "科学研究人员 / 工程技术人员 / 金融业务人员 / 办事人员和有关人员 / 商业和服务业人员",
     "publish_time": "2026-09-18"
@@ -3965,7 +5142,7 @@
     "company_name": "永卓控股",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "上海市 / 江苏省 / 山东省",
     "job_category": "科学研究人员 / 工程技术人员 / 卫生专业技术人员 / 金融业务人员 / 法律专业人员 / 新闻出版和文化工作人员 / 其他专业技术人员",
     "publish_time": "2026-09-18"
@@ -3976,7 +5153,7 @@
     "company_name": "舜宇集团有限公司",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市",
     "job_category": "科学研究人员 / 工程技术人员 / 教学人员 / 其他专业技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-18"
@@ -4020,7 +5197,7 @@
     "company_name": "富特科技｜",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "浙江省 / 陕西省",
     "job_category": "科学研究人员 / 工程技术人员 / 卫生专业技术人员 / 经济业务人员 / 金融业务人员 / 教学人员 / 办事人员和有关人员 / 其他专业技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-18"
@@ -4042,7 +5219,7 @@
     "company_name": "英科医疗",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 江苏省 / 安徽省 / 江西省 / 山东省",
     "job_category": "公务员 / 科学研究人员 / 工程技术人员 / 农林牧渔业技术人员 / 卫生专业技术人员 / 经济业务人员 / 金融业务人员 / 法律专业人员 / 教学人员 / 办事人员和有关人员 / 新闻出版和文化工作人员 / 商业和服务业人员",
     "publish_time": "2026-09-18"
@@ -4075,7 +5252,7 @@
     "company_name": "霍尼韦尔科技",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "重庆市 / 上海市 / 江苏省",
     "job_category": "科学研究人员 / 工程技术人员 / 金融业务人员 / 法律专业人员 / 教学人员 / 办事人员和有关人员 / 商业和服务业人员",
     "publish_time": "2026-09-18"
@@ -4086,7 +5263,7 @@
     "company_name": "广州华夏职业学院和广东华夏高级技工学校",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "科学研究人员 / 工程技术人员 / 教学人员",
     "publish_time": "2026-09-18"
@@ -4119,7 +5296,7 @@
     "company_name": "上海城建职业学院",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "上海市",
     "job_category": "教学人员",
     "publish_time": "2026-09-18"
@@ -4141,7 +5318,7 @@
     "company_name": "大连新东方——27届",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "辽宁省",
     "job_category": "教学人员",
     "publish_time": "2026-09-18"
@@ -4152,7 +5329,7 @@
     "company_name": "中信银行大连分行",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "辽宁省",
     "job_category": "经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-18"
@@ -4163,7 +5340,7 @@
     "company_name": "国家开发银行深圳分行",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "工程技术人员 / 经济业务人员 / 金融业务人员 / 法律专业人员 / 其他专业技术人员",
     "publish_time": "2026-09-18"
@@ -4174,7 +5351,7 @@
     "company_name": "超聚变",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-18"
@@ -4185,7 +5362,7 @@
     "company_name": "中建中东公司",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 重庆市 / 上海市 / 河北省",
     "job_category": "-",
     "publish_time": "2026-09-18"
@@ -5197,7 +6374,7 @@
     "company_name": "中国工商银行四川省分行",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "四川省",
     "job_category": "经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-17"
@@ -5208,7 +6385,7 @@
     "company_name": "牡丹江医科大学博士",
     "education_requirement": "博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "黑龙江省",
     "job_category": "卫生专业技术人员 / 教学人员",
     "publish_time": "2026-09-17"
@@ -5219,7 +6396,7 @@
     "company_name": "云览科技",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "四川省",
     "job_category": "工程技术人员 / 其他专业技术人员",
     "publish_time": "2026-09-17"
@@ -5230,7 +6407,7 @@
     "company_name": "国寿安保基金",
     "education_requirement": "硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-17"
@@ -5241,7 +6418,7 @@
     "company_name": "思谋科技",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "上海市 / 广东省",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-17"
@@ -5252,7 +6429,7 @@
     "company_name": "交通银行",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 重庆市 / 上海市 / 河北省",
     "job_category": "经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-17"
@@ -5263,7 +6440,7 @@
     "company_name": "广东碧桂园职业学院",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "教学人员 / 其他专业技术人员",
     "publish_time": "2026-09-17"
@@ -5274,7 +6451,7 @@
     "company_name": "航空工业光电所",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "河南省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员",
     "publish_time": "2026-09-17"
@@ -5282,10 +6459,10 @@
   {
     "title": "中国石化石油工程技术研究院",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/118934.html",
-    "company_name": "联通数字科技有限公司2027届秋季校园招聘正式启动",
+    "company_name": "",
     "education_requirement": "博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-17"
@@ -5296,7 +6473,7 @@
     "company_name": "国家开发银行",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 上海市",
     "job_category": "经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-17"
@@ -5307,7 +6484,7 @@
     "company_name": "宇通集团",
     "education_requirement": "本科 / 硕士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 上海市",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员",
     "publish_time": "2026-09-17"
@@ -5318,7 +6495,7 @@
     "company_name": "中国蓝星",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市 / 江苏省 / 江西省 / 广东省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员",
     "publish_time": "2026-09-17"
@@ -5329,7 +6506,7 @@
     "company_name": "中证股转科技有限公司",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "工程技术人员 / 经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-17"
@@ -5340,7 +6517,7 @@
     "company_name": "华能澜沧江水电股份有限公司",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "云南省",
     "job_category": "科学研究人员 / 工程技术人员 / 办事人员和有关人员 / 其他专业技术人员",
     "publish_time": "2026-09-17"
@@ -5912,7 +7089,7 @@
     "company_name": "“聚才兴陇汇智强甘”甘肃省教育厅",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "甘肃省",
     "job_category": "-",
     "publish_time": "2026-09-15"
@@ -5923,7 +7100,7 @@
     "company_name": "工信就业-中博汇高层次人才洽谈会",
     "education_requirement": "博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "天津市",
     "job_category": "-",
     "publish_time": "2026-09-15"
@@ -5956,7 +7133,7 @@
     "company_name": "知和环保科技有限公司",
     "education_requirement": "本科",
     "major_requirement": "环境工程、环境科学、资源与环境、给排水科学与工程、市政工程等相关专业优先，其他相关专业也可。",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "河南省",
     "job_category": "科学研究人员 / 工程技术人员 / 卫生专业技术人员",
     "publish_time": "2026-09-15"
@@ -5967,7 +7144,7 @@
     "company_name": "广发证券党务岗",
     "education_requirement": "本科",
     "major_requirement": "1.硕士研究生及以上学历，经济、管理、法学、新闻、中文、马哲等专业；",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "办事人员和有关人员",
     "publish_time": "2026-09-15"
@@ -5978,7 +7155,7 @@
     "company_name": "广发证券财务分析岗",
     "education_requirement": "硕士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "科学研究人员 / 经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-15"
@@ -5989,7 +7166,7 @@
     "company_name": "广发证券",
     "education_requirement": "硕士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 广东省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-15"
@@ -6000,7 +7177,7 @@
     "company_name": "天津航空机电有限公司",
     "education_requirement": "硕士研究生",
     "major_requirement": "电气工程类、控制科学与工程类",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "天津市",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-15"
@@ -6011,7 +7188,7 @@
     "company_name": "4399游戏",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-15"
@@ -6022,7 +7199,7 @@
     "company_name": "FREELANDER神行者",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "江苏省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-15"
@@ -6033,7 +7210,7 @@
     "company_name": "渤海银行",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "天津市",
     "job_category": "工程技术人员 / 经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-15"
@@ -6044,7 +7221,7 @@
     "company_name": "锐明技术",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "重庆市 / 广东省 / 四川省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-15"
@@ -6055,7 +7232,7 @@
     "company_name": "虹科",
     "education_requirement": "本科",
     "major_requirement": "电子信息、自动化、车辆/控制工程、通信、测控仪器、计算机等工科专业，岗位深耕自动驾驶与智能测试、工业智能化与先进制造、IT基码设施、生物医药等新兴科技领域。TOB大客户销售与部分职能类岗位(市场、采购、财务、人力等)专业不眼",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市 / 江苏省 / 广东省 / 陕西省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-15"
@@ -6066,7 +7243,7 @@
     "company_name": "财马科思集团",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "工程技术人员 / 经济业务人员 / 金融业务人员 / 法律专业人员",
     "publish_time": "2026-09-15"
@@ -6077,7 +7254,7 @@
     "company_name": "天津移动｜",
     "education_requirement": "本科",
     "major_requirement": "人工智能、大数据、应用统计、数学、统计学，计算机、通信、电子等相关专业",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "天津市",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-15"
@@ -6099,7 +7276,7 @@
     "company_name": "国家开发银行大连市分行",
     "education_requirement": "本科",
     "major_requirement": "产业投融类",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "辽宁省",
     "job_category": "经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-15"
@@ -6187,7 +7364,7 @@
     "company_name": "中国东方资产管理股份有限公司",
     "education_requirement": "本科",
     "major_requirement": "理工类、法律类、经济金融类、管理类等相关专业。具有理工类或理工类与经济金融类复合专业背景者优先考虑。",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-15"
@@ -6198,7 +7375,7 @@
     "company_name": "烟台东方威思顿电气有限公司",
     "education_requirement": "本科",
     "major_requirement": "博士研究生需求专业：电气工程、控制科学与工程、信息与通信工程、电子信息、电子科学与技术、计算机科学与技术、软件工程、仪器科学与技术等方向。",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "山东省",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-15"
@@ -6209,7 +7386,7 @@
     "company_name": "北方集成电路技术创新中心",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员",
     "publish_time": "2026-09-15"
@@ -6220,7 +7397,7 @@
     "company_name": "【梦想靠岸】招商银行广州分行",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "工程技术人员 / 经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-15"
@@ -6231,7 +7408,7 @@
     "company_name": "中国银行大连市分行",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "辽宁省",
     "job_category": "工程技术人员 / 经济业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-15"
@@ -6242,7 +7419,7 @@
     "company_name": "三棵树",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市 / 福建省 / 广东省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-15"
@@ -6253,7 +7430,7 @@
     "company_name": "远景能源",
     "education_requirement": "本科",
     "major_requirement": "人工智能、电气、机械、控制自动化、航空航天、材料、化工、土木工程、工业工程、质量管理、商科、小语种等",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "重庆市 / 上海市 / 黑龙江省 / 江苏省 / 湖北省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员",
     "publish_time": "2026-09-15"
@@ -6264,7 +7441,7 @@
     "company_name": "基石科技",
     "education_requirement": "本科",
     "major_requirement": "化学、材料、物理、光学、电气工程、机械设计与自动化、工",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "上海市 / 广东省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员",
     "publish_time": "2026-09-15"
@@ -6275,7 +7452,7 @@
     "company_name": "扬腾创新",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 江苏省 / 福建省 / 广东省 / 香港特别行政区",
     "job_category": "科学研究人员 / 经济业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-15"
@@ -6283,10 +7460,10 @@
   {
     "title": "北京环球趣学27届校招启动",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/118842.html",
-    "company_name": "联通数字科技有限公司2027届秋季校园招聘正式启动",
+    "company_name": "",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "教学人员",
     "publish_time": "2026-09-15"
@@ -6297,7 +7474,7 @@
     "company_name": "恒生电子",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "浙江省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-15"
@@ -6891,7 +8068,7 @@
     "company_name": "中国人寿集团",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市",
     "job_category": "经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-15"
@@ -6902,7 +8079,7 @@
     "company_name": "金昌市教育系统",
     "education_requirement": "硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "甘肃省",
     "job_category": "科学研究人员 / 教学人员",
     "publish_time": "2026-09-15"
@@ -6913,7 +8090,7 @@
     "company_name": "浪潮",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "工程技术人员",
     "publish_time": "2026-09-15"
@@ -6924,7 +8101,7 @@
     "company_name": "中交广州航道局有限公司",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "工程技术人员 / 经济业务人员 / 金融业务人员 / 其他专业技术人员",
     "publish_time": "2026-09-15"
@@ -6935,7 +8112,7 @@
     "company_name": "中建六局（中建丝路）",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 河北省 / 浙江省 / 广东省",
     "job_category": "工程技术人员 / 其他专业技术人员",
     "publish_time": "2026-09-15"
@@ -6946,7 +8123,7 @@
     "company_name": "昆仑万维",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "工程技术人员 / 其他专业技术人员",
     "publish_time": "2026-09-15"
@@ -7947,7 +9124,7 @@
     "company_name": "广西壮族自治区妇幼保健院",
     "education_requirement": "博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广西壮族自治区",
     "job_category": "科学研究人员 / 卫生专业技术人员",
     "publish_time": "2026-09-11"
@@ -7958,7 +9135,7 @@
     "company_name": "湖南化工职业技术学院",
     "education_requirement": "博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "湖南省",
     "job_category": "科学研究人员 / 教学人员",
     "publish_time": "2026-09-11"
@@ -7969,7 +9146,7 @@
     "company_name": "河南工程学院",
     "education_requirement": "博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "河南省",
     "job_category": "科学研究人员 / 教学人员",
     "publish_time": "2026-09-11"
@@ -7980,7 +9157,7 @@
     "company_name": "叠纸游戏",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "上海市",
     "job_category": "工程技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -7991,7 +9168,7 @@
     "company_name": "微步",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市 / 江苏省 / 广东省 / 四川省",
     "job_category": "工程技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8002,7 +9179,7 @@
     "company_name": "郑州城市职业学院",
     "education_requirement": "硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "河南省",
     "job_category": "教学人员 / 办事人员和有关人员",
     "publish_time": "2026-09-11"
@@ -8013,7 +9190,7 @@
     "company_name": "厦门大学嘉庚学院",
     "education_requirement": "博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "福建省",
     "job_category": "科学研究人员 / 教学人员",
     "publish_time": "2026-09-11"
@@ -8024,7 +9201,7 @@
     "company_name": "薇美姿集团",
     "education_requirement": "本科",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "工程技术人员 / 经济业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8035,7 +9212,7 @@
     "company_name": "小红书",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市 / 浙江省 / 湖北省 / 广东省",
     "job_category": "工程技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8046,7 +9223,7 @@
     "company_name": "Shopee",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "上海市",
     "job_category": "工程技术人员",
     "publish_time": "2026-09-11"
@@ -8057,7 +9234,7 @@
     "company_name": "中国建设银行深圳市分行",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "金融业务人员",
     "publish_time": "2026-09-11"
@@ -8068,7 +9245,7 @@
     "company_name": "厦门信息集团管培生",
     "education_requirement": "硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "福建省",
     "job_category": "工程技术人员 / 经济业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8079,7 +9256,7 @@
     "company_name": "中际旭创",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市 / 江苏省 / 四川省",
     "job_category": "工程技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8090,7 +9267,7 @@
     "company_name": "百度",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 江苏省 / 广东省",
     "job_category": "工程技术人员",
     "publish_time": "2026-09-11"
@@ -8101,7 +9278,7 @@
     "company_name": "长飞光纤",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "重庆市 / 上海市 / 浙江省",
     "job_category": "工程技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8109,10 +9286,10 @@
   {
     "title": "金证科技27届秋招已开启！",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/118677.html",
-    "company_name": "联通数字科技有限公司2027届秋季校园招聘正式启动",
+    "company_name": "",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "上海市 / 湖南省 / 广东省 / 四川省",
     "job_category": "工程技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8123,7 +9300,7 @@
     "company_name": "宏工科技",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "江苏省 / 湖南省 / 广东省",
     "job_category": "工程技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8134,7 +9311,7 @@
     "company_name": "飒智智能",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "上海市",
     "job_category": "工程技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8145,7 +9322,7 @@
     "company_name": "中国石化石油工程技术研究院",
     "education_requirement": "博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-11"
@@ -8153,10 +9330,10 @@
   {
     "title": "2026年海军士官学校人才引进招录简章",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/118673.html",
-    "company_name": "联通数字科技有限公司2027届秋季校园招聘正式启动",
+    "company_name": "",
     "education_requirement": "硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "安徽省",
     "job_category": "科学研究人员 / 工程技术人员 / 办事人员和有关人员",
     "publish_time": "2026-09-11"
@@ -8167,7 +9344,7 @@
     "company_name": "中国工商银行天津市分行",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "天津市",
     "job_category": "经济业务人员 / 金融业务人员 / 法律专业人员 / 办事人员和有关人员 / 其他专业技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8178,7 +9355,7 @@
     "company_name": "海南控股",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "海南省",
     "job_category": "科学研究人员 / 工程技术人员 / 卫生专业技术人员 / 经济业务人员 / 金融业务人员 / 法律专业人员 / 办事人员和有关人员 / 新闻出版和文化工作人员 / 文学艺术工作人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8189,7 +9366,7 @@
     "company_name": "中邮消费金融",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "金融业务人员",
     "publish_time": "2026-09-11"
@@ -8200,7 +9377,7 @@
     "company_name": "中国移动物联网公司",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 重庆市 / 上海市 / 河北省",
     "job_category": "经济业务人员 / 金融业务人员 / 办事人员和有关人员 / 其他专业技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8211,7 +9388,7 @@
     "company_name": "中国建设银行湖南省分行",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "湖南省",
     "job_category": "金融业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8222,7 +9399,7 @@
     "company_name": "工银金租",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 重庆市 / 上海市 / 河北省",
     "job_category": "经济业务人员 / 金融业务人员",
     "publish_time": "2026-09-11"
@@ -8233,7 +9410,7 @@
     "company_name": "贵州OPPO",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "贵州省",
     "job_category": "商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8244,7 +9421,7 @@
     "company_name": "经纬开物",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "科学研究人员 / 农林牧渔业技术人员 / 卫生专业技术人员 / 经济业务人员 / 体育工作人员 / 新闻出版和文化工作人员",
     "publish_time": "2026-09-11"
@@ -8255,7 +9432,7 @@
     "company_name": "中国移动通信集团新疆有限公司",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "新疆维吾尔自治区",
     "job_category": "工程技术人员 / 经济业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8266,7 +9443,7 @@
     "company_name": "思特威",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "上海市",
     "job_category": "科学研究人员 / 工程技术人员 / 卫生专业技术人员 / 经济业务人员 / 金融业务人员 / 办事人员和有关人员 / 其他专业技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8277,7 +9454,7 @@
     "company_name": "恒生",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "浙江省",
     "job_category": "工程技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8288,7 +9465,7 @@
     "company_name": "高露洁棕榄中国",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "上海市 / 广东省 / 香港特别行政区",
     "job_category": "商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8299,7 +9476,7 @@
     "company_name": "万兴科技",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 浙江省 / 湖南省 / 广东省",
     "job_category": "工程技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8310,7 +9487,7 @@
     "company_name": "明源云",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市 / 湖北省 / 广东省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员 / 法律专业人员 / 办事人员和有关人员 / 新闻出版和文化工作人员 / 其他专业技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8321,7 +9498,7 @@
     "company_name": "2027届杉间",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "江苏省 / 安徽省 / 广东省",
     "job_category": "工程技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8329,10 +9506,10 @@
   {
     "title": "招商银行股份有限公司南昌分行",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/118657.html",
-    "company_name": "联通数字科技有限公司2027届秋季校园招聘正式启动",
+    "company_name": "",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "江西省",
     "job_category": "金融业务人员",
     "publish_time": "2026-09-11"
@@ -8343,7 +9520,7 @@
     "company_name": "乐尔智能 |",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "江苏省",
     "job_category": "科学研究人员 / 工程技术人员 / 办事人员和有关人员 / 其他专业技术人员",
     "publish_time": "2026-09-11"
@@ -8365,7 +9542,7 @@
     "company_name": "王力安防",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "浙江省 / 广东省 / 四川省",
     "job_category": "工程技术人员",
     "publish_time": "2026-09-11"
@@ -8376,7 +9553,7 @@
     "company_name": "中国邮政储蓄银行福建省分行",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 重庆市 / 上海市 / 河北省",
     "job_category": "经济业务人员 / 金融业务人员 / 其他专业技术人员",
     "publish_time": "2026-09-11"
@@ -8387,7 +9564,7 @@
     "company_name": "多益网络27届",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "浙江省 / 湖北省 / 广东省",
     "job_category": "科学研究人员 / 工程技术人员 / 卫生专业技术人员 / 经济业务人员 / 金融业务人员 / 法律专业人员 / 办事人员和有关人员 / 新闻出版和文化工作人员 / 其他专业技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8395,10 +9572,10 @@
   {
     "title": "2027莫仕珠海秋季校招| 光联万物，智享未来！",
     "link": "https://career.nankai.edu.cn/correcruit/content/id/118651.html",
-    "company_name": "联通数字科技有限公司2027届秋季校园招聘正式启动",
+    "company_name": "",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "工程技术人员",
     "publish_time": "2026-09-11"
@@ -8409,7 +9586,7 @@
     "company_name": "金蝶",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 上海市 / 江苏省 / 湖南省 / 广东省",
     "job_category": "工程技术人员 / 卫生专业技术人员 / 经济业务人员 / 金融业务人员 / 法律专业人员 / 办事人员和有关人员 / 体育工作人员 / 新闻出版和文化工作人员 / 其他专业技术人员 / 文学艺术工作人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8420,7 +9597,7 @@
     "company_name": "黑白调集团",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "浙江省 / 广东省",
     "job_category": "科学研究人员 / 工程技术人员 / 卫生专业技术人员 / 经济业务人员 / 金融业务人员 / 新闻出版和文化工作人员 / 其他专业技术人员 / 文学艺术工作人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8431,7 +9608,7 @@
     "company_name": "“梦想靠岸”招商银行上海分行",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "上海市",
     "job_category": "金融业务人员",
     "publish_time": "2026-09-11"
@@ -8442,7 +9619,7 @@
     "company_name": "山东恒信集团",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "山东省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8453,7 +9630,7 @@
     "company_name": "泰康基金",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员 / 法律专业人员 / 办事人员和有关人员 / 新闻出版和文化工作人员 / 其他专业技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8464,7 +9641,7 @@
     "company_name": "联想•中国",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 天津市 / 重庆市 / 上海市 / 广东省",
     "job_category": "工程技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8475,7 +9652,7 @@
     "company_name": "赣州澳克泰工具",
     "education_requirement": "硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "江西省",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-11"
@@ -8486,7 +9663,7 @@
     "company_name": "AIVA汽车",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "重庆市 / 上海市 / 四川省",
     "job_category": "科学研究人员 / 工程技术人员 / 经济业务人员 / 金融业务人员 / 法律专业人员 / 办事人员和有关人员 / 新闻出版和文化工作人员 / 其他专业技术人员 / 文学艺术工作人员",
     "publish_time": "2026-09-11"
@@ -8497,7 +9674,7 @@
     "company_name": "中建三局华南公司",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "广东省",
     "job_category": "工程技术人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -8508,7 +9685,7 @@
     "company_name": "航空工业规划总院",
     "education_requirement": "硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-11"
@@ -8519,7 +9696,7 @@
     "company_name": "石油工程技术研究院",
     "education_requirement": "博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市",
     "job_category": "科学研究人员 / 工程技术人员",
     "publish_time": "2026-09-11"
@@ -8530,7 +9707,7 @@
     "company_name": "阳光保险",
     "education_requirement": "本科 / 硕士研究生 / 博士研究生",
     "major_requirement": "",
-    "salary": "6000-8000元",
+    "salary": "",
     "work_location": "北京市 / 香港特别行政区",
     "job_category": "经济业务人员 / 金融业务人员 / 商业和服务业人员",
     "publish_time": "2026-09-11"
@@ -9820,1183 +10997,6 @@
     "salary": "15000-20000元",
     "work_location": "天津市 / 山西省",
     "job_category": "其他专业技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "有机/无机材料研发工程师/研发助理",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118550.html",
-    "company_name": "长裕控股集团股份有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "15000-20000元",
-    "work_location": "上海市 / 山东省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "各类岗位",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118549.html",
-    "company_name": "中国移动通信集团四川有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "8000-10000元",
-    "work_location": "四川省",
-    "job_category": "其他专业技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "创新研发岗",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118548.html",
-    "company_name": "联通视频科技有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "需求专业：计算机类、电子信息类、数学类、统计学类、自动化类等理工科专业",
-    "salary": "15000-20000元",
-    "work_location": "天津市",
-    "job_category": "其他专业技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "AI 与运营自动化工程师 (远程，专业不限)",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/115872.html",
-    "company_name": "海口渐渐数字技术有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "专业不限，欢迎不同背景的同学申请。",
-    "salary": "15000-20000元",
-    "work_location": "北京市 / 天津市 / 上海市 / 广东省",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "中国石油勘探开发研究院西北分院  ——2027届研究生校园招聘",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118546.html",
-    "company_name": "中国石油勘探开发研究院西北分院  ——",
-    "education_requirement": "硕士研究生 / 博士研究生",
-    "major_requirement": "地球探测与信息技术，地质工程（油气勘探方向），构造地质学，矿物学、岩石学、矿床学，地球化学，地球物理学，地质资源与地质工程（油气勘探方向），石油与天然气工程，油气田开发工程，固体力学，能源与环保，应用数学，信号与信息处理，信息与通信工程，电子与通信工程，计算机应用技术，计算机系统结构，人工智能，计算机科学与技术，计算机软件与理论，软件工程，人工智能，数据科学与大数据技术等油气勘探和信息化相关专业。",
-    "salary": "",
-    "work_location": "北京市 / 甘肃省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "HR管培生",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118545.html",
-    "company_name": "杭州碧橙数字技术股份有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "岗位职责：",
-    "salary": "10000-15000元",
-    "work_location": "浙江省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "抖音直播管培生",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118544.html",
-    "company_name": "杭州碧橙数字技术股份有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "\"碧橙直播业务核心人才梯队的摇篮",
-    "salary": "10000-15000元",
-    "work_location": "浙江省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "电商管培生",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118543.html",
-    "company_name": "杭州碧橙数字技术股份有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "\"碧橙核心人才梯队的摇篮，",
-    "salary": "10000-15000元",
-    "work_location": "浙江省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "新疆油田公司2026年秋季高校毕业生招聘",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118542.html",
-    "company_name": "新疆油田公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "8000-10000元",
-    "work_location": "新疆维吾尔自治区",
-    "job_category": "科学研究人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "模拟电路设计工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118541.html",
-    "company_name": "3.学习版图协同设计流程，协助完成寄生提取、后仿真及可靠性验证；",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "微电子、集成电路、电子工程或相关专业",
-    "salary": "",
-    "work_location": "北京市 / 天津市 / 海南省 / 四川省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "ATE测试工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118539.html",
-    "company_name": "",
-    "education_requirement": "本科",
-    "major_requirement": "电子工程、微电子等相关专业",
-    "salary": "",
-    "work_location": "天津市",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "数字中端工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118538.html",
-    "company_name": "",
-    "education_requirement": "本科",
-    "major_requirement": "微电子、集成电路、电子信息、通信工程等相关专业",
-    "salary": "",
-    "work_location": "海南省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "DFT 工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118537.html",
-    "company_name": "",
-    "education_requirement": "本科",
-    "major_requirement": "计算机/电子信息工程或相关领域",
-    "salary": "",
-    "work_location": "天津市 / 海南省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "数字中后端工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118536.html",
-    "company_name": "",
-    "education_requirement": "本科",
-    "major_requirement": "电子工程、微电子等相关专业",
-    "salary": "",
-    "work_location": "天津市 / 上海市 / 四川省 / 陕西省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "AI infra工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118533.html",
-    "company_name": "",
-    "education_requirement": "硕士研究生 / 博士研究生",
-    "major_requirement": "计算机等相关专业",
-    "salary": "",
-    "work_location": "天津市 / 上海市 / 浙江省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "集群开发工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118532.html",
-    "company_name": "",
-    "education_requirement": "本科",
-    "major_requirement": "计算机科学与技术、计算机工程、电子工程、微电子、软件工程、自动化或相关专业",
-    "salary": "",
-    "work_location": "天津市 / 上海市 / 浙江省 / 四川省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "软件开发工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118531.html",
-    "company_name": "",
-    "education_requirement": "本科",
-    "major_requirement": "电子信息、微电子、集成电路等相关专业",
-    "salary": "",
-    "work_location": "北京市 / 天津市 / 上海市 / 浙江省 / 四川省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "EMU/FPGA 原型验证工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118529.html",
-    "company_name": "",
-    "education_requirement": "本科",
-    "major_requirement": "通信、电子、自动化或相关专业",
-    "salary": "",
-    "work_location": "上海市 / 海南省 / 四川省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "IP 验证工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118527.html",
-    "company_name": "",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "微电子、电子工程、计算机、通信等相关专业",
-    "salary": "",
-    "work_location": "天津市 / 海南省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "SOC设计工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118526.html",
-    "company_name": "",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "电子信息工程、微电子科学与工程、集成电路设计与集成系统等相关专业",
-    "salary": "",
-    "work_location": "北京市",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "Cmodel 工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118525.html",
-    "company_name": "5.参与功能模型、性能模型、reference/golden model、RTL 仿真或原型验证结果的对比分析，通过日志、trace、统计指标和最小复现用例定位功能或性能偏差；",
-    "education_requirement": "本科",
-    "major_requirement": "计算机科学与技术、计算机工程、电子工程、微电子、软件工程、自动化或相关专业，本科及以上学历的应届毕业生；",
-    "salary": "",
-    "work_location": "天津市 / 海南省 / 四川省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "算法工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118524.html",
-    "company_name": "",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "计算机科学、电子工程或相关领域的硕士学位",
-    "salary": "",
-    "work_location": "天津市 / 海南省 / 四川省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "算子工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118522.html",
-    "company_name": "",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "计算机科学、电子工程或相关领域的硕士学位",
-    "salary": "",
-    "work_location": "天津市 / 海南省 / 四川省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "IC 验证工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118521.html",
-    "company_name": "",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "电子/微电子/计算机等相关专业硕士以上学历",
-    "salary": "",
-    "work_location": "北京市 / 天津市 / 四川省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "IC 设计工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118520.html",
-    "company_name": "",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "计算机体系架构、微电子、电子、通信或其他弱电相关专业背景",
-    "salary": "",
-    "work_location": "北京市 / 天津市",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "中国工商银行远程银行中心2027年度秋季  校园招聘公告",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118535.html",
-    "company_name": "中国工商银行远程银行中心",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "电子信息、计算机等理工类；数学、统计学、经济金融类等优先",
-    "salary": "",
-    "work_location": "北京市 / 河北省 / 安徽省 / 广东省 / 四川省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "巨鲨医疗2027届 招聘简章",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118534.html",
-    "company_name": "巨鲨医疗",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "详见招聘简章",
-    "salary": "",
-    "work_location": "上海市 / 江苏省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "总经理助理",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118530.html",
-    "company_name": "东莞市海昌实业有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "",
-    "salary": "15000-20000元",
-    "work_location": "广东省",
-    "job_category": "商业和服务业人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "采购类管培生",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118528.html",
-    "company_name": "东莞市海昌实业有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "",
-    "salary": "15000-20000元",
-    "work_location": "广东省",
-    "job_category": "商业和服务业人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "航运业务管培生",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/104398.html",
-    "company_name": "东莞市海昌实业有限公司",
-    "education_requirement": "本科",
-    "major_requirement": "专业：船舶与海洋工程、轮机工程、电气与自动化、流体力学等相关专业优先。",
-    "salary": "15000-20000元",
-    "work_location": "广东省",
-    "job_category": "生产和运输设备操作人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "销售类管培生",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/104400.html",
-    "company_name": "东莞市海昌实业有限公司",
-    "education_requirement": "本科",
-    "major_requirement": "经济学类、法学类、管理学类、外语类、文学类、工学类、理学类、传媒类。",
-    "salary": "15000-20000元",
-    "work_location": "广东省",
-    "job_category": "商业和服务业人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "综合类管培生",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/104401.html",
-    "company_name": "东莞市海昌实业有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "经济学类、法学类、管理学类、外语类、文学类、工学类、理学类、传媒类",
-    "salary": "15000-20000元",
-    "work_location": "广东省",
-    "job_category": "商业和服务业人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "双电层超级电容器研发工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118519.html",
-    "company_name": "深圳市东阳光实业发展有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "材料、新能源器件、化学、电化学、机械工程等相关专业",
-    "salary": "10000-15000元",
-    "work_location": "广东省",
-    "job_category": "其他专业技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "行业分析专员",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118518.html",
-    "company_name": "深圳市东阳光实业发展有限公司",
-    "education_requirement": "本科",
-    "major_requirement": "材料学、电子信息、统计学、市场营销等相关专业。",
-    "salary": "8000-10000元",
-    "work_location": "广东省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "管理培训生（电子新材料）",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118517.html",
-    "company_name": "深圳市东阳光实业发展有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "材料、化学、新能源器件、机械等相关专业",
-    "salary": "10000-15000元",
-    "work_location": "浙江省 / 湖北省 / 广东省 / 内蒙古自治区",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "中国移动（成都）产业研究院2027秋季校园招聘公告",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118516.html",
-    "company_name": "中国移动（成都）产业研究院",
-    "education_requirement": "硕士研究生 / 博士研究生",
-    "major_requirement": "计算机、软件、通信、电子工程、自动化、数学、统计学、人工智能、大数据等相关专业",
-    "salary": "",
-    "work_location": "四川省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "金属材料腐蚀与防护工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118515.html",
-    "company_name": "深圳市东阳光实业发展有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "电化学、金属材料、化工、计算化学等相关专业",
-    "salary": "10000-15000元",
-    "work_location": "广东省",
-    "job_category": "其他专业技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "锂电正极材料研发工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118514.html",
-    "company_name": "深圳市东阳光实业发展有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "材料科学与工程、电化学、化学工程与工艺等相关专业",
-    "salary": "10000-15000元",
-    "work_location": "广东省",
-    "job_category": "其他专业技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "半导体封装材料研发工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118513.html",
-    "company_name": "深圳市东阳光实业发展有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "高分子材料等相关专业",
-    "salary": "10000-15000元",
-    "work_location": "广东省",
-    "job_category": "其他专业技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "社区医师岗",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/102030.html",
-    "company_name": "北京通用航天医院",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "2025年毕业专业型硕士（博士优先）；",
-    "salary": "15000-20000元",
-    "work_location": "北京市",
-    "job_category": "卫生专业技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "电容器研发工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118512.html",
-    "company_name": "深圳市东阳光实业发展有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "化学、材料类等相关专业",
-    "salary": "10000-15000元",
-    "work_location": "广东省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "管理岗",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/102031.html",
-    "company_name": "北京通用航天医院",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "2027年毕业硕士研究生（博士优先）；",
-    "salary": "15000-20000元",
-    "work_location": "北京市",
-    "job_category": "卫生专业技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "电商运营类",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118511.html",
-    "company_name": "十月稻田集团股份有限公司",
-    "education_requirement": "本科",
-    "major_requirement": "​1、本科以上学历，专业不限，但市场营销、电子商务类相关专业优先；",
-    "salary": "8000-10000元",
-    "work_location": "北京市",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "化工材料研发工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118510.html",
-    "company_name": "深圳市东阳光实业发展有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "化学工程、应用化学、精细化工等相关专业。",
-    "salary": "10000-15000元",
-    "work_location": "广东省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "采购工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118509.html",
-    "company_name": "深圳市东阳光实业发展有限公司",
-    "education_requirement": "本科",
-    "major_requirement": "材料、化学、药学、土木工程、机械等相关专业",
-    "salary": "8000-10000元",
-    "work_location": "湖北省 / 广东省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "财务专员",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118508.html",
-    "company_name": "山东金钟科技集团股份有限公司",
-    "education_requirement": "本科",
-    "major_requirement": "会计学、财务管理学",
-    "salary": "6000-8000元",
-    "work_location": "山东省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "营销工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118507.html",
-    "company_name": "山东金钟科技集团股份有限公司",
-    "education_requirement": "本科",
-    "major_requirement": "1.",
-    "salary": "6000-8000元",
-    "work_location": "山东省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "一汽资本控股有限公司2027校园招聘",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118506.html",
-    "company_name": "一汽资本控股有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "",
-    "salary": "10000-15000元",
-    "work_location": "吉林省 / 山东省 / 广东省 / 四川省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "软件开发工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118505.html",
-    "company_name": "山东金钟科技集团股份有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "软件工程、计算机科学与技术",
-    "salary": "10000-15000元",
-    "work_location": "山东省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "有道领世2027校园招聘 领世1对1甄选教师管培生专项正式启动！ 综合薪资20-30W，优秀者不限！",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118504.html",
-    "company_name": "有道领世",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "一、品牌简介",
-    "salary": "15000-20000元",
-    "work_location": "北京市",
-    "job_category": "教学人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "传感器工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118503.html",
-    "company_name": "山东金钟科技集团股份有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "测控技术与仪器、智能感知工程",
-    "salary": "10000-15000元",
-    "work_location": "山东省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "基因编辑研发科学",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/67557.html",
-    "company_name": "百奥赛图（北京）医药科技股份有限公司",
-    "education_requirement": "博士研究生",
-    "major_requirement": "生物科学类相关专业",
-    "salary": "8000-10000元",
-    "work_location": "北京市 / 江苏省",
-    "job_category": "科学研究人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "药效体外研发科学家",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/67554.html",
-    "company_name": "百奥赛图（北京）医药科技股份有限公司",
-    "education_requirement": "博士研究生",
-    "major_requirement": "博士学历，有扎实的免疫学、药理学、生物学相关研究方向",
-    "salary": "8000-10000元",
-    "work_location": "北京市 / 江苏省",
-    "job_category": "科学研究人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "体外细胞功能分析研究",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/67552.html",
-    "company_name": "百奥赛图（北京）医药科技股份有限公司",
-    "education_requirement": "博士研究生",
-    "major_requirement": "有抗体药物研发、免疫学、生理学，疾病模型的学科知识储备，或相关行业工作经验，博士及以上学历",
-    "salary": "8000-10000元",
-    "work_location": "北京市 / 江苏省",
-    "job_category": "科学研究人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "抗体发现研究",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/67549.html",
-    "company_name": "百奥赛图（北京）医药科技股份有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "分子生物学相关专业",
-    "salary": "8000-10000元",
-    "work_location": "北京市 / 江苏省",
-    "job_category": "科学研究人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "病理研究员",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/67544.html",
-    "company_name": "百奥赛图（北京）医药科技股份有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "硕士研究生及以上学历，动物病理学、医学或生物技术相关专业",
-    "salary": "8000-10000元",
-    "work_location": "北京市 / 江苏省",
-    "job_category": "科学研究人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "电气工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118502.html",
-    "company_name": "山东金钟科技集团股份有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "电气工程、自动化、控制工程",
-    "salary": "10000-15000元",
-    "work_location": "山东省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "管理培训生（职能方向）",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118501.html",
-    "company_name": "深圳市东阳光实业发展有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "硕士研究生学历，药学、材料、化学、英语等相关专业",
-    "salary": "10000-15000元",
-    "work_location": "广东省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "百奥赛图2026秋季招聘",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118499.html",
-    "company_name": "百奥赛图",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "生物学、免疫学、药学、兽医学、医学、生物技术、生物信息、计算生物学等相关专业",
-    "salary": "8000-10000元",
-    "work_location": "北京市 / 江苏省",
-    "job_category": "科学研究人员 / 农林牧渔业技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "机械工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118500.html",
-    "company_name": "山东金钟科技集团股份有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "机械工程、机械设计、液压设计",
-    "salary": "10000-15000元",
-    "work_location": "山东省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "机械/材料类博士",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118498.html",
-    "company_name": "山东金钟科技集团股份有限公司",
-    "education_requirement": "博士研究生",
-    "major_requirement": "机械、材料类相关专业",
-    "salary": "6000-8000元",
-    "work_location": "山东省",
-    "job_category": "科学研究人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "教师管培生",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118497.html",
-    "company_name": "北京领世瑞丰教育科技有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "岗位职责：",
-    "salary": "15000-20000元",
-    "work_location": "北京市 / 辽宁省 / 广东省",
-    "job_category": "教学人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "市场专员",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118495.html",
-    "company_name": "清昴智能科技（北京）有限公司",
-    "education_requirement": "本科",
-    "major_requirement": "",
-    "salary": "8000-10000元",
-    "work_location": "北京市",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "炼化数智技术研究/炼化工艺与设备技术研究/炼化设备技术/炼化环保技术",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118494.html",
-    "company_name": "中国石油天然气股份有限公司长庆石化分公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "长庆石化公司2026年秋季高校毕业生招聘公告",
-    "salary": "8000-10000元",
-    "work_location": "陕西省",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "OMLP管培生",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/113106.html",
-    "company_name": "瑞普生物股份有限公司",
-    "education_requirement": "硕士研究生 / 博士研究生",
-    "major_requirement": "工业工程、物流工程、供应链工程、化工机械、安全工程、环境工程、数学统计、兽医等相关专业",
-    "salary": "10000-15000元",
-    "work_location": "天津市",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "人力资源管培生",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/113107.html",
-    "company_name": "瑞普生物股份有限公司",
-    "education_requirement": "硕士研究生 / 博士研究生",
-    "major_requirement": "硕士及以上学历应届生，人力资源相关专业或相关实习经历，愿意在人力资源领域长期发展",
-    "salary": "10000-15000元",
-    "work_location": "天津市",
-    "job_category": "其他专业技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "新生代热血青年计划",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118493.html",
-    "company_name": "博雅春天教育科技（厦门）有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "我们希望你具备：",
-    "salary": "10000-15000元",
-    "work_location": "山西省 / 浙江省 / 安徽省 / 福建省 / 江西省",
-    "job_category": "教学人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "多场科技2027届校园招聘【国家级专精特新\"重点小巨人\"企业】",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118489.html",
-    "company_name": "多场科技",
-    "education_requirement": "硕士研究生 / 博士研究生",
-    "major_requirement": "物理学、光学、低温工程、机械工程、集成电路工程、控制工程、仪器仪表、自动化、电子信息、软件开发、财务类等",
-    "salary": "15000-20000元",
-    "work_location": "北京市",
-    "job_category": "科学研究人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "中国邮政储蓄银行2027年度校园招聘公告",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118491.html",
-    "company_name": "中国邮政储蓄银行",
-    "education_requirement": "本科",
-    "major_requirement": "",
-    "salary": "8000-10000元",
-    "work_location": "北京市",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "中国建设银行股份有限公司天津市分行",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118490.html",
-    "company_name": "中国建设银行股份有限公司天津市分行",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "中国建设银行天津市分行座落在有“渤海明珠”之称的中国北方经济中心、国际港口城市—天津市。天津市分行经过多年的改革发展，逐渐成为一家金融功能齐全、服务与产品丰富，在地区同业中具有较强竞争力的现代商业银行。",
-    "salary": "4500-6000元",
-    "work_location": "天津市",
-    "job_category": "金融业务人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "重庆南开中学教育集团2026年秋季教师招聘",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118488.html",
-    "company_name": "重庆南开中学教育集团",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "",
-    "work_location": "重庆市",
-    "job_category": "教学人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "泰康基金管理有限公司2027届秋季校园招聘火热进行中",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118486.html",
-    "company_name": "泰康基金管理有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "具体专业要求详见下方各岗位任职资格。涉及财经、管理、理工等相关专业；渠道销售（南方）、电商运营岗位未限定专业。",
-    "salary": "",
-    "work_location": "北京市 / 广东省",
-    "job_category": "工程技术人员 / 金融业务人员 / 办事人员和有关人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "“梦想靠岸”招商银行海口分行2027秋季校园招聘公告",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118485.html",
-    "company_name": "“梦想靠岸”招商银行海口分行",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "“",
-    "salary": "6000-8000元",
-    "work_location": "海南省",
-    "job_category": "金融业务人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "光学薄膜研究员",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118484.html",
-    "company_name": "福建海创光电有限公司",
-    "education_requirement": "博士研究生",
-    "major_requirement": "光学、物理、光电子、光学材料、量子光学、激光技术、光学仪器、凝聚态物理等研究方向",
-    "salary": "8000-10000元",
-    "work_location": "福建省",
-    "job_category": "科学研究人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "激光器研究员",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118483.html",
-    "company_name": "福建海创光电有限公司",
-    "education_requirement": "博士研究生",
-    "major_requirement": "光学、物理、光电子、光学材料、量子光学、激光技术、光学仪器、凝聚态物理等研究方向",
-    "salary": "8000-10000元",
-    "work_location": "福建省",
-    "job_category": "科学研究人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "制造工程师（工艺/品保/IE）",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118482.html",
-    "company_name": "福建海创光电有限公司",
-    "education_requirement": "本科",
-    "major_requirement": "理工科相关专业",
-    "salary": "8000-10000元",
-    "work_location": "福建省",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "光学组合件研发工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118481.html",
-    "company_name": "福建海创光电有限公司",
-    "education_requirement": "本科",
-    "major_requirement": "机械、光学、物理、光学材料、精密仪器、光电传感器等相关理工科专业",
-    "salary": "8000-10000元",
-    "work_location": "福建省",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "光学冷加工工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118480.html",
-    "company_name": "福建海创光电有限公司",
-    "education_requirement": "本科",
-    "major_requirement": "机械、光学、物理、光学材料、精密仪器、光电传感器等相关理工科专业",
-    "salary": "8000-10000元",
-    "work_location": "福建省",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "激光器研发工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118479.html",
-    "company_name": "福建海创光电有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "光学、物理、光电子、精密仪器、光学材料、光电传感器等相关专业",
-    "salary": "10000-15000元",
-    "work_location": "福建省",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "光器件研发工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118478.html",
-    "company_name": "福建海创光电有限公司",
-    "education_requirement": "硕士研究生",
-    "major_requirement": "光学、物理、光电子、精密仪器、光学材料、光电传感器等相关专业岗位职责：从事光无源器件研发工作。任职要求：1.硕士或博士学历，激光技术、光学、物理、光电子、精密仪器、光学材料、光电传感器等相关专业；2.具备较好的理论功底及动手实验能力。",
-    "salary": "10000-15000元",
-    "work_location": "福建省",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "中华财险2027秋季校园招聘简章  ——中你心意，共谱华章",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118477.html",
-    "company_name": "中华财险",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "计算机、通信、电子、药学、数学、物理、化工、经济学、法学、农学、医学、管理学、建筑、船舶工学等一级学科类目包含的与公司经营管理相关专业。",
-    "salary": "基本薪酬 绩效薪酬 奖励薪酬 专业技术津贴等；",
-    "work_location": "北京市 / 天津市 / 重庆市 / 上海市",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "广州市卓越教育集团2027届秋季校园招聘进行中",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118476.html",
-    "company_name": "广州市卓越教育集团",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "",
-    "salary": "8000-10000元",
-    "work_location": "广东省",
-    "job_category": "教学人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "中国电信四川公司2027年度校园招聘公告",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118473.html",
-    "company_name": "中国电信四川公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "",
-    "work_location": "四川省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "中国石油锦州石化分公司2026年秋季高校毕业生招聘",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118474.html",
-    "company_name": "中国石油锦州石化分公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "",
-    "work_location": "辽宁省",
-    "job_category": "其他专业技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "Call浦青年 锚定未来！ 浦发银行广州分行2027年度校园招聘启事",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118471.html",
-    "company_name": "Call浦青年 锚定未来！ 浦发银行广州分行",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "",
-    "salary": "",
-    "work_location": "广东省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "贵州磷化集团2027届校园招聘 心有磷云志·脚下万里程",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118472.html",
-    "company_name": "贵州磷化集团",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "化学工程与工艺、精细化工、化学、应用化学、化学工程与技术、会计学、财务管理、审计学、税收学、金融学、应用统计学、统计学、法学、经济学、工商管理、行政管理、新闻学、汉语言文学、纪检监察、政治学与行政学、物流管理、交通运输等专业",
-    "salary": "",
-    "work_location": "贵州省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "Ai未来 等你来 ——南京银行2027届全球校园招聘公告",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118470.html",
-    "company_name": "Ai未来 等你来 ——南京银行",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "",
-    "work_location": "江苏省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "法律实习生",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118469.html",
-    "company_name": "天津观典律师事务所",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "1、法学及相关专业，本科及以上学历，研究生优先，接收在校生；",
-    "salary": "3000-4500元",
-    "work_location": "天津市",
-    "job_category": "法律专业人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "校招-蔚来顾问-天津",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118468.html",
-    "company_name": "",
-    "education_requirement": "本科",
-    "major_requirement": "",
-    "salary": "",
-    "work_location": "天津市 / 河北省 / 山西省 / 山东省 / 河南省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "空间运营（门店运营）实习生",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118467.html",
-    "company_name": "",
-    "education_requirement": "本科",
-    "major_requirement": "",
-    "salary": "",
-    "work_location": "天津市 / 河北省 / 山西省 / 山东省 / 河南省",
-    "job_category": "其他专业技术人员 / 商业和服务业人员 / 其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "传播实习生（天津）",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118466.html",
-    "company_name": "",
-    "education_requirement": "本科",
-    "major_requirement": "",
-    "salary": "",
-    "work_location": "天津市 / 河北省 / 山西省 / 山东省 / 河南省",
-    "job_category": "办事人员和有关人员 / 其他专业技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "株式会社アクティシステム　正社員（软件开发）",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118465.html",
-    "company_name": "北京亚科特软件技术有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "计算机或软件工程相关专业，无日语要求。",
-    "salary": "10000-15000元",
-    "work_location": "北京市",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "科技研发岗",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118464.html",
-    "company_name": "中铝郑州有色金属研究院有限公司",
-    "education_requirement": "硕士研究生 / 博士研究生",
-    "major_requirement": "冶金工程、材料科学与工程（无机非金属材料、氧化铝基材料、炭素材料、铝合金材料）、矿物加工工程、控制科学与工程、计算机科学与工程、人工智能、机械工程、自动化、光学工程、环境科学与工程、化学工程",
-    "salary": "20000元",
-    "work_location": "浙江省 / 山东省 / 河南省",
-    "job_category": "科学研究人员 / 工程技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "江苏华创微2027届秋招招聘简章",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118202.html",
-    "company_name": "江苏华创微",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "目标专业：集成电路、电子信息、电子科学与技术、信息与通信工程、计算机科学与技术、测控技术与仪器等相关专业",
-    "salary": "岗位工资",
-    "work_location": "北京市 / 天津市 / 江苏省 / 四川省 / 陕西省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "上海东方芯港集成电路有限公司2027届校园招聘",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118463.html",
-    "company_name": "上海东方芯港集成电路有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "电子信息类、集成电路类、材料类、物理类、化学类、机械类、自动化与控制类、计算机信息技术类、工业工程类、管理科学与工程类、智能制造类等相关专业。",
-    "salary": "15000-20000元",
-    "work_location": "上海市",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "永赢基金校园招聘",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118407.html",
-    "company_name": "永赢基金",
-    "education_requirement": "硕士研究生 / 博士研究生",
-    "major_requirement": "管理/贸易",
-    "salary": "",
-    "work_location": "北京市 / 上海市 / 广东省",
-    "job_category": "其他人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "工程技术员",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/111567.html",
-    "company_name": "淮北矿业（集团）有限责任公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "1.具有本科及以上学历。",
-    "salary": "10000-15000元",
-    "work_location": "安徽省",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "工程技术员",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118462.html",
-    "company_name": "淮北矿业（集团）有限责任公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "1\t煤炭采选类\t采矿工程、智能采矿工程、安全工程、地质工程、测绘工程、水文与水资源工程、勘查技术与工程、地球探测与信息技术、矿物加工工程等相关专业\t80",
-    "salary": "8000-10000元",
-    "work_location": "安徽省",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "工银金融租赁有限公司2027年度校园招聘公告",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118229.html",
-    "company_name": "工银金融租赁有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "工银金融租赁有限公司",
-    "salary": "10000-15000元",
-    "work_location": "北京市",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "研发技术员",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118461.html",
-    "company_name": "山西华钠碳能科技有限责任公司",
-    "education_requirement": "硕士研究生 / 博士研究生",
-    "major_requirement": "材料、化学、物理相关专业",
-    "salary": "10000-15000元",
-    "work_location": "山西省",
-    "job_category": "其他专业技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "拉普拉斯新能源科技股份有限公司秋招",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118460.html",
-    "company_name": "",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "",
-    "work_location": "江苏省 / 广东省 / 陕西省 / 香港特别行政区",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "三星(中国)半导体有限公司2027届校园招聘简章",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118417.html",
-    "company_name": "三星(中国)半导体有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "机械类、自动化类、电子类、微电子类、电气类、物理类、化学类、材料类",
-    "salary": "",
-    "work_location": "陕西省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "电气工程师",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/89434.html",
-    "company_name": "天津江天数据科技有限公司",
-    "education_requirement": "本科 / 硕士研究生",
-    "major_requirement": "",
-    "salary": "8000-10000元",
-    "work_location": "天津市",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "金蝶2027届校园招聘简章",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118458.html",
-    "company_name": "金蝶",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "",
-    "salary": "8000-10000元",
-    "work_location": "北京市 / 上海市 / 江苏省 / 湖南省 / 广东省",
-    "job_category": "-",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "研发序列/营销序列/技术序列",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118459.html",
-    "company_name": "【27届】研发序列/营销序列/技术序列",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "博士研究生需求专业：电气工程、控制科学与工程、信息与通信工程、电子信息、电子科学与技术、计算机科学与技术、软件工程、仪器科学与技术等方向。",
-    "salary": "10000-15000元",
-    "work_location": "山东省",
-    "job_category": "工程技术人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "保研转化顾问",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118457.html",
-    "company_name": "天津翰海星途科技有限公司",
-    "education_requirement": "本科",
-    "major_requirement": "1、本科及以上学历，市场营销、教育学、汉语言、经管类,l理工科专业优先，有保研经历、高校升学咨询、教培销售经验优先，致力于长期深耕高校升学教育行业；",
-    "salary": "8000-10000元",
-    "work_location": "天津市",
-    "job_category": "教学人员",
-    "publish_time": "2026-09-10"
-  },
-  {
-    "title": "制程研发",
-    "link": "https://career.nankai.edu.cn/correcruit/content/id/118456.html",
-    "company_name": "泉意光罩光电科技（济南）有限公司",
-    "education_requirement": "本科 / 硕士研究生 / 博士研究生",
-    "major_requirement": "光学、物理、材料、化学、微电子、计算机、软件",
-    "salary": "15000-20000元",
-    "work_location": "北京市 / 上海市 / 山东省",
-    "job_category": "科学研究人员",
     "publish_time": "2026-09-10"
   }
 ]
